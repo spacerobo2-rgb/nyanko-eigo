@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>ねこ英語大戦 - v13 50語ごと猫解放</title>
+<title>ねこ英語大戦 - v13.1 イラスト＆戻る修正版</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0;background:#bfe8ff;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Maru Gothic ProN","Yu Gothic",sans-serif;color:#2a211a;overscroll-behavior:none}
@@ -260,6 +260,25 @@ body{
 .kingdomUnlockName{font-size:24px;font-weight:1000;color:#422818}
 .kingdomUnlockMsg{font-size:14px;font-weight:900;line-height:1.6;margin:8px 0 12px}
 
+
+/* v13.1 iPhone Safari画像・戻る修正 */
+.kingdomUnlockArtImg{
+  display:block;
+  width:auto;
+  max-width:180px;
+  height:145px;
+  object-fit:contain;
+  margin:5px auto;
+}
+.profileArtImg{
+  display:block;
+  width:auto;
+  max-width:190px;
+  height:150px;
+  object-fit:contain;
+  margin:4px auto 8px;
+}
+
 </style></head>
 <body><div id="app">
 <div class="top"><div class="logo">🐾 ねこ英語大戦</div><div id="topStage" class="topStage">第1章 とりあえず動け村</div><div class="coinTop">🪙 <span id="coinTopValue">0</span></div></div>
@@ -292,7 +311,7 @@ body{
 <div class="bottom"><button id="battleBackBtn">← もどる</button><button id="zukanBtn">📖 ねこ図鑑</button><button id="battleMapBtn">🗺️ ステージ</button><button id="menuBtn">🐾 メニュー</button></div>
 </section>
 
-<section id="zukan" class="screen"><div class="panel"><div class="zukanTop"><div><div class="heroTitle" style="font-size:25px">🐾 猫図鑑</div><div id="zukanCount" class="zukanCount"></div></div><button id="zukanHomeBtn" class="subBtn" style="width:auto;margin:0;padding:9px 12px">ホーム</button></div><div class="heroSub">50単語覚えるごとに、王国の住民が1匹ずつ仲間になるにゃ！</div><div id="zukanGrid" class="zukanGrid"></div></div></section><section id="catProfile" class="screen"><div class="panel"><div id="profileNo" class="zukanNo" style="text-align:center"></div><div id="profileArt" class="profileArt"></div><div id="profileName" class="profileName"></div><div id="profileText" class="profileText"></div><div id="profileQuote" class="profileQuote"></div><div id="profileHint" class="lockHint"></div><button id="profileBackBtn" class="mainBtn">← 図鑑にもどる</button></div></section><section id="clear" class="screen clear"><div class="panel"><div style="font-size:65px;text-align:center">🏆🐱✨</div><div class="heroTitle">ステージクリア！</div><p id="clearText" class="heroSub"></p><div id="unlockBox" class="unlockBox"><div class="unlockNew">NEW!</div><div id="unlockArt" class="unlockArt"></div><div id="unlockName" class="unlockName"></div><div id="unlockDesc" class="unlockDesc"></div></div><button id="nextStageBtn" class="mainBtn">次へ進む ▶</button><button id="clearHomeBtn" class="subBtn">ホームへ</button></div></section>
+<section id="zukan" class="screen"><div class="panel"><div class="zukanTop"><div><div class="heroTitle" style="font-size:25px">🐾 猫図鑑</div><div id="zukanCount" class="zukanCount"></div></div><button id="zukanHomeBtn" class="subBtn" style="width:auto;margin:0;padding:9px 12px">ホーム</button></div><div class="heroSub">50単語覚えるごとに、王国の住民が1匹ずつ仲間になるにゃ！</div><div id="zukanGrid" class="zukanGrid"></div></div></section><section id="catProfile" class="screen"><div class="panel"><div id="profileNo" class="zukanNo" style="text-align:center"></div><img id="profileArt" class="profileArtImg" alt="ねこのイラスト"><div id="profileName" class="profileName"></div><div id="profileText" class="profileText"></div><div id="profileQuote" class="profileQuote"></div><div id="profileHint" class="lockHint"></div><button id="profileBackBtn" class="mainBtn">← 図鑑にもどる</button></div></section><section id="clear" class="screen clear"><div class="panel"><div style="font-size:65px;text-align:center">🏆🐱✨</div><div class="heroTitle">ステージクリア！</div><p id="clearText" class="heroSub"></p><div id="unlockBox" class="unlockBox"><div class="unlockNew">NEW!</div><div id="unlockArt" class="unlockArt"></div><div id="unlockName" class="unlockName"></div><div id="unlockDesc" class="unlockDesc"></div></div><button id="nextStageBtn" class="mainBtn">次へ進む ▶</button><button id="clearHomeBtn" class="subBtn">ホームへ</button></div></section>
 
 <section id="learn" class="screen learn"><div class="panel">
 <div id="learnTitle" class="heroTitle" style="font-size:23px">📖 おぼえるモード</div>
@@ -306,7 +325,7 @@ body{
 <div id="notice" class="notice"></div><div id="kingdomUnlockOverlay" class="kingdomUnlockOverlay">
 <div class="kingdomUnlockCard">
 <div class="kingdomUnlockNew">NEW! 🐾</div>
-<div id="kingdomUnlockArt" class="kingdomUnlockArt"></div>
+<img id="kingdomUnlockArt" class="kingdomUnlockArtImg" alt="解放されたねこ">
 <div id="kingdomUnlockName" class="kingdomUnlockName"></div>
 <div id="kingdomUnlockMsg" class="kingdomUnlockMsg"></div>
 <button id="kingdomUnlockClose" class="mainBtn">やった！</button>
@@ -643,9 +662,11 @@ function learnAction(){
   }
 }
 function showKingdomUnlock(index){
-  if(!window.KINGDOM_CATS || !KINGDOM_CATS[index])return;
+  if(!KINGDOM_CATS || !KINGDOM_CATS[index])return;
   const c=KINGDOM_CATS[index];
-  $("kingdomUnlockArt").style.backgroundImage=`url("${c.img}")`;
+  const art=$("kingdomUnlockArt");
+  art.src=c.img;
+  art.style.display="block";
   $("kingdomUnlockName").textContent=c.name+" が仲間になった！";
   $("kingdomUnlockMsg").textContent=(index+1)*50+"語達成！ 猫図鑑に新しい住民が登録されたにゃ！";
   $("kingdomUnlockOverlay").classList.add("show");
@@ -698,7 +719,11 @@ $("battleMapBtn").addEventListener("click",openMap);
 $("clearHomeBtn").addEventListener("click",()=>show("home"));
 $("nextStageBtn").addEventListener("click",()=>startStage(Math.min(stageIndex+1,STAGES.length-1)));
 $("learnBtn").addEventListener("click",learnAction);$("learnCheckBtn").addEventListener("click",toggleLearned);
-$("learnBackBtn").addEventListener("click",()=>show("home"));
+$("learnBackBtn").addEventListener("click",(e)=>{
+  e.preventDefault();
+  show("home");
+  window.scrollTo(0,0);
+});
 $("speakBtn").addEventListener("click",()=>{unlockAudio();if(currentQ)speak(currentQ.en)});
 
 $("menuBtn").addEventListener("click",()=>note("メニューは次に追加するにゃ！"));
@@ -737,19 +762,36 @@ function renderZukan(){
 }
 function openProfile(i){
  const c=KINGDOM_CATS[i],open=i<kingdomUnlockedCount(),learned=getLearnedWords().size;
- const lockedIcon="data:image/png;base64,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";
+ const lockedIcon=KINGDOM_CATS[0].img;
  $("profileNo").textContent="No."+(i+1);
- $("profileArt").style.backgroundImage=`url("${open?c.img:lockedIcon}")`;
- $("profileArt").style.filter=open?"none":"brightness(0)";
+ const art=$("profileArt");
+ art.src=open?c.img:lockedIcon;
+ art.style.filter=open?"none":"brightness(0)";
+ art.style.opacity=open?"1":"0.75";
  $("profileName").textContent=open?c.name:"？？？";
  $("profileText").textContent=open?c.profile:"まだ正体はひみつ。";
  $("profileQuote").textContent=open?"「"+c.quote+"」":"";
  $("profileHint").textContent=open?"ねこ王国の住民として登録されたにゃ！":"あと "+Math.max(0,(i+1)*50-learned)+" 単語覚えると解放！";
  show("catProfile");
+ window.scrollTo(0,0);
 }
 $("zukanBtn").addEventListener("click",()=>{renderZukan();show("zukan")});
-$("zukanHomeBtn").addEventListener("click",openHome);
-$("profileBackBtn").addEventListener("click",()=>{renderZukan();show("zukan")});
+$("zukanHomeBtn").addEventListener("click",(e)=>{
+  e.preventDefault();
+  openHome();
+  window.scrollTo(0,0);
+});
+$("profileBackBtn").addEventListener("click",(e)=>{
+  e.preventDefault();
+  renderZukan();
+  show("zukan");
+  window.scrollTo(0,0);
+});
 
-$("kingdomUnlockClose").addEventListener("click",()=>{$("kingdomUnlockOverlay").classList.remove("show");renderZukan()});
+$("kingdomUnlockClose").addEventListener("click",(e)=>{
+  e.preventDefault();
+  $("kingdomUnlockOverlay").classList.remove("show");
+  $("kingdomUnlockOverlay").classList.remove("show");
+  renderZukan();
+});
 </script></body></html>
