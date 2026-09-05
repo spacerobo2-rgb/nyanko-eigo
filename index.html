@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>ねこ英語大戦 - トップ透過修正版</title>
+<title>ねこ英語大戦 - iPhone上ズレ修正版</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0;background:#bfe8ff;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Maru Gothic ProN","Yu Gothic",sans-serif;color:#2a211a;overscroll-behavior:none}
@@ -163,6 +163,23 @@ button{font-family:inherit;touch-action:manipulation}
   background:transparent !important;
   border:0 !important;
   box-shadow:none !important;
+}
+
+
+/* v7: iPhone初期表示の上ズレ対策 */
+html{
+  scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 10px);
+}
+body{
+  padding-top: env(safe-area-inset-top, 0px);
+}
+#home{
+  padding-top: 14px !important;
+}
+@supports (padding: max(0px)){
+  #home{
+    padding-top: max(14px, calc(env(safe-area-inset-top, 0px) + 8px)) !important;
+  }
 }
 
 </style></head>
@@ -426,4 +443,13 @@ window.addEventListener("error",e=>{console.log(e.error||e.message);note("うま
 
 // first touch unlock for iPhone Safari
 document.addEventListener("touchstart",unlockAudio,{once:true,passive:true});
+
+
+window.addEventListener("load",()=>{
+  requestAnimationFrame(()=>{
+    window.scrollTo({top:0,left:0,behavior:"auto"});
+    setTimeout(()=>window.scrollTo({top:0,left:0,behavior:"auto"}),120);
+  });
+});
+
 </script></body></html>
