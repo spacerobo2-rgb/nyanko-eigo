@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>ねこ英語大戦 - トップ画面位置調整版</title>
+<title>ねこ英語大戦 - ねこ解放システム版</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0;background:#bfe8ff;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Maru Gothic ProN","Yu Gothic",sans-serif;color:#2a211a;overscroll-behavior:none}
@@ -193,6 +193,56 @@ body{
   }
 }
 
+
+/* v9: ねこ解放システム */
+.unlockBox{
+  display:none;
+  margin:14px auto 12px;
+  padding:14px 12px;
+  max-width:320px;
+  border:3px solid #8b5a2b;
+  border-radius:18px;
+  background:linear-gradient(#fffdf5,#fff0c8);
+  text-align:center;
+}
+.unlockBox.on{display:block}
+.unlockNew{
+  font-size:22px;
+  font-weight:1000;
+  color:#d14b2f;
+  letter-spacing:.5px;
+}
+.unlockArt{
+  width:96px;
+  height:82px;
+  margin:7px auto 3px;
+  background-size:contain;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.unlockName{
+  font-size:20px;
+  font-weight:1000;
+  color:#4a2b17;
+}
+.unlockDesc{
+  font-size:13px;
+  font-weight:800;
+  color:#6d4a31;
+  margin-top:3px;
+}
+.catCard.lockedCat{
+  opacity:.48;
+  filter:grayscale(1);
+}
+.catCard.lockedCat .catArt{
+  filter:brightness(.18);
+}
+.catCard.lockedCat .deployBtn{
+  background:#9e9e9e !important;
+  color:#fff !important;
+}
+
 </style></head>
 <body><div id="app">
 <div class="top"><div class="logo">🐾 ねこ英語大戦</div><div id="topStage" class="topStage">第1章 とりあえず動け村</div><div class="coinTop">🪙 <span id="coinTopValue">0</span></div></div>
@@ -225,7 +275,7 @@ body{
 <div class="bottom"><button id="battleBackBtn">← もどる</button><button id="zukanBtn">📖 ねこ図鑑</button><button id="battleMapBtn">🗺️ ステージ</button><button id="menuBtn">🐾 メニュー</button></div>
 </section>
 
-<section id="clear" class="screen clear"><div class="panel"><div style="font-size:65px;text-align:center">🏆🐱✨</div><div class="heroTitle">ステージクリア！</div><p id="clearText" class="heroSub"></p><button id="nextStageBtn" class="mainBtn">次へ進む ▶</button><button id="clearHomeBtn" class="subBtn">ホームへ</button></div></section>
+<section id="clear" class="screen clear"><div class="panel"><div style="font-size:65px;text-align:center">🏆🐱✨</div><div class="heroTitle">ステージクリア！</div><p id="clearText" class="heroSub"></p><div id="unlockBox" class="unlockBox"><div class="unlockNew">NEW!</div><div id="unlockArt" class="unlockArt"></div><div id="unlockName" class="unlockName"></div><div id="unlockDesc" class="unlockDesc"></div></div><button id="nextStageBtn" class="mainBtn">次へ進む ▶</button><button id="clearHomeBtn" class="subBtn">ホームへ</button></div></section>
 
 <section id="learn" class="screen learn"><div class="panel"><div class="heroTitle" style="font-size:23px">📖 おぼえるモード</div><div id="learnWord" class="learnWord"></div><div id="learnMeaning" class="meaning" hidden></div><button id="learnBtn" class="mainBtn">正解は・・</button><button id="learnBackBtn" class="subBtn">← もどる</button></div></section>
 <div id="notice" class="notice"></div>
@@ -248,13 +298,59 @@ const el={
  enemy:$("enemySprite"),boom:$("boom"),advanceFill:$("advanceFill"),life:$("lifeHearts"),hpText:$("hpText"),hpFill:$("hpFill"),
  coinHud:$("coinHud"),qStage:$("qStage"),qWord:$("qWord"),answers:$("answers"),feedback:$("feedback"),
  catGrid:$("catGrid"),clearText:$("clearText"),learnWord:$("learnWord"),learnMeaning:$("learnMeaning"),
- learnBtn:$("learnBtn"),notice:$("notice"),boo:$("booAudio")
+ learnBtn:$("learnBtn"),unlockBox:$("unlockBox"),unlockArt:$("unlockArt"),unlockName:$("unlockName"),unlockDesc:$("unlockDesc"),notice:$("notice"),boo:$("booAudio")
 };
 
 let progress=Math.max(0,Math.min(Number(localStorage.getItem("nekoProgressIPhone")||0),STAGES.length-1));
 let stageIndex=progress,coins=0,life=3,enemyHP=80,maxHP=80,currentQ=null,answerLocked=false;
 let battleActive=false,enemyAdvance=0,lastAdvanceTime=0,advanceRAF=0,enemyPauseUntil=0;
 let learnIndex=0,learnShown=false,audioUnlocked=false,activeTimers=new Set();
+
+const UNLOCK_RULES=[
+  {after:0,id:"gakusei"},   // ステージ1クリア
+  {after:2,id:"ninja"},     // 第1章クリア
+  {after:4,id:"mahou"},     // 第2章途中
+  {after:6,id:"mukimuki"},  // 第3章途中
+  {after:8,id:"fuwa"}       // 第3章クリア
+];
+const START_CATS=["chibi","futsuu"];
+let unlockedCats=new Set(START_CATS);
+try{
+  const saved=JSON.parse(localStorage.getItem("nekoUnlockedCats")||"[]");
+  saved.forEach(id=>unlockedCats.add(id));
+}catch(e){}
+
+// 以前から遊んでいる人は、保存済みの進行度に応じて自動解放
+UNLOCK_RULES.forEach(r=>{
+  if(progress>r.after)unlockedCats.add(r.id);
+});
+saveUnlockedCats();
+
+function saveUnlockedCats(){
+  try{localStorage.setItem("nekoUnlockedCats",JSON.stringify([...unlockedCats]))}catch(e){}
+}
+function isCatUnlocked(id){
+  return unlockedCats.has(id);
+}
+function unlockCatForStage(clearedStageIndex){
+  const rule=UNLOCK_RULES.find(r=>r.after===clearedStageIndex);
+  if(!rule || unlockedCats.has(rule.id))return null;
+  unlockedCats.add(rule.id);
+  saveUnlockedCats();
+  return CATS.find(c=>c.id===rule.id)||null;
+}
+function showUnlock(cat){
+  if(!cat){
+    el.unlockBox.classList.remove("on");
+    return;
+  }
+  el.unlockArt.style.backgroundImage=`url("${CAT_POSES[cat.id].taiki}")`;
+  el.unlockName.textContent="「"+cat.name+"」が仲間になった！";
+  el.unlockDesc.textContent="🪙"+cat.cost+"　攻"+cat.atk+" / 速"+cat.speed+"　"+cat.desc;
+  el.unlockBox.classList.add("on");
+  ding();
+}
+
 
 function later(fn,ms){const t=setTimeout(()=>{activeTimers.delete(t);fn()},ms);activeTimers.add(t);return t}
 function clearTimers(){activeTimers.forEach(clearTimeout);activeTimers.clear()}
@@ -355,11 +451,12 @@ function startStage(i){
 function updateHud(){
  el.coinTop.textContent=coins;el.coinHud.textContent=coins;el.life.textContent="❤️".repeat(life)+"🖤".repeat(3-life);
  el.hpText.textContent=Math.max(0,enemyHP)+"/"+maxHP;el.hpFill.style.width=(Math.max(0,enemyHP)/maxHP*100)+"%";
- CATS.forEach((c,i)=>{const b=$("catBtn"+i);if(b)b.disabled=coins<c.cost});
+ CATS.forEach((c,i)=>{const b=$("catBtn"+i);if(b)b.disabled=(!isCatUnlocked(c.id)||coins<c.cost)});
 }
 function renderCats(){
  el.catGrid.replaceChildren();
  CATS.forEach((c,i)=>{
+   if(!isCatUnlocked(c.id))return;
    const card=document.createElement("div");card.className="catCard"+(c.special?" special":"");
    const art=document.createElement("div");art.className="catArt";art.style.backgroundImage=`url("${CAT_POSES[c.id].taiki}")`;
    const name=document.createElement("div");name.className="catName";name.textContent=(c.special?"✨ ":"")+c.name;
@@ -394,7 +491,7 @@ function answer(choice){
  }
 }
 function deploy(i){
- const c=CATS[i];if(coins<c.cost)return;coins-=c.cost;updateHud();
+ const c=CATS[i];if(!isCatUnlocked(c.id)||coins<c.cost)return;coins-=c.cost;updateHud();
  const u=document.createElement("div");u.className="unit";
  u.style.backgroundImage=`url("${CAT_POSES[c.id].hashiru}")`;
  el.arena.appendChild(u);
@@ -427,9 +524,14 @@ function attack(c,u){
 }
 function stageClear(){
  stopAdvance();
- if(stageIndex>=progress&&progress<STAGES.length-1){progress=stageIndex+1;localStorage.setItem("nekoProgressIPhone",String(progress))}
+ let newlyUnlocked=null;
+ if(stageIndex>=progress){
+   if(progress<STAGES.length-1){progress=stageIndex+1;localStorage.setItem("nekoProgressIPhone",String(progress))}
+   newlyUnlocked=unlockCatForStage(stageIndex);
+ }
  el.clearText.textContent=STAGES[stageIndex].name+"を突破！ "+(stageIndex<STAGES.length-1?"次のステージが開いたにゃ！":"全ステージ制覇！");
  show("clear");
+ showUnlock(newlyUnlocked);
 }
 function gameOver(){stopAdvance();el.answers.replaceChildren();el.feedback.textContent="💔 GAME OVER";later(openMap,1200)}
 function startLearn(){learnIndex=0;show("learn");loadLearn()}
