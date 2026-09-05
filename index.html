@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>ねこ英語大戦 - v12.1 修正版</title>
+<title>ねこ英語大戦 - v13 50語ごと猫解放</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0;background:#bfe8ff;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Maru Gothic ProN","Yu Gothic",sans-serif;color:#2a211a;overscroll-behavior:none}
@@ -654,28 +654,39 @@ function showKingdomUnlock(index){
 function toggleLearned(){
   if(!learnCurrent)return;
   const s=learnedSet(),id=learnCurrent.id;
+
   if(learnMode==="review"){
-    s.delete(id);saveLearnedSet(s);
+    s.delete(id);
+    saveLearnedSet(s);
     el.learnStats.textContent=learnProgressText();
     note("覚えたチェックを外したよ。おぼえるモードに戻るにゃ！");
     buildLearnPool();
     if(learnIndex>=learnPool.length)learnIndex=0;
     loadLearn();
-  }else{
-    const before=savedKingdomUnlockCount();
-    s.add(id);saveLearnedSet(s);
-    const earned=Math.min(29,Math.floor(s.size/50));
-    let permanent=before;
-    if(earned>permanent){
-      permanent=earned;
-      localStorage.setItem("nekoKingdomUnlockedCount",String(permanent));
-    }
-    el.learnStats.textContent=learnProgressText();
-    if(permanent>before)showKingdomUnlock(permanent-1);
-    buildLearnPool();
-    if(learnIndex>=learnPool.length)learnIndex=0;
-    loadLearn();
+    return;
   }
+
+  if(s.has(id))return;
+
+  const beforeCount=s.size;
+  const beforeUnlocked=savedKingdomUnlockCount();
+
+  s.add(id);
+  saveLearnedSet(s);
+
+  const afterCount=s.size;
+  const reached=Math.min(29,Math.floor(afterCount/50));
+
+  if(reached>beforeUnlocked){
+    localStorage.setItem("nekoKingdomUnlockedCount",String(reached));
+    // 50,100,150...1450語の瞬間に1匹だけ解放
+    showKingdomUnlock(reached-1);
+  }
+
+  el.learnStats.textContent=learnProgressText();
+  buildLearnPool();
+  if(learnIndex>=learnPool.length)learnIndex=0;
+  loadLearn();
 }
 
 $("continueBtn").addEventListener("click",()=>{unlockAudio();startStage(progress)});
