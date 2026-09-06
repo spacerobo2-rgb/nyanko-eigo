@@ -15,8 +15,8 @@ html,body{margin:0;padding:0;background:#bfe8ff;font-family:-apple-system,BlinkM
 button{font-family:inherit;touch-action:manipulation}
 #app{max-width:560px;margin:0 auto;min-height:100svh;background:#d7efff;padding-bottom:env(safe-area-inset-bottom)}
 .screen{display:none}.screen.on{display:block}
-.top{position:sticky;top:0;z-index:20;display:grid;grid-template-columns:1.22fr 1fr .78fr;gap:5px;align-items:center;padding:calc(8px + env(safe-area-inset-top)) 8px 8px;background:linear-gradient(#a96b31,#6c3d1d);border-bottom:3px solid #3e2515}
-.logo{color:white;font-weight:1000;font-size:17px;text-shadow:0 2px #321b10;line-height:1.08}
+.top{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:flex-start;padding:calc(4px + env(safe-area-inset-top)) 10px 5px;background:linear-gradient(#a96b31,#6c3d1d);border-bottom:2px solid #3e2515}
+.logo{color:white;font-weight:1000;font-size:16px;text-shadow:0 2px #321b10;line-height:1.05}
 .topStage{background:#fff0be;border:2px solid #5a351c;border-radius:10px;padding:6px 6px;text-align:center;font-weight:1000;font-size:10px;line-height:1.15}
 .coinTop{background:#2f251d;color:#fff4a3;border:2px solid #6e4a27;border-radius:18px;padding:7px 4px;text-align:center;font-weight:1000;font-size:13px}
 .home,.map,.clear,.learn{padding:12px;min-height:calc(100svh - 65px);background:linear-gradient(#a9e2ff,#7bc3f1 38%,#9ed76b 38%)}
@@ -423,7 +423,7 @@ body{
 #home .homeWorld{
   position:relative;
   min-height:calc(100svh - 65px);
-  padding:300px 16px 30px;
+  padding:245px 16px 30px;
   overflow:hidden;
   background-image:url("kingdom_bg.png");
   background-size:cover;
@@ -434,7 +434,7 @@ body{
 
 #home .homeMiniBoard{
   position:absolute;
-  top:138px;
+  top:92px;
   padding:10px 12px;
   border:3px solid #6c4122;
   border-radius:10px;
@@ -451,7 +451,7 @@ body{
 }
 #home .homeMiniBoardRight{
   right:12px;
-  top:182px;
+  top:132px;
   text-align:center;
   background:linear-gradient(#ae733c,#875225);
   color:#fff6e5;
@@ -593,16 +593,16 @@ body{
 
 @media (max-width:390px){
   #home .homeWorld{
-    padding-top:286px;
+    padding-top:232px;
     background-size:cover;
     background-position:center top;
   }
   #home .homeMiniBoard{
-    top:126px;
+    top:82px;
     font-size:11px;
     padding:9px 10px;
   }
-  #home .homeMiniBoardRight{top:171px}
+  #home .homeMiniBoardRight{top:122px}
   #home .homeHeroCats{margin-top:2px}
   #home .homeHeroCats .heroCats{height:122px}
   #home .homeHeroCats .heroOne{height:118px !important}
@@ -627,9 +627,13 @@ body{
   }
 }
 
+
+.topSimple .topStage,
+.topSimple .coinTop{display:none !important}
+
 </style></head>
 <body><div id="app">
-<div class="top"><div class="logo">🐾 ねこ英語大戦</div><div id="topStage" class="topStage">第1章 とりあえず動け村</div><div class="coinTop">🪙 <span id="coinTopValue">0</span></div></div>
+<div class="top topSimple"><div class="logo">🐾 ねこ英語大戦</div></div>
 
 
 <section id="home" class="screen on home homeKingdom">
