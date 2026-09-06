@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>ねこ英語大戦 - v16 ステージ選択版</title>
+<title>ねこ英語大戦 - v17 ねこセリフ版</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0;background:#bfe8ff;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Maru Gothic ProN","Yu Gothic",sans-serif;color:#2a211a;overscroll-behavior:none}
@@ -361,6 +361,48 @@ body{
   font-weight:1000;
   white-space:nowrap;
   box-shadow:0 2px 0 rgba(70,42,22,.18);
+}
+
+.kingdomSpeech{
+  position:absolute;
+  z-index:12;
+  max-width:190px;
+  min-width:110px;
+  padding:9px 11px;
+  border:3px solid #5a351c;
+  border-radius:16px;
+  background:rgba(255,252,235,.97);
+  color:#4b321f;
+  font-size:12px;
+  font-weight:1000;
+  line-height:1.45;
+  box-shadow:0 4px 0 rgba(80,47,24,.25);
+  pointer-events:none;
+  transform:translate(-50%,-115%);
+  text-align:center;
+}
+.kingdomSpeech::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:-10px;
+  transform:translateX(-50%);
+  width:0;height:0;
+  border-left:8px solid transparent;
+  border-right:8px solid transparent;
+  border-top:10px solid #5a351c;
+}
+.kingdomSpeech::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:-6px;
+  transform:translateX(-50%);
+  width:0;height:0;
+  border-left:6px solid transparent;
+  border-right:6px solid transparent;
+  border-top:8px solid rgba(255,252,235,.97);
+  z-index:2;
 }
 @media (max-width:390px){
   .kingdomScene{min-height:300px}
@@ -916,6 +958,8 @@ window.addEventListener("load",()=>{
 
 
 const KINGDOM_CATS=[{"name":"しろねこ","profile":"のんびり屋。ひなたぼっこと昼寝が大好き。王国で最初に暮らし始めたねこ。","quote":"いそがなくても、なんとかなるにゃ。","img":"cats/01.png"},{"name":"くろねこ","profile":"無口でクール。でも困っているねこを見ると、こっそり助けている。","quote":"べ、べつに助けたわけじゃないにゃ。","img":"cats/02.png"},{"name":"みけねこ","profile":"とにかく好奇心旺盛。王国の面白そうな場所にはだいたいいる。","quote":"なにそれ？見せて見せて！","img":"cats/03.png"},{"name":"とらねこ","profile":"食べることと走ることが大好き。考えるより先に動くタイプ。","quote":"おなかすいたにゃ！","img":"cats/04.png"},{"name":"うしねこ","profile":"おっとりしていて力持ち。昼寝を始めるとなかなか起きない。","quote":"あと5分だけ……にゃ。","img":"cats/05.png"},{"name":"さめねこ","profile":"サメに憧れているねこ。実は泳ぐのがちょっと苦手。","quote":"海の王者になるにゃ！","img":"cats/06.png"},{"name":"ねこUFO","profile":"宇宙からやってきたらしい。本人に聞いても「にゃ」としか答えない。","quote":"ワレワレハ……ねこである。","img":"cats/07.png"},{"name":"ねこロボ","profile":"博士が作った高性能ねこ型ロボット。たまに意味もなく再起動する。","quote":"ニャンゴ、インストール完了。","img":"cats/08.png"},{"name":"ねこタンク","profile":"とにかく頑丈。細かいことは気にせず、だいたい正面突破する。","quote":"前に進めばなんとかなるにゃ！","img":"cats/09.png"},{"name":"ねこ忍者","profile":"王国の屋根から屋根へ飛び回る忍者。隠れているつもりだが、しっぽがよく見えている。","quote":"拙者はここにはいないにゃ。","img":"cats/10.png"},{"name":"ねこ侍","profile":"礼儀を大切にする武士ねこ。おやつをもらうときだけものすごく素早い。","quote":"おやつ、一ついただくでござる。","img":"cats/11.png"},{"name":"ねこ魔法使い","profile":"魔法学校を卒業したらしい。得意魔法はおやつを増やす魔法。成功率は低い。","quote":"ちゅ〜るよ、増えるにゃ！","img":"cats/12.png"},{"name":"ねこ天使","profile":"王国一やさしいねこ。ケンカを見ると止めに入るが、自分のおやつを取られると怒る。","quote":"みんな仲良くするにゃ♡","img":"cats/13.png"},{"name":"ねこ悪魔","profile":"悪そうな格好をしているだけで、実はかなりいい子。落とし物は必ず届ける。","quote":"悪いこと……思いつかないにゃ。","img":"cats/14.png"},{"name":"ねこドラゴン","profile":"ドラゴンになりたいねこ。火を吹く練習中だが、今のところくしゃみしか出ない。","quote":"いつか火を吹くにゃ！","img":"cats/15.png"},{"name":"ねこゴーレム","profile":"岩のような体を持つ巨大ねこ。見た目は怖いが、お花を育てるのが趣味。","quote":"今日もお花に水をやるにゃ。","img":"cats/16.png"},{"name":"ねこバルーン","profile":"風船で空を旅するねこ。風が強い日はどこへ行くか本人にも分からない。","quote":"今日はどこに着くかにゃ〜？","img":"cats/17.png"},{"name":"ねこパイロット","profile":"空を飛ぶことに命をかけるパイロット。着陸だけちょっと苦手。","quote":"離陸は完璧にゃ！","img":"cats/18.png"},{"name":"ねこ漁師","profile":"毎朝早くから魚を狙う王国の漁師。ただし釣った魚を途中で食べてしまう。","quote":"今日の収穫は……もう食べたにゃ。","img":"cats/19.png"},{"name":"ねこシェフ","profile":"王国の料理長。味見をしすぎて、完成するころには料理が半分になっている。","quote":"味見も仕事にゃ。","img":"cats/20.png"},{"name":"ねこアイドル","profile":"歌って踊れる王国の人気者。ファンのほとんどはねこ。","quote":"みんな〜！ニャーって言って〜！","img":"cats/21.png"},{"name":"ねこスポーツ","profile":"体を動かすのが大好き。どんな競技にも参加するが、ルールはあまり知らない。","quote":"とりあえず走るにゃ！","img":"cats/22.png"},{"name":"ねこ音楽家","profile":"音楽を愛する芸術家。夜中に突然演奏を始めるので、近所からよく怒られる。","quote":"芸術は時間を選ばないにゃ♪","img":"cats/23.png"},{"name":"ねこ博士","profile":"王国一の頭脳を持つ研究者。英単語を集めて何かを研究している。","quote":"ふむ……この単語、興味深いにゃ。","img":"cats/24.png"},{"name":"ねこ探検家","profile":"未知の場所を求めて世界中を旅する冒険家。方向音痴なのは秘密。","quote":"目的地？たぶんあっちにゃ！","img":"cats/25.png"},{"name":"ねこカメラマン","profile":"王国中を撮影して回っている。決定的瞬間より変な顔の写真が好き。","quote":"その顔いいにゃ！動かないで！","img":"cats/26.png"},{"name":"ねこおばけ","profile":"夜になると現れる不思議なねこ。人を驚かせたいのに、かわいくて全然怖がられない。","quote":"うらめし……にゃ〜！","img":"cats/27.png"},{"name":"ねこ神さま","profile":"ねこ王国をずっと昔から見守っているという伝説の存在。なぜかおやつには弱い。","quote":"願いを一つ……おやつと交換にゃ。","img":"cats/28.png"},{"name":"ねこ執事","profile":"王国一の紳士。いつも冷静で完璧だが、猫じゃらしを見ると我を忘れる。","quote":"お紅茶を……あっ、猫じゃらし！","img":"cats/29.png"}];
+const KINGDOM_QUOTES=[["今日ものんびりいくにゃ〜。","ひなたぼっこ日和にゃ。","勉強が終わったら昼寝するにゃ。","急がなくても、ちゃんと進んでるにゃ。","ここ、居心地いいにゃ〜。ずっといていい？"],["……ちゃんと覚えてるにゃ？","べ、べつに応援してないにゃ。","困ったら呼べばいいにゃ。","その単語、さっき間違えてたにゃ。……見てたにゃ。","今日はまあまあ頑張ってるにゃ。"],["新しい単語！？どこどこ？","王国のすみまで探検するにゃ！","なんか面白いものないかにゃ？","あっちにも行ってみようにゃ！","知らないことを見つけるとワクワクするにゃ！"],["とりあえず走るにゃー！","勉強したらおなかすいたにゃ！","次のステージ行こうにゃ！","考えるのは走りながらでいいにゃ！","おやつまで競争にゃー！"],["あと5分だけ寝るにゃ……。","ここ、昼寝にちょうどいいにゃ。","急がなくても大丈夫にゃ〜。","起きてるにゃ。たぶん。","単語ひとつ覚えたら、ひと休みにゃ。"],["海の王者になるにゃ！","泳ぐ練習は……明日するにゃ。","魚の気配がするにゃ！","サメっぽく見えるにゃ？見えるよね？","水はちょっと冷たいにゃ……。"],["ワレワレハ……ねこである。","チキュウノ英語、ムズカシイニャ。","次ノ単語ヲ受信シタニャ。","ピピ……おやつノ反応ヲ確認。","宇宙デモ“cat”ハ人気ニャ。"],["学習データ更新中……ニャ。","英単語、インストール完了。","エラー……おやつ不足。","正解率、上昇中。スバラシイニャ。","再起動します……3、2、1、ニャ！"],["前進あるのみニャ！","わからなくても、とりあえず進むにゃ！","この壁？こわしていいにゃ？","防御力には自信があるにゃ。","英単語も正面突破にゃー！"],["拙者はここにはいないにゃ。","英単語、ひそかに覚えたでござる。","しっぽが見えてる？気のせいにゃ。","忍法・こっそり復習の術！","気づかれずにおやつをいただくでござる。"],["今日も修行でござる。","おやつ、一ついただくでござる。","英語も武士のたしなみでござる。","間違いを恐れてはならぬでござる。","いざ、次の単語へ参る！"],["単語よ、頭に入るにゃ〜！","ちゅ〜るよ、増えるにゃ！","今の魔法……成功したかにゃ？","忘れた単語よ、よみがえるにゃ！","魔法の杖より復習のほうが効くかもにゃ……。"],["今日もがんばっててえらいにゃ♡","みんな仲良くするにゃ。","間違えても、また覚えればいいにゃ！","がんばったぶんだけ強くなるにゃ♡","ちょっと休んでから続けてもいいにゃ。"],["悪いことするにゃ……たぶん。","宿題を忘れる……これは悪いことにゃ。","落とし物はちゃんと届けるにゃ。","今日は悪のおやつタイムにゃ！","悪魔だけど、ズルして答えは教えないにゃ。"],["いつか火を吹くにゃ！","ハックション！……まだダメにゃ。","ドラゴン英語を覚えるにゃ！","今日こそ炎が……ふぇっ、ふぇっ……。","強そうな単語ほど燃えるにゃ！"],["お花に水をあげたにゃ。","見た目ほど怖くないにゃ。","ゆっくり覚えればいいにゃ。","今日も王国を守ってるにゃ。","この花、昨日よりちょっと大きくなったにゃ。"],["今日はどこへ飛ぶかにゃ〜？","風まかせの旅にゃ！","あっ、王国が小さく見えるにゃ！","ちょっと風が強すぎるにゃ〜！","雲の上で英単語を覚えるにゃ。"],["離陸は完璧にゃ！","着陸は……まあなんとかなるにゃ。","次のステージへ出発にゃ！","目的地は英語マスターにゃ！","シートベルトをしめるにゃ。たぶん揺れるにゃ。"],["今日の収穫は……もう食べたにゃ。","大物が来たにゃ！","魚の英語も覚えたいにゃ。","釣れるまでのんびり復習するにゃ。","これは魚じゃないにゃ……長ぐつにゃ。"],["味見も仕事にゃ。","今日のおすすめは単語スープにゃ！","あれ？料理が半分しかないにゃ。","英単語をひとつまみ……完成にゃ！","お客さんが来る前に味見するにゃ。もう一回だけ。"],["みんな〜！ニャーって言って〜！","今日もセンターはわたしにゃ♡","英単語ライブ、始まるにゃ！","アンコールは復習してからにゃ♡","応援してくれたら、もっとがんばるにゃ！"],["とりあえず走るにゃ！","ルール？あとで聞くにゃ！","英語も体力勝負にゃ！","次は何の競技にゃ？なんでも来いにゃ！","勉強のあとはストレッチにゃ！"],["ニャ〜♪ いいメロディにゃ。","芸術は時間を選ばないにゃ。","この単語、歌にしたら覚えられるかにゃ？","次の曲は“English Cat Symphony”にゃ♪","ちょっと音が大きい？芸術だから仕方ないにゃ。"],["ふむ……興味深い単語にゃ。","学習データが増えているにゃ。","1480語すべて集めたいにゃ！","この調子なら研究は順調にゃ。","忘れる仕組みも研究中にゃ。だから復習するにゃ。"],["目的地？たぶんあっちにゃ！","まだ見ぬ単語を探すにゃ！","……ここ、どこにゃ？","地図は持ってるにゃ。読めないだけにゃ。","知らない場所ほど行きたくなるにゃ！"],["その顔いいにゃ！動かないで！","はい、ニャーズ！","決定的瞬間を撮るにゃ！","今の正解顔、撮りたかったにゃ〜。","変な顔の写真ほど名作になるにゃ。"],["うらめし……にゃ〜！","怖かったにゃ？","なんで誰も怖がらないにゃ……。","夜になったら本気出すにゃ。","びっくりさせるにゃ！……あれ、笑った？"],["願いを一つ……おやつと交換にゃ。","よくここまで覚えたにゃ。","ねこ王国を見守っているにゃ。","努力する者には、ねこの加護があるにゃ。","神さまでも英単語は復習するにゃ。"],["お紅茶をどうぞにゃ。","本日もお勉強、おつかれさまですにゃ。","あっ……猫じゃらし！……失礼しましたにゃ。","次の問題をご用意いたしましょうかにゃ？","王国の皆さま、本日も元気でございますにゃ。"]];
+
 function getLearnedWords(){try{return new Set(JSON.parse(localStorage.getItem("nekoLearnedWords")||"[]"))}catch(e){return new Set()}}
 function kingdomUnlockedCount(){return savedKingdomUnlockCount()}
 function renderZukan(){
@@ -1031,6 +1075,105 @@ function kingdomScrollToPoint(xPercent){
   });
 }
 
+
+const KINGDOM_TIME_QUOTES={
+  morning:["おはようにゃ！今日も単語を覚えるにゃ。","朝の王国は気持ちいいにゃ〜。","まずは1語、覚えてみるにゃ！"],
+  day:["今日も王国はにぎやかにゃ！","お昼の勉強も悪くないにゃ。","ちょっとだけ復習していくにゃ？"],
+  evening:["こんばんはにゃ。今日もよくがんばったにゃ。","夜の王国もきれいにゃ〜。","寝る前に1語だけ復習するにゃ？"]
+};
+const KINGDOM_MILESTONE_QUOTES=[
+  [1480,"1480語コンプリート！王国中がお祭りにゃー！"],
+  [1450,"29匹そろったにゃ！ねこ王国、完成にゃ！"],
+  [1000,"1000語！これはもう英語マスター級にゃ！"],
+  [500,"500語！王国がかなりにぎやかになってきたにゃ！"],
+  [50,"最初の50語達成！ここから王国が始まるにゃ！"]
+];
+const KINGDOM_RARE_QUOTES=[
+  "このセリフを見たあなた、ちょっとラッキーにゃ✨",
+  "ねこ王国のひみつを一つ……おやつは大事にゃ。",
+  "今日はなんだかいいことありそうにゃ！",
+  "レアセリフ発見！スクショしてもいいにゃ。",
+  "ここだけの話、ねこたちはちゃんと応援してるにゃ。"
+];
+
+let kingdomLastTapCat=-1;
+let kingdomTapCount=0;
+let kingdomLastTapAt=0;
+let kingdomSpeechTimer=null;
+
+function kingdomLearnedCount(){
+  try{return learned.size||0}catch(e){return 0}
+}
+function kingdomTimeQuote(){
+  const h=new Date().getHours();
+  const key=h<11?"morning":h<18?"day":"evening";
+  const a=KINGDOM_TIME_QUOTES[key];
+  return a[Math.floor(Math.random()*a.length)];
+}
+function kingdomMilestoneQuote(){
+  const learnedCount=kingdomLearnedCount();
+  for(const [n,q] of KINGDOM_MILESTONE_QUOTES){
+    if(learnedCount>=n)return q;
+  }
+  return "";
+}
+function kingdomChooseQuote(i){
+  const now=Date.now();
+  if(kingdomLastTapCat===i && now-kingdomLastTapAt<1800){
+    kingdomTapCount++;
+  }else{
+    kingdomTapCount=1;
+  }
+  kingdomLastTapCat=i;
+  kingdomLastTapAt=now;
+
+  const rapid=[
+    "にゃ？",
+    "どうしたにゃ？",
+    "まだ何かあるにゃ？",
+    "そんなに押すとくすぐったいにゃ！",
+    "……おやつくれるまで返事しないにゃ。"
+  ];
+  if(kingdomTapCount>=2){
+    return rapid[Math.min(kingdomTapCount-1,rapid.length-1)];
+  }
+
+  if(Math.random()<0.02){
+    return KINGDOM_RARE_QUOTES[Math.floor(Math.random()*KINGDOM_RARE_QUOTES.length)];
+  }
+
+  const milestone=kingdomMilestoneQuote();
+  if(milestone && Math.random()<0.22){
+    return milestone;
+  }
+
+  if(Math.random()<0.18){
+    return kingdomTimeQuote();
+  }
+
+  const a=KINGDOM_QUOTES[i]||["にゃ！"];
+  return a[Math.floor(Math.random()*a.length)];
+}
+
+function showKingdomSpeech(img,text){
+  const scene=$("kingdomScene");
+  if(!scene)return;
+  scene.querySelectorAll(".kingdomSpeech").forEach(x=>x.remove());
+
+  const b=document.createElement("div");
+  b.className="kingdomSpeech";
+  b.textContent=text;
+
+  const left=parseFloat(img.style.left)||50;
+  const top=parseFloat(img.style.top)||50;
+  b.style.left=left+"%";
+  b.style.top=Math.max(12,top-2)+"%";
+  scene.appendChild(b);
+
+  clearTimeout(kingdomSpeechTimer);
+  kingdomSpeechTimer=setTimeout(()=>b.remove(),3200);
+}
+
 function renderKingdom(){
   const n=kingdomUnlockedCount();
   $("kingdomCount").textContent="住民 "+n+" / 29";
@@ -1055,6 +1198,14 @@ function renderKingdom(){
     img.title=KINGDOM_CATS[i].name;
     img.loading="eager";
     img.decoding="async";
+    img.style.cursor="pointer";
+    img.style.pointerEvents="auto";
+    img.addEventListener("click",(e)=>{
+      e.preventDefault();
+      e.stopPropagation();
+      stopScreenAudio();
+      showKingdomSpeech(img,kingdomChooseQuote(i));
+    });
 
     const [x,y]=KINGDOM_POSITIONS[i];
     img.style.left=x+"%";
