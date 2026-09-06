@@ -428,19 +428,9 @@ body{
   background-image:
     linear-gradient(to bottom,rgba(255,255,255,0) 0 58%,rgba(74,135,48,.12) 100%),
     url("kingdom_bg.png");
-  background-size:auto 410px;
-  background-position:center top;
+  background-size:auto 100%;
+  background-position:center center;
   background-repeat:no-repeat;
-}
-#home .homeWorld::after{
-  content:"";
-  position:absolute;
-  left:0;right:0;top:390px;bottom:0;
-  background:
-    radial-gradient(circle at 12% 18%,rgba(255,255,255,.45) 0 3px,transparent 4px),
-    radial-gradient(circle at 82% 9%,rgba(255,235,103,.48) 0 4px,transparent 5px),
-    linear-gradient(#9bdc70,#79c450);
-  z-index:0;
 }
 #home .homeWorld > *{position:relative;z-index:2}
 
@@ -587,10 +577,9 @@ body{
 @media (max-width:390px){
   #home .homeWorld{
     padding-top:252px;
-    background-size:auto 385px;
+    background-size:auto 100%;
   }
-  #home .homeWorld::after{top:365px}
-  #home .homeMiniBoard{top:108px;font-size:11px}
+    #home .homeMiniBoard{top:108px;font-size:11px}
   #home .homeMiniBoardRight{top:132px}
   #home .homeHeroCats{margin-top:-26px}
   #home .homeHeroCats .heroCats{height:105px}
@@ -606,6 +595,31 @@ body{
   #home .homeQuestTitle{font-size:21px}
   #home .homeAdventureBtn{font-size:20px;padding:15px 8px}
   #home .homeWoodBtn{font-size:17px;padding:11px 8px}
+}
+
+
+/* ===== トップヘッダー超コンパクト版 ===== */
+.top{
+  min-height:0 !important;
+  padding:calc(1px + env(safe-area-inset-top)) 5px 2px !important;
+  gap:3px !important;
+  border-bottom-width:2px !important;
+}
+.logo{
+  font-size:13px !important;
+  line-height:1 !important;
+}
+.topStage{
+  padding:2px 3px !important;
+  font-size:8px !important;
+  line-height:1.05 !important;
+  border-radius:7px !important;
+}
+.coinTop{
+  padding:2px 3px !important;
+  font-size:10px !important;
+  line-height:1 !important;
+  border-radius:13px !important;
 }
 
 </style></head>
