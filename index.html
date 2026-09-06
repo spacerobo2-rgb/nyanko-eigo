@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>ねこ英語大戦 - v14.2 シンプル画像パス版</title>
+<title>ねこ英語大戦 - v15 横スクロールねこ王国</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0;background:#bfe8ff;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Maru Gothic ProN","Yu Gothic",sans-serif;color:#2a211a;overscroll-behavior:none}
@@ -280,56 +280,86 @@ body{
 }
 
 
-/* v14 ねこ王国 */
-.kingdomScene{
+/* v15 ねこ王国：4画面横スクロール */
+.kingdomViewport{
   position:relative;
-  min-height:560px;
-  overflow:hidden;
+  width:100%;
+  overflow-x:auto;
+  overflow-y:hidden;
+  -webkit-overflow-scrolling:touch;
+  scroll-snap-type:x proximity;
+  overscroll-behavior-x:contain;
   border:3px solid #6b4528;
   border-radius:18px;
-  background:
-    radial-gradient(circle at 80% 16%,rgba(255,255,255,.85) 0 34px,transparent 36px),
-    linear-gradient(#8fd8ff 0 48%,#b8e27b 48% 100%);
-  box-shadow:inset 0 -40px 0 rgba(96,155,68,.16);
+  background:#8fd8ff;
+  box-shadow:0 4px 0 rgba(70,42,22,.22);
+  scrollbar-width:none;
 }
-.kingdomScene:before{
-  content:"";
-  position:absolute;
-  left:12%;
-  bottom:23%;
-  width:92px;height:105px;
-  background:#f3d7a0;
-  border:3px solid #7a4c2d;
-  border-radius:10px 10px 3px 3px;
-  box-shadow:
-    175px 22px 0 -8px #f3d7a0,
-    175px 22px 0 -5px #7a4c2d;
-}
-.kingdomScene:after{
-  content:"🏰";
-  position:absolute;
-  font-size:100px;
-  right:8%;
-  bottom:24%;
-  filter:drop-shadow(0 3px 2px rgba(0,0,0,.18));
+.kingdomViewport::-webkit-scrollbar{display:none}
+.kingdomScene{
+  position:relative;
+  width:400%;
+  aspect-ratio:4 / 1;
+  min-height:320px;
+  background-image:url("kingdom_bg.png");
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  background-position:center;
 }
 .kingdomResident{
   position:absolute;
-  width:72px;height:72px;
+  width:clamp(50px,16vw,88px);
+  height:clamp(50px,16vw,88px);
   object-fit:contain;
-  filter:drop-shadow(0 2px 1px rgba(0,0,0,.2));
+  z-index:4;
+  filter:drop-shadow(0 3px 2px rgba(0,0,0,.28));
+  transform-origin:50% 100%;
+  user-select:none;
+  -webkit-user-drag:none;
 }
 .kingdomEmpty{
   position:absolute;
-  inset:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  left:50%;
+  top:55%;
+  width:22%;
+  transform:translate(-50%,-50%);
+  z-index:7;
+  padding:15px 12px;
+  border:3px solid #6b4528;
+  border-radius:16px;
+  background:rgba(255,250,232,.92);
+  box-shadow:0 4px 0 rgba(70,42,22,.2);
   text-align:center;
   font-weight:1000;
   color:#5d432d;
-  padding:30px;
-  line-height:1.7;
+  line-height:1.65;
+}
+.kingdomSwipeHint{
+  margin:8px 0 0;
+  text-align:center;
+  font-size:13px;
+  font-weight:1000;
+  color:#644328;
+}
+.kingdomArea{
+  position:absolute;
+  top:10px;
+  transform:translateX(-50%);
+  z-index:3;
+  padding:5px 9px;
+  border:2px solid rgba(78,48,27,.75);
+  border-radius:999px;
+  background:rgba(255,250,235,.88);
+  color:#4a311e;
+  font-size:11px;
+  font-weight:1000;
+  white-space:nowrap;
+  box-shadow:0 2px 0 rgba(70,42,22,.18);
+}
+@media (max-width:390px){
+  .kingdomScene{min-height:300px}
+  .kingdomResident{width:58px;height:58px}
+  .kingdomArea{font-size:10px;padding:4px 7px}
 }
 
 </style></head>
@@ -374,8 +404,11 @@ body{
       </div>
       <button id="kingdomHomeBtn" class="subBtn" style="width:auto;margin:0;padding:9px 12px">ホーム</button>
     </div>
-    <div class="heroSub">覚えたことばが増えるほど、王国にねこがうじゃうじゃ増えていくにゃ！</div>
-    <div id="kingdomScene" class="kingdomScene"></div>
+    <div class="heroSub">覚えたことばが増えるほど、王国のあちこちに住民が増えるにゃ！</div>
+    <div id="kingdomViewport" class="kingdomViewport">
+      <div id="kingdomScene" class="kingdomScene"></div>
+    </div>
+    <div class="kingdomSwipeHint">👈 横にスワイプして王国を探検しよう！ 👉</div>
   </div>
 </section>
 <section id="clear" class="screen clear"><div class="panel"><div style="font-size:65px;text-align:center">🏆🐱✨</div><div class="heroTitle">ステージクリア！</div><p id="clearText" class="heroSub"></p><div id="unlockBox" class="unlockBox"><div class="unlockNew">NEW!</div><div id="unlockArt" class="unlockArt"></div><div id="unlockName" class="unlockName"></div><div id="unlockDesc" class="unlockDesc"></div></div><button id="nextStageBtn" class="mainBtn">次へ進む ▶</button><button id="clearHomeBtn" class="subBtn">ホームへ</button></div></section>
@@ -864,35 +897,97 @@ $("kingdomUnlockClose").addEventListener("click",(e)=>{
 
 
 const KINGDOM_POSITIONS=[
- [8,72],[25,77],[42,73],[58,80],[76,73],[14,54],[31,58],[49,55],[67,57],[83,53],
- [5,35],[21,37],[38,34],[55,39],[72,34],[88,38],[12,18],[29,20],[46,16],[63,21],
- [80,18],[2,84],[19,88],[36,84],[53,89],[70,86],[87,88],[91,65],[4,62]
+  /* 01-09 */
+  [60.0,68],[64.0,70],[8.5,54],[16.0,65],[34.5,71],[87.0,70],[83.0,18],[90.0,49],[79.0,56],
+  /* 10-18 */
+  [5.5,30],[19.0,59],[42.0,50],[66.0,25],[3.5,64],[31.0,35],[12.5,72],[74.0,18],[93.0,20],
+  /* 19-27 */
+  [94.0,66],[46.0,61],[48.0,51],[28.0,72],[47.0,37],[71.0,61],[23.0,52],[58.0,74],[97.0,37],
+  /* 28-29 */
+  [56.0,24],[62.0,45]
 ];
+
+const KINGDOM_SCALES=[
+  1.03,.95,.98,1.02,1.05,1.08,.95,1.02,1.08,
+  .98,1.02,1.00,.92,.98,1.04,1.08,.95,.96,
+  1.03,1.00,.98,1.02,.98,1.00,1.02,.98,.95,
+  .98,1.00
+];
+
+function addKingdomAreaLabels(scene){
+  const labels=[
+    [12.5,"① 森と冒険"],
+    [37.5,"② 村と城下町"],
+    [62.5,"③ 王都の広場"],
+    [87.5,"④ 港と海"]
+  ];
+  labels.forEach(([x,t])=>{
+    const d=document.createElement("div");
+    d.className="kingdomArea";
+    d.style.left=x+"%";
+    d.textContent=t;
+    scene.appendChild(d);
+  });
+}
+
+function kingdomScrollToPoint(xPercent){
+  const vp=$("kingdomViewport");
+  const scene=$("kingdomScene");
+  if(!vp||!scene)return;
+  requestAnimationFrame(()=>{
+    requestAnimationFrame(()=>{
+      const target=scene.scrollWidth*(xPercent/100)-vp.clientWidth/2;
+      const max=Math.max(0,scene.scrollWidth-vp.clientWidth);
+      vp.scrollLeft=Math.max(0,Math.min(max,target));
+    });
+  });
+}
+
 function renderKingdom(){
   const n=kingdomUnlockedCount();
   $("kingdomCount").textContent="住民 "+n+" / 29";
-  const s=$("kingdomScene");s.replaceChildren();
+  const s=$("kingdomScene");
+  s.replaceChildren();
+  addKingdomAreaLabels(s);
+
   if(n===0){
     const e=document.createElement("div");
     e.className="kingdomEmpty";
     e.innerHTML="まだ王国はしずか……<br>50語覚えると最初のねこがやってくるにゃ！";
     s.appendChild(e);
+    kingdomScrollToPoint(50);
     return;
   }
+
   for(let i=0;i<n;i++){
     const img=document.createElement("img");
     img.className="kingdomResident";
     img.src=KINGDOM_CATS[i].img;
     img.alt=KINGDOM_CATS[i].name;
+    img.title=KINGDOM_CATS[i].name;
+    img.loading="eager";
+    img.decoding="async";
+
     const [x,y]=KINGDOM_POSITIONS[i];
     img.style.left=x+"%";
     img.style.top=y+"%";
-    img.style.transform=`translate(-50%,-50%) rotate(${(i%5-2)*3}deg) scale(${0.9+(i%4)*0.07})`;
-    img.title=KINGDOM_CATS[i].name;
+
+    const rot=(i%5-2)*1.4;
+    const sc=KINGDOM_SCALES[i]||1;
+    img.style.transform=`translate(-50%,-50%) rotate(${rot}deg) scale(${sc})`;
+
     s.appendChild(img);
   }
+
+  /* 開いたときは、いちばん新しく仲間になった猫の近くを表示 */
+  kingdomScrollToPoint(KINGDOM_POSITIONS[n-1][0]);
 }
-$("kingdomBtn").addEventListener("click",()=>{renderKingdom();show("kingdom");window.scrollTo(0,0)});
+
+$("kingdomBtn").addEventListener("click",()=>{
+  show("kingdom");
+  renderKingdom();
+  window.scrollTo(0,0);
+});
 $("kingdomHomeBtn").addEventListener("click",()=>{openHome();window.scrollTo(0,0)});
 
 </script></body></html>
