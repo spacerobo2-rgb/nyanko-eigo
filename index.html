@@ -948,11 +948,11 @@ function startStage(i){
  unlockAudio();stageIndex=i;const s=STAGES[i];coins=0;life=3;maxHP=enemyHP=s.hp;answerLocked=false;
  enemyAdvance=0;enemyPauseUntil=0;
  document.querySelectorAll(".unit").forEach(u=>u.remove());el.enemy.style.backgroundImage=`url("${ENEMY_POSES.taiki}")`;
- el.topStage.textContent=s.chapter.replace("　"," ")+" / "+s.name;el.qStage.textContent=(i+1)+". "+s.name;
+ if(el.topStage)el.topStage.textContent=s.chapter.replace("　"," ")+" / "+s.name;el.qStage.textContent=(i+1)+". "+s.name;
  renderCats();updateHud();show("battle");updateEnemyPosition();startAdvance();later(nextQuestion,80);
 }
 function updateHud(){
- el.coinTop.textContent=coins;el.coinHud.textContent=coins;el.life.textContent="❤️".repeat(life)+"🖤".repeat(3-life);
+ if(el.coinTop)el.coinTop.textContent=coins;el.coinHud.textContent=coins;el.life.textContent="❤️".repeat(life)+"🖤".repeat(3-life);
  el.hpText.textContent=Math.max(0,enemyHP)+"/"+maxHP;el.hpFill.style.width=(Math.max(0,enemyHP)/maxHP*100)+"%";
  CATS.forEach((c,i)=>{const b=$("catBtn"+i);if(b)b.disabled=(!isCatUnlocked(c.id)||coins<c.cost)});
 }
