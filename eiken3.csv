@@ -1,0 +1,1481 @@
+﻿id,type,no,en,jp,cat,rank
+単語-1-carry,単語,1,carry,～を運ぶ,動詞,A
+単語-2-kill,単語,2,kill,～を殺す,動詞,A
+単語-3-connect,単語,3,connect,～をつなぐ,動詞,A
+単語-4-decrease,単語,4,decrease,減る,動詞,A
+単語-5-increase,単語,5,increase,増える,動詞,A
+単語-6-reach,単語,6,reach,到着する（r）,動詞,A
+単語-7-wait,単語,7,wait,待つ,動詞,A
+単語-8-hurry,単語,8,hurry,急ぐ,動詞,A
+単語-9-brush,単語,9,brush,～を磨く,動詞,A
+単語-10-return,単語,10,return,戻る,動詞,A
+単語-11-agree,単語,11,agree,賛成する,動詞,A
+単語-12-remind,単語,12,remind,～に思い出させる,動詞,A
+単語-13-realize,単語,13,realize,～だとよくわかる,動詞,A
+単語-14-paint,単語,14,paint,（絵）を描く（p）,動詞,A
+単語-15-act,単語,15,act,行動する,動詞,A
+単語-16-fight,単語,16,fight,（～と）戦う,動詞,A
+単語-17-end,単語,17,end,終わる（e）,動詞,A
+単語-18-forget,単語,18,forget,（～を）忘れる,動詞,A
+単語-19-disagree,単語,19,disagree,意見が異なる,動詞,A
+単語-20-spoken,単語,20,spoken,話すの過去分詞,動詞,A
+単語-21-sold,単語,21,sold,売るの過去形・過去分詞,動詞,A
+単語-22-left,単語,22,left,～を置き忘れる、出発するの過去形・過去分詞,動詞,A
+単語-23-done,単語,23,done,するの過去分詞,動詞,A
+単語-24-seen,単語,24,seen,～を見るの過去分詞（s）,動詞,A
+単語-25-been,単語,25,been,beの過去分詞,動詞,A
+単語-26-known,単語,26,known,知るの過去分詞,動詞,A
+単語-27-brought,単語,27,brought,～を持ってくるの過去形・過去分詞,動詞,A
+単語-28-knew,単語,28,knew,知るの過去形,動詞,A
+単語-29-wrote,単語,29,wrote,書くの過去形,動詞,A
+単語-30-forgotten,単語,30,forgotten,（～を）忘れるの過去分詞,動詞,A
+単語-31-internet,単語,31,internet,インターネット,動詞,A
+単語-32-elephant,単語,32,elephant,ゾウ,動詞,A
+単語-33-themselves,単語,33,themselves,彼ら自身を［に］,動詞,A
+単語-34-news,単語,34,news,ニュース,動詞,A
+単語-35-forest,単語,35,forest,森,動詞,A
+単語-36-technology,単語,36,technology,科学技術,動詞,A
+単語-37-system,単語,37,system,方式、システム,動詞,A
+単語-38-success,単語,38,success,成功,動詞,A
+単語-39-tooth,単語,39,tooth,歯,動詞,A
+単語-40-teeth,単語,40,teeth,歯の複数形,動詞,A
+単語-41-reason,単語,41,reason,理由,動詞,A
+単語-42-peace,単語,42,peace,平和,動詞,A
+単語-43-childhood,単語,43,childhood,子どもの頃,動詞,A
+単語-44-daughter,単語,44,daughter,娘,動詞,A
+単語-45-son,単語,45,son,息子,動詞,A
+単語-46-textbook,単語,46,textbook,教科書,動詞,A
+単語-47-report,単語,47,report,レポート,動詞,A
+単語-48-generation,単語,48,generation,世代,動詞,A
+単語-49-war,単語,49,war,戦争,動詞,A
+単語-50-past,単語,50,past,過去,動詞,A
+単語-51-paper,単語,51,paper,紙,動詞,A
+単語-52-money,単語,52,money,お金,動詞,A
+単語-53-importance,単語,53,importance,重要性,動詞,A
+単語-54-wife,単語,54,wife,妻,動詞,A
+単語-55-uniform,単語,55,uniform,制服,動詞,A
+単語-56-health,単語,56,health,健康,動詞,A
+単語-57-southern,単語,57,southern,南の,動詞,A
+単語-58-national,単語,58,national,国立の,動詞,A
+単語-59-throughout,単語,59,throughout,～のあちこちを（t）,動詞,A
+単語-60-terrible,単語,60,terrible,ひどい、悲惨な,動詞,A
+単語-61-less,単語,61,less,（～より）少なく,動詞,A
+単語-62-however,単語,62,however,しかしながら,動詞,A
+単語-63-yet,単語,63,yet,まだ（～ない）,動詞,A
+単語-64-whole,単語,64,whole,全部,動詞,A
+単語-65-busy,単語,65,busy,忙しい,動詞,A
+単語-66-already,単語,66,already,もう、すでに,動詞,A
+単語-67-ever,単語,67,ever,これまでに,動詞,A
+単語-68-recently,単語,68,recently,最近（r）,動詞,A
+単語-69-such,単語,69,such,そのような,動詞,A
+単語-70-twice,単語,70,twice,2回,動詞,A
+単語-71-once,単語,71,once,1度、以前,動詞,A
+単語-72-correct,単語,72,correct,正しい、正確な（c）,動詞,A
+単語-73-since,単語,73,since,～以来、～から,動詞,A
+単語-74-valuable,単語,74,valuable,価値のある,動詞,A
+単語-75-though,単語,75,though,～にもかかわらず,動詞,A
+単語-76-alone,単語,76,alone,～だけで、1人で,動詞,A
+単語-77-outside,単語,77,outside,外に,動詞,A
+単語-78-foreign,単語,78,foreign,外国の,動詞,A
+単語-79-short,単語,79,short,短い,動詞,A
+単語-80-even,単語,80,even,～でさえ,動詞,A
+単語-81-shouldn't,単語,81,shouldn't,～すべきでない,動詞,A
+単語-82-against,単語,82,against,～に反対して,動詞,A
+単語-83-introduce ～ to ...,単語,83,introduce ～ to ...,～を…に紹介する②,動詞,A
+単語-84-make ～ from ...,単語,84,make ～ from ...,…から～を作る（元の形と比べない）②,動詞,A
+単語-85-so that ～,単語,85,so that ～,～するために②,動詞,A
+単語-86-less than ～,単語,86,less than ～,～より少ない②,動詞,A
+単語-87-Wait a minute.,単語,87,Wait a minute.,ちょっと待って。③,動詞,A
+単語-88-What's wrong?,単語,88,What's wrong?,どうかしましたか。②,動詞,A
+単語-89-Hurry up.,単語,89,Hurry up.,急いで。②,動詞,A
+単語-90-Be careful.,単語,90,Be careful.,気を付けて。②,動詞,A
+単語-91-such a ～,単語,91,such a ～,あんな～、そのような～②,動詞,A
+単語-92-just once,単語,92,just once,1度だけ②（j）,動詞,A
+単語-93-agree with ～,単語,93,agree with ～,～に賛成する②,動詞,A
+単語-94-the same as ～,単語,94,the same as ～,～と同じ③,名詞,A
+単語-95-How long ～?,単語,95,How long ～?,どのくらいの間～？②,名詞,A
+単語-96-year by year,単語,96,year by year,年々③,名詞,A
+単語-97-put on ～,単語,97,put on ～,～を着る②,名詞,A
+"単語-98-～, such as ...",単語,98,"～, such as ...",～たとえば…②,名詞,A
+単語-99-think of ～,単語,99,think of ～,～について考える②,名詞,A
+単語-100-take action,単語,100,take action,行動を起こす②,名詞,A
+単語-101-parent,単語,101,parent,親,名詞,A
+単語-102-contest,単語,102,contest,コンテスト,名詞,A
+単語-103-subject,単語,103,subject,教科・科目,名詞,A
+単語-104-ticket,単語,104,ticket,切符・チケット,名詞,A
+単語-105-money,単語,105,money,お金,名詞,A
+単語-106-office,単語,106,office,事務所・オフィス,名詞,A
+単語-107-animal,単語,107,animal,動物,名詞,A
+単語-108-fun,単語,108,fun,楽しみ・おもしろいこと,名詞,A
+単語-109-lesson,単語,109,lesson,授業・レッスン,名詞,A
+単語-110-minute,単語,110,minute,分,名詞,A
+単語-111-concert,単語,111,concert,コンサート,名詞,A
+単語-112-plan,単語,112,plan,計画・計画する,名詞,A
+単語-113-station,単語,113,station,駅,名詞,A
+単語-114-fish,単語,114,fish,魚・釣りをする,名詞,A
+単語-115-meeting,単語,115,meeting,会合・会議,名詞,A
+単語-116-sport,単語,116,sport,スポーツ,名詞,A
+単語-117-place,単語,117,place,場所,名詞,A
+単語-118-vacation,単語,118,vacation,休暇,名詞,A
+単語-119-museum,単語,119,museum,博物館・美術館,名詞,A
+単語-120-science,単語,120,science,理科・科学,名詞,A
+単語-121-travel,単語,121,travel,旅行・旅行する,名詞,A
+単語-122-dollar,単語,122,dollar,ドル,名詞,A
+単語-123-problem,単語,123,problem,問題,名詞,A
+単語-124-sound,単語,124,sound,音・～に聞こえる,名詞,A
+単語-125-beach,単語,125,beach,浜辺,名詞,A
+単語-126-rose,単語,126,rose,バラ,名詞,A
+単語-127-London,単語,127,London,ロンドン,名詞,A
+単語-128-art,単語,128,art,芸術・美術,名詞,A
+単語-129-job,単語,129,job,仕事,名詞,A
+単語-130-way,単語,130,way,道・方法,名詞,A
+単語-131-breakfast,単語,131,breakfast,朝食,名詞,A
+単語-132-weather,単語,132,weather,天気,名詞,A
+単語-133-grandmother,単語,133,grandmother,祖母,名詞,A
+単語-134-present,単語,134,present,贈り物・プレゼント,名詞,A
+単語-135-floor,単語,135,floor,床・階,名詞,A
+単語-136-country,単語,136,country,国,名詞,A
+単語-137-e-mail,単語,137,e-mail,電子メール・電子メールを送る,名詞,A
+単語-138-history,単語,138,history,歴史,名詞,A
+単語-139-life,単語,139,life,生活・人生・命,名詞,A
+単語-140-street,単語,140,street,通り,名詞,A
+単語-141-thing,単語,141,thing,もの・こと,名詞,A
+単語-142-area,単語,142,area,地域,名詞,A
+単語-143-computer,単語,143,computer,コンピューター,名詞,A
+単語-144-glass,単語,144,glass,コップ・ガラス,名詞,A
+単語-145-speech,単語,145,speech,演説・スピーチ,名詞,A
+単語-146-writer,単語,146,writer,作家・書き手,名詞,A
+単語-147-grandparent,単語,147,grandparent,祖父母の1人,名詞,A
+単語-148-report,単語,148,report,レポート・報告,名詞,A
+単語-149-town,単語,149,town,町,名詞,A
+単語-150-ice,単語,150,ice,氷,名詞,A
+単語-151-idea,単語,151,idea,考え・アイデア,名詞,A
+単語-152-bear,単語,152,bear,クマ,名詞,A
+単語-153-Canada,単語,153,Canada,カナダ,名詞,A
+単語-154-garden,単語,154,garden,庭,名詞,A
+単語-155-pumpkin,単語,155,pumpkin,カボチャ,名詞,A
+単語-156-theater,単語,156,theater,劇場,名詞,A
+単語-157-United States,単語,157,United States,アメリカ合衆国,名詞,A
+単語-158-airport,単語,158,airport,空港,名詞,A
+単語-159-band,単語,159,band,楽団・バンド,名詞,A
+単語-160-China,単語,160,China,中国,名詞,A
+単語-161-France,単語,161,France,フランス,名詞,A
+単語-162-photo,単語,162,photo,写真,名詞,A
+単語-163-prize,単語,163,prize,賞,名詞,A
+単語-164-supermarket,単語,164,supermarket,スーパーマーケット,名詞,A
+単語-165-university,単語,165,university,（総合）大学,名詞,A
+単語-166-camp,単語,166,camp,キャンプ・キャンプをする,名詞,A
+単語-167-care,単語,167,care,注意・世話,名詞,A
+単語-168-Europe,単語,168,Europe,ヨーロッパ,名詞,A
+単語-169-fall,単語,169,fall,秋・落ちる,名詞,A
+単語-170-holiday,単語,170,holiday,休日・祝日,名詞,A
+単語-171-piece,単語,171,piece,1つ・かけら,名詞,A
+単語-172-question,単語,172,question,質問,名詞,A
+単語-173-snack,単語,173,snack,軽食・スナック,名詞,A
+単語-174-stadium,単語,174,stadium,スタジアム・競技場,名詞,A
+単語-175-tournament,単語,175,tournament,トーナメント・勝ち抜き戦,名詞,A
+単語-176-wife,単語,176,wife,妻,名詞,A
+単語-177-sale,単語,177,sale,販売・特売・セール,名詞,A
+単語-178-daughter,単語,178,daughter,娘,名詞,A
+単語-179-front,単語,179,front,前,名詞,A
+単語-180-gym,単語,180,gym,体育館,名詞,A
+単語-181-mountain,単語,181,mountain,山,名詞,A
+単語-182-team,単語,182,team,チーム・運動部,名詞,A
+単語-183-tour,単語,183,tour,見学旅行・ツアー,名詞,A
+単語-184-vegetable,単語,184,vegetable,野菜,名詞,A
+単語-185-clothes,単語,185,clothes,服,名詞,A
+単語-186-college,単語,186,college,大学,名詞,A
+単語-187-course,単語,187,course,コース・講座,名詞,A
+単語-188-husband,単語,188,husband,夫,名詞,A
+単語-189-Italy,単語,189,Italy,イタリア,名詞,A
+単語-190-plane,単語,190,plane,飛行機,名詞,A
+単語-191-pool,単語,191,pool,プール,名詞,A
+単語-192-radish,単語,192,radish,ラディッシュ・ハツカダイコン,名詞,A
+単語-193-textbook,単語,193,textbook,教科書,名詞,A
+単語-194-America,単語,194,America,アメリカ,名詞,A
+単語-195-bicycle,単語,195,bicycle,自転車,名詞,A
+単語-196-café,単語,196,café,カフェ・軽食堂,名詞,A
+単語-197-member,単語,197,member,メンバー・一員,名詞,A
+単語-198-part,単語,198,part,部分,名詞,A
+単語-199-volunteer,単語,199,volunteer,ボランティア,名詞,A
+単語-200-New York,単語,200,New York,ニューヨーク,名詞,A
+単語-201-end,単語,201,end,終わり・終わる,名詞,A
+単語-202-grandfather,単語,202,grandfather,祖父,名詞,A
+単語-203-Hawaii,単語,203,Hawaii,ハワイ,名詞,A
+単語-204-information,単語,204,information,情報,名詞,A
+単語-205-Mexico,単語,205,Mexico,メキシコ,名詞,A
+単語-206-picnic,単語,206,picnic,ピクニック,名詞,A
+単語-207-sandwich,単語,207,sandwich,サンドイッチ,名詞,A
+単語-208-sir,単語,208,sir,あなた・お客様（男性への丁寧な呼びかけ）,名詞,A
+単語-209-website,単語,209,website,ウェブサイト,名詞,A
+単語-210-artist,単語,210,artist,芸術家・アーティスト,名詞,A
+単語-211-Australia,単語,211,Australia,オーストラリア,名詞,A
+単語-212-center,単語,212,center,中心・中央,名詞,A
+単語-213-dish,単語,213,dish,料理・皿,名詞,A
+単語-214-message,単語,214,message,伝言・メッセージ,名詞,A
+単語-215-phone,単語,215,phone,電話,名詞,A
+単語-216-race,単語,216,race,競走・レース,名詞,A
+単語-217-size,単語,217,size,サイズ・大きさ,名詞,A
+単語-218-baby,単語,218,baby,赤ちゃん,名詞,A
+単語-219-bank,単語,219,bank,銀行,名詞,A
+単語-220-chip,単語,220,chip,チップ・薄切り,名詞,A
+単語-221-company,単語,221,company,会社,名詞,A
+単語-222-crowd,単語,222,crowd,群衆・人ごみ,名詞,A
+単語-223-dress,単語,223,dress,ドレス・服,名詞,A
+単語-224-event,単語,224,event,行事・イベント,名詞,A
+単語-225-farm,単語,225,farm,農場,名詞,A
+単語-226-future,単語,226,future,未来,名詞,A
+単語-227-hotel,単語,227,hotel,ホテル,名詞,A
+単語-228-kitchen,単語,228,kitchen,台所,名詞,A
+単語-229-mall,単語,229,mall,ショッピングセンター,名詞,A
+単語-230-newspaper,単語,230,newspaper,新聞,名詞,A
+単語-231-Thailand,単語,231,Thailand,タイ,名詞,A
+単語-232-video,単語,232,video,ビデオ・動画,形容詞副詞,A
+単語-233-some,単語,233,some,いくつかの,形容詞副詞,A
+単語-234-next,単語,234,next,次の,形容詞副詞,A
+単語-235-many,単語,235,many,たくさんの,形容詞副詞,A
+単語-236-last,単語,236,last,この前の・最後の,形容詞副詞,A
+単語-237-all,単語,237,all,すべての・すべて,形容詞副詞,A
+単語-238-late,単語,238,late,遅い・遅れた・遅く,形容詞副詞,A
+単語-239-great,単語,239,great,すばらしい・偉大な,形容詞副詞,A
+単語-240-every,単語,240,every,毎～・どの～もみな,形容詞副詞,A
+単語-241-other,単語,241,other,ほかの,形容詞副詞,A
+単語-242-sure,単語,242,sure,確信して,形容詞副詞,A
+単語-243-more,単語,243,more,もっと多くの,形容詞副詞,A
+単語-244-famous,単語,244,famous,有名な,形容詞副詞,A
+単語-245-only,単語,245,only,ただ1つの・唯一の,形容詞副詞,A
+単語-246-much,単語,246,much,多くの・たくさん,形容詞副詞,A
+単語-247-popular,単語,247,popular,人気のある,形容詞副詞,A
+単語-248-special,単語,248,special,特別な,形容詞副詞,A
+単語-249-any,単語,249,any,いくらかの・どんな～でも,形容詞副詞,A
+単語-250-most,単語,250,most,ほとんどの・最も,形容詞副詞,A
+単語-251-free,単語,251,free,暇な・無料の,形容詞副詞,A
+単語-252-best,単語,252,best,最もよい,形容詞副詞,A
+単語-253-better,単語,253,better,よりよい・より上手に,形容詞副詞,A
+単語-254-happy,単語,254,happy,うれしい・幸せな,形容詞副詞,A
+単語-255-different,単語,255,different,違った・異なる,形容詞副詞,A
+単語-256-ready,単語,256,ready,用意ができた,形容詞副詞,A
+単語-257-busy,単語,257,busy,忙しい,形容詞副詞,A
+単語-258-Italian,単語,258,Italian,イタリア（人・語）の,形容詞副詞,A
+単語-259-expensive,単語,259,expensive,高価な,形容詞副詞,A
+単語-260-cold,単語,260,cold,寒い・冷たい,形容詞副詞,A
+単語-261-delicious,単語,261,delicious,おいしい,形容詞副詞,A
+単語-262-sunny,単語,262,sunny,晴れた,形容詞副詞,A
+単語-263-beautiful,単語,263,beautiful,美しい,形容詞副詞,A
+単語-264-cheap,単語,264,cheap,安い,形容詞副詞,A
+単語-265-French,単語,265,French,フランス（人・語）の,形容詞副詞,A
+単語-266-interesting,単語,266,interesting,おもしろい・興味深い,形容詞副詞,A
+単語-267-enough,単語,267,enough,十分な・十分に,形容詞副詞,A
+単語-268-difficult,単語,268,difficult,難しい,形容詞副詞,A
+単語-269-sick,単語,269,sick,病気の,形容詞副詞,A
+単語-270-little,単語,270,little,小さい・少しの,形容詞副詞,A
+単語-271-small,単語,271,small,小さい,形容詞副詞,A
+単語-272-excited,単語,272,excited,わくわくしている,形容詞副詞,A
+単語-273-far,単語,273,far,遠い,形容詞副詞,A
+単語-274-able,単語,274,able,～できる,形容詞副詞,A
+単語-275-each,単語,275,each,それぞれの,形容詞副詞,A
+単語-276-easy,単語,276,easy,簡単な,形容詞副詞,A
+単語-277-glad,単語,277,glad,うれしい,形容詞副詞,A
+単語-278-surprised,単語,278,surprised,驚いた,形容詞副詞,A
+単語-279-tired,単語,279,tired,疲れた,形容詞副詞,A
+単語-280-windy,単語,280,windy,風の吹く・風の強い,形容詞副詞,A
+単語-281-afraid,単語,281,afraid,こわがって,形容詞副詞,A
+単語-282-main,単語,282,main,おもな・主要な,形容詞副詞,A
+単語-283-sad,単語,283,sad,悲しい,形容詞副詞,A
+単語-284-such,単語,284,such,そのような・とても,形容詞副詞,A
+単語-285-another,単語,285,another,もう1つの,形容詞副詞,A
+単語-286-both,単語,286,both,両方の・両方,形容詞副詞,A
+単語-287-few,単語,287,few,少数の,形容詞副詞,A
+単語-288-fine,単語,288,fine,けっこうな・元気な,形容詞副詞,A
+単語-289-full,単語,289,full,いっぱいの,形容詞副詞,A
+単語-290-rainy,単語,290,rainy,雨降りの,形容詞副詞,A
+単語-291-Chinese,単語,291,Chinese,中国（人・語）の・中国語,形容詞副詞,A
+単語-292-hungry,単語,292,hungry,空腹の,形容詞副詞,A
+単語-293-poor,単語,293,poor,貧しい・かわいそうな,形容詞副詞,A
+単語-294-same,単語,294,same,同じ,形容詞副詞,A
+単語-295-wrong,単語,295,wrong,間違った・悪い,形容詞副詞,A
+単語-296-own,単語,296,own,自分自身の,形容詞副詞,A
+単語-297-Spanish,単語,297,Spanish,スペイン（人・語）の・スペイン語,形容詞副詞,A
+単語-298-wild,単語,298,wild,野生の,形容詞副詞,A
+単語-299-so,単語,299,so,そんなに・そのように・それで,形容詞副詞,A
+単語-300-too,単語,300,too,～もまた・～すぎる,形容詞副詞,A
+単語-301-very,単語,301,very,ひじょうに・とても,形容詞副詞,A
+単語-302-really,単語,302,really,本当に,形容詞副詞,A
+単語-303-now,単語,303,now,今,形容詞副詞,A
+単語-304-up,単語,304,up,上へ,形容詞副詞,A
+単語-305-well,単語,305,well,じょうずに・よく,形容詞副詞,A
+単語-306-also,単語,306,also,～もまた,形容詞副詞,A
+単語-307-soon,単語,307,soon,すぐに,形容詞副詞,A
+単語-308-then,単語,308,then,そのとき・それから,形容詞副詞,A
+単語-309-tonight,単語,309,tonight,今夜は・今夜,形容詞副詞,A
+単語-310-just,単語,310,just,ちょうど・ほんの,形容詞副詞,A
+単語-311-often,単語,311,often,よく・しばしば,形容詞副詞,A
+単語-312-usually,単語,312,usually,ふつうは・たいてい,形容詞副詞,A
+単語-313-ago,単語,313,ago,（今から）～前に,形容詞副詞,A
+単語-314-out,単語,314,out,外へ・外に,形容詞副詞,A
+単語-315-always,単語,315,always,いつも,形容詞副詞,A
+単語-316-early,単語,316,early,早く・早い,形容詞副詞,A
+単語-317-together,単語,317,together,いっしょに,形容詞副詞,A
+単語-318-still,単語,318,still,まだ,形容詞副詞,A
+単語-319-hard,単語,319,hard,一生懸命に・熱心に,形容詞副詞,A
+単語-320-yet,単語,320,yet,（疑問文で）もう・（否定文で）まだ,形容詞副詞,A
+単語-321-never,単語,321,never,決して～ない,形容詞副詞,A
+単語-322-again,単語,322,again,再び・また,形容詞副詞,A
+単語-323-away,単語,323,away,離れて,形容詞副詞,A
+単語-324-maybe,単語,324,maybe,もしかしたら・～かもしれない,形容詞副詞,A
+単語-325-already,単語,325,already,すでに・もう,形容詞副詞,A
+単語-326-outside,単語,326,outside,外側に・外側・～の外に,形容詞副詞,A
+単語-327-forward,単語,327,forward,前方へ,形容詞副詞,A
+単語-328-once,単語,328,once,1回・かつて,形容詞副詞,A
+単語-329-twice,単語,329,twice,2度・2倍,形容詞副詞,A
+単語-330-finally,単語,330,finally,最後に・ついに,形容詞副詞,A
+単語-331-instead,単語,331,instead,（その）代わりに,形容詞副詞,A
+単語-332-even,単語,332,even,～でさえ,形容詞副詞,A
+単語-333-sometimes,単語,333,sometimes,ときどき,形容詞副詞,A
+単語-334-but,単語,334,but,しかし,形容詞副詞,A
+単語-335-because,単語,335,because,なぜなら～だから,形容詞副詞,A
+単語-336-or,単語,336,or,～または…,形容詞副詞,A
+単語-337-if,単語,337,if,もし～ならば,形容詞副詞,A
+単語-338-as,単語,338,as,（as … as ～で）～と同じくらい…,形容詞副詞,A
+単語-339-than,単語,339,than,～よりも,形容詞副詞,A
+単語-340-since,単語,340,since,～（して）以来・～以来,形容詞副詞,A
+単語-341-will,単語,341,will,～するだろう,形容詞副詞,A
+単語-342-could,単語,342,could,can（～できる）の過去形,形容詞副詞,A
+単語-343-should,単語,343,should,～したほうがよい,形容詞副詞,A
+単語-344-would,単語,344,would,will（～だろう）の過去形,形容詞副詞,A
+単語-345-must,単語,345,must,～しなければならない・～にちがいない,形容詞副詞,A
+単語-346-anything,単語,346,anything,（疑問文で）何か・（否定文で）何も（～ない）,形容詞副詞,A
+単語-347-everyone,単語,347,everyone,みんな,形容詞副詞,A
+単語-348-something,単語,348,something,何か・あるもの［こと］,形容詞副詞,A
+単語-349-everything,単語,349,everything,あらゆること［もの］,形容詞副詞,A
+単語-350-welcome,単語,350,welcome,ようこそ・歓迎される,形容詞副詞,A
+単語-351-taste,単語,351,taste,～な味がする・味,動詞,B
+単語-352-understand,単語,352,understand,理解する,動詞,B
+単語-353-answer,単語,353,answer,答える・答え,動詞,B
+単語-354-carve,単語,354,carve,彫る,動詞,B
+単語-355-fly,単語,355,fly,飛ぶ・飛行機で行く,動詞,B
+単語-356-smell,単語,356,smell,～なにおいがする・におい,動詞,B
+単語-357-arrive,単語,357,arrive,到着する,動詞,B
+単語-358-marry,単語,358,marry,結婚する,動詞,B
+単語-359-throw,単語,359,throw,投げる,動詞,B
+単語-360-celebrate,単語,360,celebrate,祝う,動詞,B
+単語-361-cover,単語,361,cover,おおう,動詞,B
+単語-362-agree,単語,362,agree,同意する,動詞,B
+単語-363-believe,単語,363,believe,信じる,動詞,B
+単語-364-carry,単語,364,carry,運ぶ,動詞,B
+単語-365-cut,単語,365,cut,切る,動詞,B
+単語-366-die,単語,366,die,死ぬ,動詞,B
+単語-367-enter,単語,367,enter,入る・出場する,動詞,B
+単語-368-graduate,単語,368,graduate,卒業する,動詞,B
+単語-369-guess,単語,369,guess,推測する・言い当てる,動詞,B
+単語-370-shake,単語,370,shake,振る,動詞,B
+単語-371-cross,単語,371,cross,横切る,動詞,B
+単語-372-follow,単語,372,follow,ついて行く・従う,動詞,B
+単語-373-reach,単語,373,reach,着く・届く,動詞,B
+単語-374-touch,単語,374,touch,さわる,動詞,B
+単語-375-cry,単語,375,cry,泣く・さけぶ,動詞,B
+単語-376-fill,単語,376,fill,満たす,動詞,B
+単語-377-laugh,単語,377,laugh,（声を出して）笑う,動詞,B
+単語-378-mix,単語,378,mix,混ぜる,動詞,B
+単語-379-peel,単語,379,peel,皮をむく,動詞,B
+単語-380-perform,単語,380,perform,上演する・演奏する,動詞,B
+単語-381-push,単語,381,push,押す,動詞,B
+単語-382-raise,単語,382,raise,上げる・育てる・飼う,動詞,B
+単語-383-relax,単語,383,relax,くつろぐ・くつろがせる,動詞,B
+単語-384-rest,単語,384,rest,休む・休息する,動詞,B
+単語-385-serve,単語,385,serve,（食事を）出す・（人に）給仕する,動詞,B
+単語-386-snowboard,単語,386,snowboard,スノーボードをする,動詞,B
+単語-387-actor,単語,387,actor,俳優,名詞,B
+単語-388-cafeteria,単語,388,cafeteria,カフェテリア・（学校の）食堂,名詞,B
+単語-389-customer,単語,389,customer,（店などの）客・顧客,名詞,B
+単語-390-factory,単語,390,factory,工場,名詞,B
+単語-391-fruit,単語,391,fruit,果物,名詞,B
+単語-392-gift,単語,392,gift,贈り物,名詞,B
+単語-393-island,単語,393,island,島,名詞,B
+単語-394-kilometer,単語,394,kilometer,キロメートル,名詞,B
+単語-395-lake,単語,395,lake,湖,名詞,B
+単語-396-language,単語,396,language,言語,名詞,B
+単語-397-leg,単語,397,leg,脚・足,名詞,B
+単語-398-luck,単語,398,luck,運・幸運,名詞,B
+単語-399-pair,単語,399,pair,1組・1対,名詞,B
+単語-400-river,単語,400,river,川,名詞,B
+単語-401-schedule,単語,401,schedule,予定・スケジュール,名詞,B
+単語-402-seat,単語,402,seat,座席・席,名詞,B
+単語-403-steak,単語,403,steak,ステーキ,名詞,B
+単語-404-tiger,単語,404,tiger,トラ,名詞,B
+単語-405-winner,単語,405,winner,勝利者・受賞者,名詞,B
+単語-406-word,単語,406,word,単語・言葉,名詞,B
+単語-407-bathroom,単語,407,bathroom,浴室・トイレ,名詞,B
+単語-408-California,単語,408,California,カリフォルニア州,名詞,B
+単語-409-chair,単語,409,chair,いす,名詞,B
+単語-410-cousin,単語,410,cousin,いとこ,名詞,B
+単語-411-Germany,単語,411,Germany,ドイツ,名詞,B
+単語-412-letter,単語,412,letter,手紙,名詞,B
+単語-413-paper,単語,413,paper,紙,名詞,B
+単語-414-project,単語,414,project,プロジェクト,名詞,B
+単語-415-salad,単語,415,salad,サラダ,名詞,B
+単語-416-space,単語,416,space,宇宙・空間,名詞,B
+単語-417-storm,単語,417,storm,嵐,名詞,B
+単語-418-uniform,単語,418,uniform,制服,名詞,B
+単語-419-visitor,単語,419,visitor,訪問者,名詞,B
+単語-420-Wales,単語,420,Wales,ウェールズ,名詞,B
+単語-421-New Zealand,単語,421,New Zealand,ニュージーランド,名詞,B
+単語-422-accident,単語,422,accident,事故,名詞,B
+単語-423-chance,単語,423,chance,機会・チャンス,名詞,B
+単語-424-coat,単語,424,coat,コート,名詞,B
+単語-425-copy,単語,425,copy,コピー・複写・写す・コピーする,名詞,B
+単語-426-dessert,単語,426,dessert,デザート,名詞,B
+単語-427-grade,単語,427,grade,学年・等級,名詞,B
+単語-428-group,単語,428,group,集団・グループ,名詞,B
+単語-429-hall,単語,429,hall,会館・ホール,名詞,B
+単語-430-Halloween,単語,430,Halloween,ハロウィーン,名詞,B
+単語-431-hand,単語,431,hand,手,名詞,B
+単語-432-key,単語,432,key,鍵,名詞,B
+単語-433-lion,単語,433,lion,ライオン,名詞,B
+単語-434-musician,単語,434,musician,音楽家,名詞,B
+単語-435-news,単語,435,news,ニュース,名詞,B
+単語-436-number,単語,436,number,数・番号,名詞,B
+単語-437-plant,単語,437,plant,植物・植える,名詞,B
+単語-438-price,単語,438,price,値段・価格,名詞,B
+単語-439-queen,単語,439,queen,女王,名詞,B
+単語-440-ship,単語,440,ship,船,名詞,B
+単語-441-soup,単語,441,soup,スープ,名詞,B
+単語-442-sweater,単語,442,sweater,セーター,名詞,B
+単語-443-type,単語,443,type,種類・型,名詞,B
+単語-444-worker,単語,444,worker,働く人・労働者,名詞,B
+単語-445-living room,単語,445,living room,居間,名詞,B
+単語-446-shopping mall,単語,446,shopping mall,ショッピングモール,名詞,B
+単語-447-bread,単語,447,bread,パン,名詞,B
+単語-448-century,単語,448,century,世紀,名詞,B
+単語-449-coach,単語,449,coach,コーチ,名詞,B
+単語-450-experience,単語,450,experience,経験・経験する,名詞,B
+単語-451-foot,単語,451,foot,足・（長さの単位で）フィート,名詞,B
+単語-452-horse,単語,452,horse,馬,名詞,B
+単語-453-matter,単語,453,matter,事がら・問題,名詞,B
+単語-454-model,単語,454,model,模型・型・モデル,名詞,B
+単語-455-pasta,単語,455,pasta,パスタ,名詞,B
+単語-456-pig,単語,456,pig,ブタ,名詞,B
+単語-457-shower,単語,457,shower,シャワー,名詞,B
+単語-458-slice,単語,458,slice,薄切り・1切れ,名詞,B
+単語-459-taxi,単語,459,taxi,タクシー,名詞,B
+単語-460-top,単語,460,top,頂上・上部,名詞,B
+単語-461-toy,単語,461,toy,おもちゃ,名詞,B
+単語-462-wallet,単語,462,wallet,財布,名詞,B
+単語-463-adult,単語,463,adult,大人,名詞,B
+単語-464-Africa,単語,464,Africa,アフリカ,名詞,B
+単語-465-aquarium,単語,465,aquarium,水族館,名詞,B
+単語-466-Boston,単語,466,Boston,ボストン,名詞,B
+単語-467-chef,単語,467,chef,シェフ・料理人,名詞,B
+単語-468-classroom,単語,468,classroom,教室,名詞,B
+単語-469-dentist,単語,469,dentist,歯科医,名詞,B
+単語-470-detective,単語,470,detective,刑事・探偵,名詞,B
+単語-471-elevator,単語,471,elevator,エレベーター,名詞,B
+単語-472-entrance,単語,472,entrance,入り口・入学,名詞,B
+単語-473-environment,単語,473,environment,環境,名詞,B
+単語-474-face,単語,474,face,顔,名詞,B
+単語-475-farmer,単語,475,farmer,農場主・農夫,名詞,B
+単語-476-garbage,単語,476,garbage,ごみ,名詞,B
+単語-477-half,単語,477,half,半分・半分の,名詞,B
+単語-478-headache,単語,478,headache,頭痛,名詞,B
+単語-479-hobby,単語,479,hobby,趣味,名詞,B
+単語-480-hometown,単語,480,hometown,故郷,名詞,B
+単語-481-ice-skating,単語,481,ice-skating,アイススケート,名詞,B
+単語-482-king,単語,482,king,王,名詞,B
+単語-483-light,単語,483,light,明かり・軽い,名詞,B
+単語-484-magazine,単語,484,magazine,雑誌,名詞,B
+単語-485-mystery,単語,485,mystery,ミステリー・なぞ,名詞,B
+単語-486-nature,単語,486,nature,自然,名詞,B
+単語-487-panda,単語,487,panda,パンダ,名詞,B
+単語-488-person,単語,488,person,人,名詞,B
+単語-489-pilot,単語,489,pilot,パイロット,名詞,B
+単語-490-pleasure,単語,490,pleasure,喜び・楽しみ,名詞,B
+単語-491-promise,単語,491,promise,約束,名詞,B
+単語-492-ray,単語,492,ray,光線・線,名詞,B
+単語-493-road,単語,493,road,道路,名詞,B
+単語-494-rule,単語,494,rule,規則・ルール,名詞,B
+単語-495-scientist,単語,495,scientist,科学者,名詞,B
+単語-496-Spain,単語,496,Spain,スペイン,名詞,B
+単語-497-stamp,単語,497,stamp,切手,名詞,B
+単語-498-star,単語,498,star,星・スター,名詞,B
+単語-499-stomachache,単語,499,stomachache,腹痛,名詞,B
+単語-500-sugar,単語,500,sugar,砂糖,名詞,B
+単語-501-wedding,単語,501,wedding,結婚式,名詞,B
+単語-502-city hall,単語,502,city hall,市役所,名詞,B
+単語-503-age,単語,503,age,年齢,名詞,B
+単語-504-attention,単語,504,attention,注意,名詞,B
+単語-505-bedroom,単語,505,bedroom,寝室,名詞,B
+単語-506-bottle,単語,506,bottle,びん,名詞,B
+単語-507-business,単語,507,business,仕事・商売,名詞,B
+単語-508-Chicago,単語,508,Chicago,シカゴ,名詞,B
+単語-509-church,単語,509,church,教会,名詞,B
+単語-510-cloud,単語,510,cloud,雲,名詞,B
+単語-511-drama,単語,511,drama,ドラマ,名詞,B
+単語-512-ferry,単語,512,ferry,フェリー,名詞,B
+単語-513-garage,単語,513,garage,ガレージ・車庫,名詞,B
+単語-514-ground,単語,514,ground,地面・土地,名詞,B
+単語-515-hamburger,単語,515,hamburger,ハンバーガー,名詞,B
+単語-516-horror,単語,516,horror,恐怖・ホラー,名詞,B
+単語-517-Internet,単語,517,Internet,インターネット,名詞,B
+単語-518-line,単語,518,line,線・列,名詞,B
+単語-519-memory,単語,519,memory,記憶・思い出,名詞,B
+単語-520-notice,単語,520,notice,通知・掲示,名詞,B
+単語-521-package,単語,521,package,小包・荷物,名詞,B
+単語-522-painting,単語,522,painting,絵・絵画,名詞,B
+単語-523-passport,単語,523,passport,パスポート,名詞,B
+単語-524-performer,単語,524,performer,演技者・出演者,名詞,B
+単語-525-reason,単語,525,reason,理由,名詞,B
+単語-526-rock,単語,526,rock,ロック,名詞,B
+単語-527-Scotland,単語,527,Scotland,スコットランド,名詞,B
+単語-528-secret,単語,528,secret,秘密,名詞,B
+単語-529-sign,単語,529,sign,標識・看板・記号・サインする,名詞,B
+単語-530-staff,単語,530,staff,職員・スタッフ,名詞,B
+単語-531-statue,単語,531,statue,像,名詞,B
+単語-532-surprise,単語,532,surprise,驚き,名詞,B
+単語-533-symbol,単語,533,symbol,象徴,名詞,B
+単語-534-table tennis,単語,534,table tennis,卓球,名詞,B
+単語-535-tooth,単語,535,tooth,歯,名詞,B
+単語-536-war,単語,536,war,戦争,名詞,B
+単語-537-San Francisco,単語,537,San Francisco,サンフランシスコ,名詞,B
+単語-538-convenience store,単語,538,convenience store,コンビニエンスストア,名詞,B
+単語-539-department store,単語,539,department store,デパート,名詞,B
+単語-540-air,単語,540,air,空気・空,名詞,B
+単語-541-apartment,単語,541,apartment,アパート・マンション,名詞,B
+単語-542-astronaut,単語,542,astronaut,宇宙飛行士,名詞,B
+単語-543-boxer,単語,543,boxer,ボクサー,名詞,B
+単語-544-carrot,単語,544,carrot,にんじん,名詞,B
+単語-545-classmate,単語,545,classmate,クラスメイト,名詞,B
+単語-546-corner,単語,546,corner,角,名詞,B
+単語-547-culture,単語,547,culture,文化,名詞,B
+単語-548-difference,単語,548,difference,違い,名詞,B
+単語-549-ear,単語,549,ear,耳,名詞,B
+単語-550-exercise,単語,550,exercise,運動,名詞,B
+単語-551-fan,単語,551,fan,ファン・うちわ,名詞,B
+単語-552-fever,単語,552,fever,（病気の）熱,名詞,B
+単語-553-flag,単語,553,flag,旗,名詞,B
+単語-554-football,単語,554,football,フットボール,名詞,B
+単語-555-fry,単語,555,fry,（複数形で）フライドポテト・油で揚げる,名詞,B
+単語-556-head,単語,556,head,頭,名詞,B
+単語-557-hero,単語,557,hero,英雄・ヒーロー,名詞,B
+単語-558-hill,単語,558,hill,丘,名詞,B
+単語-559-India,単語,559,India,インド,名詞,B
+単語-560-kilogram,単語,560,kilogram,キログラム,名詞,B
+単語-561-land,単語,561,land,陸地・土地,名詞,B
+単語-562-marathon,単語,562,marathon,マラソン,名詞,B
+単語-563-million,単語,563,million,100万・100万の,名詞,B
+単語-564-mirror,単語,564,mirror,鏡,名詞,B
+単語-565-mistake,単語,565,mistake,誤り・誤解する,名詞,B
+単語-566-noise,単語,566,noise,物音・騒音,名詞,B
+単語-567-opinion,単語,567,opinion,意見,名詞,B
+単語-568-Paris,単語,568,Paris,パリ,名詞,B
+単語-569-peach,単語,569,peach,もも,名詞,B
+単語-570-pocket,単語,570,pocket,ポケット,名詞,B
+単語-571-police,単語,571,police,警察,名詞,B
+単語-572-pollution,単語,572,pollution,汚染,名詞,B
+単語-573-Rome,単語,573,Rome,ローマ,名詞,B
+単語-574-safe,単語,574,safe,金庫・安全な,名詞,B
+単語-575-salt,単語,575,salt,塩,名詞,B
+単語-576-scissors,単語,576,scissors,はさみ,名詞,B
+単語-577-section,単語,577,section,区画・部分・部門,名詞,B
+単語-578-sneaker,単語,578,sneaker,スニーカー,名詞,B
+単語-579-sock,単語,579,sock,（短い）くつ下・ソックス,名詞,B
+単語-580-toast,単語,580,toast,トースト,名詞,B
+単語-581-Toronto,単語,581,Toronto,トロント,名詞,B
+単語-582-trouble,単語,582,trouble,困ること・困難,名詞,B
+単語-583-cloudy,単語,583,cloudy,くもった,形容詞副詞,B
+単語-584-important,単語,584,important,重要な,形容詞副詞,B
+単語-585-dangerous,単語,585,dangerous,危険な,形容詞副詞,B
+単語-586-fast,単語,586,fast,速い・速く,形容詞副詞,B
+単語-587-professional,単語,587,professional,プロの・専門的な,形容詞副詞,B
+単語-588-warm,単語,588,warm,暖かい・温かい,形容詞副詞,B
+単語-589-American,単語,589,American,アメリカ（人）の・アメリカ人,形容詞副詞,B
+単語-590-exciting,単語,590,exciting,わくわくさせる,形容詞副詞,B
+単語-591-absent,単語,591,absent,不在で・欠席して,形容詞副詞,B
+単語-592-deep,単語,592,deep,深い,形容詞副詞,B
+単語-593-funny,単語,593,funny,おかしな・おもしろい,形容詞副詞,B
+単語-594-interested,単語,594,interested,興味がある,形容詞副詞,B
+単語-595-Mexican,単語,595,Mexican,メキシコ（人）の,形容詞副詞,B
+単語-596-Scottish,単語,596,Scottish,スコットランド（人）の,形容詞副詞,B
+単語-597-true,単語,597,true,本当の,形容詞副詞,B
+単語-598-wet,単語,598,wet,ぬれた,形容詞副詞,B
+単語-599-wonderful,単語,599,wonderful,すばらしい,形容詞副詞,B
+単語-600-alone,単語,600,alone,ただひとりの・ひとりで,形容詞副詞,B
+単語-601-clever,単語,601,clever,りこうな,形容詞副詞,B
+単語-602-cute,単語,602,cute,かわいい,形容詞副詞,B
+単語-603-either,単語,603,either,どちらの～でも・～もまた…ない,形容詞副詞,B
+単語-604-excellent,単語,604,excellent,優れた・すばらしい,形容詞副詞,B
+単語-605-healthy,単語,605,healthy,健康な・健康的な,形容詞副詞,B
+単語-606-Korean,単語,606,Korean,韓国・朝鮮（人・語）の・韓国・朝鮮人・韓国・朝鮮語,形容詞副詞,B
+単語-607-pretty,単語,607,pretty,かわいらしい・きれいな・かなり,形容詞副詞,B
+単語-608-real,単語,608,real,本当の・現実の,形容詞副詞,B
+単語-609-rich,単語,609,rich,金持ちの・豊かな,形容詞副詞,B
+単語-610-blind,単語,610,blind,目の見えない,形容詞副詞,B
+単語-611-careful,単語,611,careful,注意深い,形容詞副詞,B
+単語-612-heavy,単語,612,heavy,重い,形容詞副詞,B
+単語-613-loud,単語,613,loud,（声などが）大きい,形容詞副詞,B
+単語-614-nervous,単語,614,nervous,緊張している,形容詞副詞,B
+単語-615-snowy,単語,615,snowy,雪の降る・雪の多い,形容詞副詞,B
+単語-616-strange,単語,616,strange,奇妙な,形容詞副詞,B
+単語-617-strong,単語,617,strong,強い,形容詞副詞,B
+単語-618-thirsty,単語,618,thirsty,のどのかわいた,形容詞副詞,B
+単語-619-British,単語,619,British,イギリス（人）の・イギリス人,形容詞副詞,B
+単語-620-daily,単語,620,daily,日常の・毎日の,形容詞副詞,B
+単語-621-dirty,単語,621,dirty,汚い・汚れた,形容詞副詞,B
+単語-622-European,単語,622,European,ヨーロッパの,形容詞副詞,B
+単語-623-Indian,単語,623,Indian,インド（人）の・インド人,形容詞副詞,B
+単語-624-quick,単語,624,quick,すばやい,形容詞副詞,B
+単語-625-quiet,単語,625,quiet,静かな,形容詞副詞,B
+単語-626-shy,単語,626,shy,恥ずかしがりの,形容詞副詞,B
+単語-627-silent,単語,627,silent,静かな・沈黙した,形容詞副詞,B
+単語-628-tall,単語,628,tall,（背が）高い,形容詞副詞,B
+単語-629-traditional,単語,629,traditional,伝統的な,形容詞副詞,B
+単語-630-usual,単語,630,usual,いつもの・ふつうの,形容詞副詞,B
+単語-631-wide,単語,631,wide,（幅が）広い・幅が～ある,形容詞副詞,B
+単語-632-almost,単語,632,almost,ほとんど・もう少しで,形容詞副詞,B
+単語-633-else,単語,633,else,そのほかに,形容詞副詞,B
+単語-634-ever,単語,634,ever,今までに,形容詞副詞,B
+単語-635-anytime,単語,635,anytime,いつでも,形容詞副詞,B
+単語-636-everywhere,単語,636,everywhere,どこでも,形容詞副詞,B
+単語-637-someday,単語,637,someday,（未来の）いつか,形容詞副詞,B
+単語-638-easily,単語,638,easily,簡単に,形容詞副詞,B
+単語-639-abroad,単語,639,abroad,外国に,形容詞副詞,B
+単語-640-anywhere,単語,640,anywhere,どこへでも・どこにも～ない・どこかに,形容詞副詞,B
+単語-641-certainly,単語,641,certainly,確かに,形容詞副詞,B
+単語-642-inside,単語,642,inside,内側に・～の中に・内側,形容詞副詞,B
+単語-643-straight,単語,643,straight,まっすぐに,形容詞副詞,B
+単語-644-cheaply,単語,644,cheaply,安く,形容詞副詞,B
+単語-645-however,単語,645,however,しかしながら,形容詞副詞,B
+単語-646-while,単語,646,while,～する間に・しばらくの間,形容詞副詞,B
+単語-647-anyone,単語,647,anyone,だれか・だれも～ない,形容詞副詞,B
+単語-648-someone,単語,648,someone,だれか,形容詞副詞,B
+単語-649-wow,単語,649,wow,うわー・まあ,形容詞副詞,B
+単語-650-U.S.,単語,650,U.S.,（theをつけて）アメリカ合衆国,形容詞副詞,B
+単語-651-cancel,単語,651,cancel,取り消す・キャンセルする,動詞,C
+単語-652-exchange,単語,652,exchange,交換する,動詞,C
+単語-653-explain,単語,653,explain,説明する,動詞,C
+単語-654-fight,単語,654,fight,戦う・闘う・戦い,動詞,C
+単語-655-fit,単語,655,fit,（サイズなどが）合う・ぴったり合う,動詞,C
+単語-656-fix,単語,656,fix,直す・固定する,動詞,C
+単語-657-kick,単語,657,kick,ける,動詞,C
+単語-658-protect,単語,658,protect,保護する・守る,動詞,C
+単語-659-mean,単語,659,mean,意味する,動詞,C
+単語-660-recycle,単語,660,recycle,リサイクルする,動詞,C
+単語-661-share,単語,661,share,分け合う・共有する,動詞,C
+単語-662-shut,単語,662,shut,閉める・閉じる,動詞,C
+単語-663-add,単語,663,add,加える,動詞,C
+単語-664-attack,単語,664,attack,攻撃する・攻撃,動詞,C
+単語-665-continue,単語,665,continue,続ける,動詞,C
+単語-666-control,単語,666,control,コントロールする・管理する,動詞,C
+単語-667-expect,単語,667,expect,期待する,動詞,C
+単語-668-hang,単語,668,hang,掛ける・ぶら下がる,動詞,C
+単語-669-kill,単語,669,kill,殺す,動詞,C
+単語-670-knock,単語,670,knock,ノックする,動詞,C
+単語-671-oversleep,単語,671,oversleep,寝すごす・寝ぼうする,動詞,C
+単語-672-shock,単語,672,shock,ショックを与える・衝撃・ショック,動詞,C
+単語-673-spell,単語,673,spell,（単語を）つづる,動詞,C
+単語-674-waste,単語,674,waste,むだにする・むだ・廃棄物,動詞,C
+単語-675-wrestle,単語,675,wrestle,レスリングをする・格闘する,動詞,C
+単語-676-attend,単語,676,attend,出席する,動詞,C
+単語-677-cheer,単語,677,cheer,元気づける,動詞,C
+単語-678-design,単語,678,design,設計する・デザイン,動詞,C
+単語-679-hate,単語,679,hate,大嫌いだ・にくむ,動詞,C
+単語-680-jump,単語,680,jump,とぶ・ジャンプする,動詞,C
+単語-681-print,単語,681,print,印刷する,動詞,C
+単語-682-publish,単語,682,publish,出版する・発行する,動詞,C
+単語-683-pull,単語,683,pull,引く・引っ張る,動詞,C
+単語-684-shout,単語,684,shout,さけぶ,動詞,C
+単語-685-rise,単語,685,rise,上がる・昇る,動詞,C
+単語-686-spread,単語,686,spread,広がる・広まる・広げる,動詞,C
+単語-687-community,単語,687,community,地域社会・共同体,名詞,C
+単語-688-pen pal,単語,688,pen pal,ペンパル・文通友だち,名詞,C
+単語-689-teachers' room,単語,689,teachers' room,職員室,名詞,C
+単語-690-advice,単語,690,advice,助言・アドバイス,名詞,C
+単語-691-capital,単語,691,capital,首都,名詞,C
+単語-692-cloth,単語,692,cloth,布,名詞,C
+単語-693-comedy,単語,693,comedy,喜劇・コメディー,名詞,C
+単語-694-forest,単語,694,forest,森,名詞,C
+単語-695-fridge,単語,695,fridge,冷蔵庫,名詞,C
+単語-696-goal,単語,696,goal,ゴール・目標,名詞,C
+単語-697-grove,単語,697,grove,小さな森,名詞,C
+単語-698-interview,単語,698,interview,面接・インタビュー,名詞,C
+単語-699-jeans,単語,699,jeans,ジーンズ,名詞,C
+単語-700-machine,単語,700,machine,機械,名詞,C
+単語-701-manager,単語,701,manager,経営者・責任者・マネージャー,名詞,C
+単語-702-meal,単語,702,meal,食事,名詞,C
+単語-703-menu,単語,703,menu,メニュー,名詞,C
+単語-704-middle,単語,704,middle,真ん中・真ん中の,名詞,C
+単語-705-mind,単語,705,mind,心・精神,名詞,C
+単語-706-photographer,単語,706,photographer,写真家,名詞,C
+単語-707-power,単語,707,power,力・エネルギー,名詞,C
+単語-708-shrine,単語,708,shrine,神社,名詞,C
+単語-709-smartphone,単語,709,smartphone,スマートフォン,名詞,C
+単語-710-snake,単語,710,snake,ヘビ,名詞,C
+単語-711-tuna,単語,711,tuna,マグロ・ツナ,名詞,C
+単語-712-weekday,単語,712,weekday,平日,名詞,C
+単語-713-wood,単語,713,wood,木材・森,名詞,C
+単語-714-comic book,単語,714,comic book,マンガ本,名詞,C
+単語-715-French fries,単語,715,French fries,フライドポテト,名詞,C
+単語-716-Paralympic Games,単語,716,Paralympic Games,パラリンピック大会,名詞,C
+単語-717-action,単語,717,action,行動・動作,名詞,C
+単語-718-address,単語,718,address,住所・アドレス,名詞,C
+単語-719-adventure,単語,719,adventure,冒険,名詞,C
+単語-720-airplane,単語,720,airplane,飛行機,名詞,C
+単語-721-alarm,単語,721,alarm,目覚まし時計・警報,名詞,C
+単語-722-amusement,単語,722,amusement,おかしさ・楽しみ,名詞,C
+単語-723-Asia,単語,723,Asia,アジア,名詞,C
+単語-724-bakery,単語,724,bakery,パン店,名詞,C
+単語-725-beginner,単語,725,beginner,初心者,名詞,C
+単語-726-Belgium,単語,726,Belgium,ベルギー,名詞,C
+単語-727-billion,単語,727,billion,10億・10億の,名詞,C
+単語-728-body,単語,728,body,体,名詞,C
+単語-729-button,単語,729,button,ボタン,名詞,C
+単語-730-cartoon,単語,730,cartoon,まんが・アニメ,名詞,C
+単語-731-centimeter,単語,731,centimeter,センチ（メートル）,名詞,C
+単語-732-circle,単語,732,circle,円,名詞,C
+単語-733-costume,単語,733,costume,服装・衣装,名詞,C
+単語-734-county,単語,734,county,郡,名詞,C
+単語-735-court,単語,735,court,（テニスなどの）コート,名詞,C
+単語-736-director,単語,736,director,（映画の）監督・演出家,名詞,C
+単語-737-district,単語,737,district,地域・地方,名詞,C
+単語-738-drugstore,単語,738,drugstore,ドラッグストア,名詞,C
+単語-739-Egypt,単語,739,Egypt,エジプト,名詞,C
+単語-740-example,単語,740,example,例,名詞,C
+単語-741-fact,単語,741,fact,事実,名詞,C
+単語-742-field,単語,742,field,畑・野原・競技場,名詞,C
+単語-743-figure,単語,743,figure,図・形・数,名詞,C
+単語-744-firework,単語,744,firework,花火,名詞,C
+単語-745-gate,単語,745,gate,門,名詞,C
+単語-746-ghost,単語,746,ghost,幽霊・お化け,名詞,C
+単語-747-gold,単語,747,gold,金,名詞,C
+単語-748-Greece,単語,748,Greece,ギリシャ,名詞,C
+単語-749-guest,単語,749,guest,（招待）客,名詞,C
+単語-750-guide,単語,750,guide,案内人・案内する,名詞,C
+単語-751-habit,単語,751,habit,（個人の）習慣,名詞,C
+単語-752-host,単語,752,host,（客などをもてなす）主人,名詞,C
+単語-753-human,単語,753,human,人間・人間の,名詞,C
+単語-754-Indonesia,単語,754,Indonesia,インドネシア,名詞,C
+単語-755-jazz,単語,755,jazz,ジャズ,名詞,C
+単語-756-judge,単語,756,judge,審査員,名詞,C
+単語-757-list,単語,757,list,リスト,名詞,C
+単語-758-market,単語,758,market,市場,名詞,C
+単語-759-meter,単語,759,meter,メートル,名詞,C
+単語-760-midnight,単語,760,midnight,真夜中,名詞,C
+単語-761-moment,単語,761,moment,ちょっとの間・瞬間,名詞,C
+単語-762-necklace,単語,762,necklace,ネックレス,名詞,C
+単語-763-performance,単語,763,performance,演技・演奏,名詞,C
+単語-764-planet,単語,764,planet,惑星,名詞,C
+単語-765-pond,単語,765,pond,池,名詞,C
+単語-766-president,単語,766,president,大統領・社長・学長,名詞,C
+単語-767-production,単語,767,production,生産（高）,名詞,C
+単語-768-recipe,単語,768,recipe,調理法、レシピ,名詞,C
+単語-769-reporter,単語,769,reporter,報道記者、レポーター,名詞,C
+単語-770-robot,単語,770,robot,ロボット,名詞,C
+単語-771-salesclerk,単語,771,salesclerk,（売り場の）店員、販売員,名詞,C
+単語-772-seafood,単語,772,seafood,シーフード、魚介類,名詞,C
+単語-773-sentence,単語,773,sentence,文,名詞,C
+単語-774-sheet,単語,774,sheet,（紙などの）1枚、シーツ,名詞,C
+単語-775-stew,単語,775,stew,シチュー,名詞,C
+単語-776-suit,単語,776,suit,スーツ,名詞,C
+単語-777-sunlight,単語,777,sunlight,日光,名詞,C
+単語-778-tourist,単語,778,tourist,観光客,名詞,C
+単語-779-tradition,単語,779,tradition,伝統,名詞,C
+単語-780-traveler,単語,780,traveler,旅行者,名詞,C
+単語-781-wing,単語,781,wing,つばさ,名詞,C
+単語-782-youth,単語,782,youth,若いころ、若さ,名詞,C
+単語-783-activity,単語,783,activity,活動,名詞,C
+単語-784-ankle,単語,784,ankle,足首,名詞,C
+単語-785-arm,単語,785,arm,腕,名詞,C
+単語-786-beef,単語,786,beef,牛肉,名詞,C
+単語-787-block,単語,787,block,ブロック、区画,名詞,C
+単語-788-bookcase,単語,788,bookcase,本箱,名詞,C
+単語-789-boss,単語,789,boss,（会社の）上司,名詞,C
+単語-790-bowl,単語,790,bowl,はち、ボウル,名詞,C
+単語-791-Brazil,単語,791,Brazil,ブラジル,名詞,C
+単語-792-bridge,単語,792,bridge,橋,名詞,C
+単語-793-calendar,単語,793,calendar,カレンダー,名詞,C
+単語-794-candle,単語,794,candle,ろうそく,名詞,C
+単語-795-ceiling,単語,795,ceiling,天井,名詞,C
+単語-796-ceremony,単語,796,ceremony,儀式,名詞,C
+単語-797-chopsticks,単語,797,chopsticks,（食事用の）はし,名詞,C
+単語-798-clerk,単語,798,clerk,店員,名詞,C
+単語-799-closet,単語,799,closet,クローゼット、押入れ,名詞,C
+単語-800-clothing,単語,800,clothing,衣料品,名詞,C
+単語-801-decoration,単語,801,decoration,飾りつけ、装飾,名詞,C
+単語-802-deer,単語,802,deer,シカ,名詞,C
+単語-803-diamond,単語,803,diamond,ダイヤモンド,名詞,C
+単語-804-discount,単語,804,discount,割引、値引き,名詞,C
+単語-805-distance,単語,805,distance,距離、遠距離,名詞,C
+単語-806-documentary,単語,806,documentary,ドキュメンタリー番組［映画］,名詞,C
+単語-807-doghouse,単語,807,doghouse,犬小屋,名詞,C
+単語-808-driver,単語,808,driver,運転手,名詞,C
+単語-809-exit,単語,809,exit,出口,名詞,C
+単語-810-fee,単語,810,fee,料金,名詞,C
+単語-811-finger,単語,811,finger,（手の）指,名詞,C
+単語-812-flute,単語,812,flute,フルート,名詞,C
+単語-813-glue,単語,813,glue,接着剤、のり,名詞,C
+単語-814-grave,単語,814,grave,墓,名詞,C
+単語-815-Greek,単語,815,Greek,ギリシャ語、ギリシャ人,名詞,C
+単語-816-happiness,単語,816,happiness,幸福,名詞,C
+単語-817-horizon,単語,817,horizon,地平線、水平線,名詞,C
+単語-818-humor,単語,818,humor,ユーモア、おかしみ,名詞,C
+単語-819-hurricane,単語,819,hurricane,ハリケーン,名詞,C
+単語-820-imagination,単語,820,imagination,想像（力）,名詞,C
+単語-821-instrument,単語,821,instrument,楽器,名詞,C
+単語-822-interest,単語,822,interest,興味,名詞,C
+単語-823-jacket,単語,823,jacket,ジャケット、上着,名詞,C
+単語-824-kid,単語,824,kid,子ども,名詞,C
+単語-825-limit,単語,825,limit,限度、限界,名詞,C
+単語-826-mailbox,単語,826,mailbox,郵便受け,名詞,C
+単語-827-medicine,単語,827,medicine,薬,名詞,C
+単語-828-melody,単語,828,melody,メロディー,名詞,C
+単語-829-mile,単語,829,mile,マイル（長さの単位）,名詞,C
+単語-830-mouse,単語,830,mouse,ネズミ,名詞,C
+単語-831-neighbor,単語,831,neighbor,隣人、近所の人,名詞,C
+単語-832-officer,単語,832,officer,役人、係官、警察官,名詞,C
+単語-833-Olympics,単語,833,Olympics,（the Olympicsで）国際オリンピック大会,名詞,C
+単語-834-oven,単語,834,oven,オーブン,名詞,C
+単語-835-pancake,単語,835,pancake,パンケーキ,名詞,C
+単語-836-peace,単語,836,peace,平和,名詞,C
+単語-837-pepper,単語,837,pepper,コショウ,名詞,C
+単語-838-percent,単語,838,percent,パーセント,名詞,C
+単語-839-playground,単語,839,playground,運動場、遊び場,名詞,C
+単語-840-point,単語,840,point,点,名詞,C
+単語-841-pork,単語,841,pork,ぶた肉,名詞,C
+単語-842-principal,単語,842,principal,校長,名詞,C
+単語-843-program,単語,843,program,番組、プログラム,名詞,C
+単語-844-puppy,単語,844,puppy,子犬,名詞,C
+単語-845-quiz,単語,845,quiz,クイズ,名詞,C
+単語-846-radio,単語,846,radio,ラジオ,名詞,C
+単語-847-ring,単語,847,ring,輪、指輪・鳴る,名詞,C
+単語-848-safety,単語,848,safety,安全,名詞,C
+単語-849-sausage,単語,849,sausage,ソーセージ,名詞,C
+単語-850-scene,単語,850,scene,場面,名詞,C
+単語-851-shape,単語,851,shape,形,名詞,C
+単語-852-side,単語,852,side,側面,名詞,C
+単語-853-sightseeing,単語,853,sightseeing,観光,名詞,C
+単語-854-Singapore,単語,854,Singapore,シンガポール,名詞,C
+単語-855-smile,単語,855,smile,ほほえみ・ほほえむ,名詞,C
+単語-856-softball,単語,856,softball,ソフトボール,名詞,C
+単語-857-souvenir,単語,857,souvenir,みやげ、記念品,名詞,C
+単語-858-stage,単語,858,stage,舞台,名詞,C
+単語-859-step,単語,859,step,歩み・歩く,名詞,C
+単語-860-stomach,単語,860,stomach,胃、腹,名詞,C
+単語-861-success,単語,861,success,成功,名詞,C
+単語-862-telephone,単語,862,telephone,電話,名詞,C
+単語-863-temple,単語,863,temple,寺,名詞,C
+単語-864-toilet,単語,864,toilet,トイレ、洗面所,名詞,C
+単語-865-traffic,単語,865,traffic,交通,名詞,C
+単語-866-trash,単語,866,trash,ごみ、くず,名詞,C
+単語-867-turkey,単語,867,turkey,シチメンチョウ,名詞,C
+単語-868-turtle,単語,868,turtle,カメ,名詞,C
+単語-869-typhoon,単語,869,typhoon,台風,名詞,C
+単語-870-view,単語,870,view,ながめ、物の見方,名詞,C
+単語-871-village,単語,871,village,村,名詞,C
+単語-872-voice,単語,872,voice,声,名詞,C
+単語-873-wind,単語,873,wind,風,名詞,C
+単語-874-bright,単語,874,bright,かがやいている、明るい,形容詞副詞,C
+単語-875-cool,単語,875,cool,すずしい,形容詞副詞,C
+単語-876-dark,単語,876,dark,暗い,形容詞副詞,C
+単語-877-familiar,単語,877,familiar,よく知られた、なじみのある,形容詞副詞,C
+単語-878-fresh,単語,878,fresh,新鮮な,形容詞副詞,C
+単語-879-friendly,単語,879,friendly,友好的な、気さくな,形容詞副詞,C
+単語-880-international,単語,880,international,国際的な,形容詞副詞,C
+単語-881-less,単語,881,less,より少ない,形容詞副詞,C
+単語-882-national,単語,882,national,国の、国民の,形容詞副詞,C
+単語-883-peaceful,単語,883,peaceful,平和な,形容詞副詞,C
+単語-884-perfect,単語,884,perfect,完全な、完璧な,形容詞副詞,C
+単語-885-plastic,単語,885,plastic,プラスチックの,形容詞副詞,C
+単語-886-possible,単語,886,possible,可能な、ありうる,形容詞副詞,C
+単語-887-public,単語,887,public,公共の,形容詞副詞,C
+単語-888-scary,単語,888,scary,こわい、おそろしい,形容詞副詞,C
+単語-889-short,単語,889,short,短い、（背が）低い,形容詞副詞,C
+単語-890-sleepy,単語,890,sleepy,眠い,形容詞副詞,C
+単語-891-asleep,単語,891,asleep,眠って,形容詞副詞,C
+単語-892-boring,単語,892,boring,つまらない、退屈な,形容詞副詞,C
+単語-893-lucky,単語,893,lucky,幸運な,形容詞副詞,C
+単語-894-narrow,単語,894,narrow,（幅が）せまい,形容詞副詞,C
+単語-895-necessary,単語,895,necessary,必要な,形容詞副詞,C
+単語-896-part-time,単語,896,part-time,パート（タイム）の,形容詞副詞,C
+単語-897-Portuguese,単語,897,Portuguese,ポルトガル（人・語）の,形容詞副詞,C
+単語-898-simple,単語,898,simple,簡単な、質素な,形容詞副詞,C
+単語-899-smart,単語,899,smart,りこうな,形容詞副詞,C
+単語-900-social,単語,900,social,社会の,形容詞副詞,C
+単語-901-sweet,単語,901,sweet,あまい,形容詞副詞,C
+単語-902-terrible,単語,902,terrible,ひどい、おそろしい,形容詞副詞,C
+単語-903-thick,単語,903,thick,厚い、（液体などが）濃い,形容詞副詞,C
+単語-904-upset,単語,904,upset,気を悪くした、動揺した,形容詞副詞,C
+単語-905-useful,単語,905,useful,役に立つ,形容詞副詞,C
+単語-906-weak,単語,906,weak,弱い,形容詞副詞,C
+単語-907-worst,単語,907,worst,最も悪い（badの最上級）,形容詞副詞,C
+単語-908-classical,単語,908,classical,古典の、クラシックの,形容詞副詞,C
+単語-909-clear,単語,909,clear,明白な、晴れた、澄んだ,形容詞副詞,C
+単語-910-common,単語,910,common,共通の、ありふれた,形容詞副詞,C
+単語-911-correct,単語,911,correct,正しい、正確な,形容詞副詞,C
+単語-912-enjoyable,単語,912,enjoyable,楽しい、おもしろい,形容詞副詞,C
+単語-913-foreign,単語,913,foreign,外国の,形容詞副詞,C
+単語-914-helpful,単語,914,helpful,役に立つ,形容詞副詞,C
+単語-915-local,単語,915,local,地元の、その地域の,形容詞副詞,C
+単語-916-musical,単語,916,musical,音楽の、音楽的な,形容詞副詞,C
+単語-917-natural,単語,917,natural,自然の,形容詞副詞,C
+単語-918-rental,単語,918,rental,レンタルの,形容詞副詞,C
+単語-919-scared,単語,919,scared,こわがった,形容詞副詞,C
+単語-920-several,単語,920,several,いくつかの,形容詞副詞,C
+単語-921-sharp,単語,921,sharp,するどい,形容詞副詞,C
+単語-922-thin,単語,922,thin,薄い、やせた,形容詞副詞,C
+単語-923-unusual,単語,923,unusual,ふつうでない,形容詞副詞,C
+単語-924-whole,単語,924,whole,全体の,形容詞副詞,C
+単語-925-worse,単語,925,worse,より悪い,形容詞副詞,C
+単語-926-total,単語,926,total,合計の,形容詞副詞,C
+単語-927-probably,単語,927,probably,たぶん、おそらく,形容詞副詞,C
+単語-928-quickly,単語,928,quickly,すばやく,形容詞副詞,C
+単語-929-badly,単語,929,badly,ひどく、まずく,形容詞副詞,C
+単語-930-sincerely,単語,930,sincerely,心から,形容詞副詞,C
+単語-931-somewhere,単語,931,somewhere,どこかに,形容詞副詞,C
+単語-932-suddenly,単語,932,suddenly,突然,形容詞副詞,C
+単語-933-actually,単語,933,actually,実際には,形容詞副詞,C
+単語-934-ahead,単語,934,ahead,前方に,形容詞副詞,C
+単語-935-anymore,単語,935,anymore,（否定文で）もう、いまは,形容詞副詞,C
+単語-936-clearly,単語,936,clearly,はっきりと,形容詞副詞,C
+単語-937-luckily,単語,937,luckily,幸運にも,形容詞副詞,C
+単語-938-neither,単語,938,neither,～もまた…しない、（neither A nor Bで）AもBも～ない,形容詞副詞,C
+単語-939-quite,単語,939,quite,非常に、かなり、まったく,形容詞副詞,C
+単語-940-slowly,単語,940,slowly,ゆっくりと,形容詞副詞,C
+単語-941-anyway,単語,941,anyway,とにかく、いずれにしても,形容詞副詞,C
+単語-942-downtown,単語,942,downtown,繁華街へ,形容詞副詞,C
+単語-943-hardly,単語,943,hardly,ほとんど～ない,形容詞副詞,C
+単語-944-recently,単語,944,recently,最近、近ごろ,形容詞副詞,C
+単語-945-sometime,単語,945,sometime,（未来・過去の）いつか,形容詞副詞,C
+単語-946-although,単語,946,although,～だけれども,形容詞副詞,C
+単語-947-shall,単語,947,shall,（Shall I ～? / Shall we ～?で）～しましょうか。,形容詞副詞,C
+単語-948-everybody,単語,948,everybody,だれでも、みんな,形容詞副詞,C
+単語-949-nothing,単語,949,nothing,何も～ない,形容詞副詞,C
+単語-950-congratulations,単語,950,congratulations,おめでとう,形容詞副詞,C
+熟語-950-have to ～,熟語,950,have to ～,～しなければならない,熟語,A
+熟語-951-thank you (for ～),熟語,951,thank you (for ～),（～を）ありがとう,熟語,A
+熟語-952-need to ～,熟語,952,need to ～,～する必要がある,熟語,A
+熟語-953-from A to B,熟語,953,from A to B,AからBまで,熟語,A
+熟語-954-a lot of ～,熟語,954,a lot of ～,たくさんの～,熟語,A
+熟語-955-like studying,熟語,955,like studying,勉強することが好きだ,熟語,A
+熟語-956-talk about ～,熟語,956,talk about ～,～について話す,熟語,A
+熟語-957-at school,熟語,957,at school,学校で,熟語,A
+熟語-958-take me to ～,熟語,958,take me to ～,私を～に連れていく,熟語,A
+熟語-959-talk to ～,熟語,959,talk to ～,～と話をする、～に話しかける,熟語,A
+熟語-960-look for ～,熟語,960,look for ～,～を探す,熟語,A
+熟語-961-ask him to ～,熟語,961,ask him to ～,彼に～するように頼む,熟語,A
+熟語-962-on the second floor,熟語,962,on the second floor,2階に,熟語,A
+熟語-963-a kind of ～,熟語,963,a kind of ～,一種の～,熟語,A
+熟語-964-get to ～,熟語,964,get to ～,～に着く,熟語,A
+熟語-965-go home,熟語,965,go home,帰宅する,熟語,A
+熟語-966-go shopping,熟語,966,go shopping,買い物に行く,熟語,A
+熟語-967-like to ～,熟語,967,like to ～,～することが好きだ,熟語,A
+熟語-968-would like to ～,熟語,968,would like to ～,～したい,熟語,A
+熟語-969-look at ～,熟語,969,look at ～,～を見る,熟語,A
+熟語-970-look forward to ～,熟語,970,look forward to ～,～を楽しみに待つ,熟語,A
+熟語-971-move to ～,熟語,971,move to ～,～に引っ越す,熟語,A
+熟語-972-on weekends,熟語,972,on weekends,週末に,熟語,A
+熟語-973-once a week,熟語,973,once a week,週に1回,熟語,A
+熟語-974-take a bus,熟語,974,take a bus,バスに乗る,熟語,A
+熟語-975-want you to ～,熟語,975,want you to ～,あなたに～してもらいたい,熟語,A
+熟語-976-around the world,熟語,976,around the world,世界中で［の］,熟語,A
+熟語-977-pick up ～,熟語,977,pick up ～,～を拾い上げる、～を車で迎えにいく,熟語,A
+熟語-978-decide to ～,熟語,978,decide to ～,～しようと決心する,熟語,A
+熟語-979-not any ～,熟語,979,not any ～,少しも～ない,熟語,A
+熟語-980-plan to ～,熟語,980,plan to ～,～するつもりである,熟語,A
+熟語-981-start learning,熟語,981,start learning,学び始める,熟語,A
+熟語-982-have been to ～,熟語,982,have been to ～,～へ行ったことがある,熟語,A
+熟語-983-be good at ～,熟語,983,be good at ～,～が得意だ、～が上手だ,熟語,A
+熟語-984-be late for ～,熟語,984,be late for ～,～に遅れる,熟語,A
+熟語-985-because of ～,熟語,985,because of ～,～のために,熟語,A
+熟語-986-one of ～,熟語,986,one of ～,～のうちの1つ［1人］,熟語,A
+熟語-987-try to ～,熟語,987,try to ～,～しようとする,熟語,A
+熟語-988-enjoy painting,熟語,988,enjoy painting,絵を描くことを楽しむ,熟語,A
+熟語-989-go back,熟語,989,go back,戻る、帰っていく,熟語,A
+熟語-990-of course,熟語,990,of course,もちろん,熟語,A
+熟語-991-tell me to ～,熟語,991,tell me to ～,私に～するように言う,熟語,A
+熟語-992-be able to ～,熟語,992,be able to ～,～することができる,熟語,A
+熟語-993-be born,熟語,993,be born,生まれる,熟語,A
+熟語-994-by myself,熟語,994,by myself,1人で、独力で,熟語,A
+熟語-995-get home,熟語,995,get home,帰宅する、家に着く,熟語,A
+熟語-996-go and ～,熟語,996,go and ～,～しに行く,熟語,A
+熟語-997-once a year,熟語,997,once a year,年に1回,熟語,A
+熟語-998-come back,熟語,998,come back,帰ってくる、戻る,熟語,A
+熟語-999-feel well,熟語,999,feel well,体調がよい、気分がよい,熟語,A
+熟語-1000-have a ～ lesson,熟語,1000,have a ～ lesson,～のレッスンがある,熟語,A
+熟語-1001-have a ～ time,熟語,1001,have a ～ time,～な時を過ごす,熟語,A
+熟語-1002-wait for ～,熟語,1002,wait for ～,～を待つ,熟語,A
+熟語-1003-work at ～,熟語,1003,work at ～,～に勤めている、～で働く,熟語,A
+熟語-1004-be from ～,熟語,1004,be from ～,～の出身である,熟語,A
+熟語-1005-bring A to B,熟語,1005,bring A to B,AをBに持ってくる,熟語,A
+熟語-1006-come and ～,熟語,1006,come and ～,～しに来る,熟語,A
+熟語-1007-listen to ～,熟語,1007,listen to ～,～を聞く、～の言うことを聞く,熟語,A
+熟語-1008-lots of ～,熟語,1008,lots of ～,たくさんの～,熟語,A
+熟語-1009-over there,熟語,1009,over there,向こうに、あそこで,熟語,A
+熟語-1010-stay home,熟語,1010,stay home,家にいる,熟語,A
+熟語-1011-take care of ～,熟語,1011,take care of ～,～の世話をする,熟語,A
+熟語-1012-wake up,熟語,1012,wake up,目を覚ます,熟語,A
+熟語-1013-do well,熟語,1013,do well,うまくやる、いい成績をとる,熟語,A
+熟語-1014-go to bed,熟語,1014,go to bed,寝る、ベッドに入る,熟語,A
+熟語-1015-more than ～,熟語,1015,more than ～,～以上、～よりもっと,熟語,A
+熟語-1016-～ year(s) old,熟語,1016,～ year(s) old,～歳,熟語,A
+熟語-1017-a few ～,熟語,1017,a few ～,少しの～、2、3の～,熟語,A
+熟語-1018-a piece of ～,熟語,1018,a piece of ～,1枚の～、1切れの～,熟語,A
+熟語-1019-be back,熟語,1019,be back,帰る、戻る,熟語,A
+熟語-1020-be home,熟語,1020,be home,家にいる、在宅している,熟語,A
+熟語-1021-come home,熟語,1021,come home,帰宅する,熟語,A
+熟語-1022-do her homework,熟語,1022,do her homework,宿題をする,熟語,A
+熟語-1023-go hiking,熟語,1023,go hiking,ハイキングに行く,熟語,A
+熟語-1024-go out,熟語,1024,go out,外出する,熟語,A
+熟語-1025-in front of ～,熟語,1025,in front of ～,～の前に[で],熟語,A
+熟語-1026-be my first time,熟語,1026,be my first time,初めてである,熟語,A
+熟語-1027-be sold out,熟語,1027,be sold out,売り切れである,熟語,A
+熟語-1028-between A and B,熟語,1028,between A and B,AとBの間に,熟語,A
+熟語-1029-for the first time,熟語,1029,for the first time,初めて,熟語,A
+熟語-1030-go jogging,熟語,1030,go jogging,ジョギングに行く,熟語,A
+熟語-1031-go swimming,熟語,1031,go swimming,泳ぎに行く,熟語,A
+熟語-1032-have time to ～,熟語,1032,have time to ～,～する時間がある,熟語,A
+熟語-1033-in the future,熟語,1033,in the future,将来（は）,熟語,A
+熟語-1034-love watching,熟語,1034,love watching,見ることが大好きだ,熟語,A
+熟語-1035-on sale,熟語,1035,on sale,特売で、セールで,熟語,A
+熟語-1036-start to ～,熟語,1036,start to ～,～し始める,熟語,A
+熟語-1037-take a lesson,熟語,1037,take a lesson,レッスンを受ける,熟語,A
+熟語-1038-take a photo,熟語,1038,take a photo,写真を撮る,熟語,A
+熟語-1039-take a trip,熟語,1039,take a trip,旅行をする,熟語,A
+熟語-1040-take part in ～,熟語,1040,take part in ～,～に参加する,熟語,A
+熟語-1041-travel around ～,熟語,1041,travel around ～,～を旅行して回る,熟語,A
+熟語-1042-travel to ～,熟語,1042,travel to ～,～へ旅行する,熟語,A
+熟語-1043-write back,熟語,1043,write back,返事を書く,熟語,A
+熟語-1044-at that time,熟語,1044,at that time,そのとき,熟語,A
+熟語-1045-be ready to ～,熟語,1045,be ready to ～,～する用意ができている,熟語,A
+熟語-1046-go to lunch,熟語,1046,go to lunch,昼食に行く,熟語,A
+熟語-1047-go to the doctor,熟語,1047,go to the doctor,医者に行く,熟語,A
+熟語-1048-grow up,熟語,1048,grow up,育つ,熟語,A
+熟語-1049-have a test,熟語,1049,have a test,試験がある,熟語,A
+熟語-1050-help me with ～,熟語,1050,help me with ～,私の～を手伝う,熟語,A
+熟語-1051-invite him to ～,熟語,1051,invite him to ～,彼を～に招く,熟語,A
+熟語-1052-love to ～,熟語,1052,love to ～,～することが大好きだ,熟語,A
+熟語-1053-next time,熟語,1053,next time,この次は,熟語,A
+熟語-1054-next to ～,熟語,1054,next to ～,～のとなりに,熟語,A
+熟語-1055-not ～ at all,熟語,1055,not ～ at all,少しも～ない,熟語,A
+熟語-1056-on my[the] way home,熟語,1056,on my[the] way home,家に帰る途中で,熟語,A
+熟語-1057-on time,熟語,1057,on time,時間通りに,熟語,A
+熟語-1058-such as ～,熟語,1058,such as ～,（例えば）～のような,熟語,A
+熟語-1059-think about ～,熟語,1059,think about ～,～について考える,熟語,A
+熟語-1060-at first,熟語,1060,at first,最初は[に],熟語,A
+熟語-1061-begin to ～,熟語,1061,begin to ～,～し始める,熟語,A
+熟語-1062-call back,熟語,1062,call back,電話をかけなおす,熟語,A
+熟語-1063-far from ～,熟語,1063,far from ～,～から遠い、～から遠くに,熟語,A
+熟語-1064-go fishing,熟語,1064,go fishing,釣りに行く,熟語,A
+熟語-1065-in the world,熟語,1065,in the world,世界で,熟語,A
+熟語-1066-look in ～,熟語,1066,look in ～,～をのぞく,熟語,A
+熟語-1067-look like ～,熟語,1067,look like ～,～のように見える、～に似ている,熟語,A
+熟語-1068-most of ～,熟語,1068,most of ～,～のほとんど、～の大部分,熟語,A
+熟語-1069-not have to ～,熟語,1069,not have to ～,～する必要はない,熟語,A
+熟語-1070-on vacation,熟語,1070,on vacation,休暇で[に],熟語,A
+熟語-1071-pay for ～,熟語,1071,pay for ～,～の代金を払う,熟語,A
+熟語-1072-run away,熟語,1072,run away,走り去る、逃げる,熟語,A
+熟語-1073-see a doctor,熟語,1073,see a doctor,医者にみてもらう,熟語,A
+熟語-1074-stay at ～,熟語,1074,stay at ～,～に滞在する,熟語,A
+熟語-1075-stop working,熟語,1075,stop working,働くことをやめる,熟語,A
+熟語-1076-take a picture,熟語,1076,take a picture,写真を撮る,熟語,A
+熟語-1077-teach me how to ～,熟語,1077,teach me how to ～,私に～のしかたを教える,熟語,A
+熟語-1078-think of ～,熟語,1078,think of ～,～を思いつく,熟語,A
+熟語-1079-too tired to ～,熟語,1079,too tired to ～,疲れすぎて～できない,熟語,A
+熟語-1080-a lot,熟語,1080,a lot,たくさん、とても,熟語,A
+熟語-1081-anything else,熟語,1081,anything else,何かほかのもの,熟語,A
+熟語-1082-be ready for ～,熟語,1082,be ready for ～,～の用意ができている,熟語,A
+熟語-1083-be different from ～,熟語,1083,be different from ～,～と異なる、～と違っている,熟語,A
+熟語-1084-drive me to ～,熟語,1084,drive me to ～,私を車で～へ送る,熟語,A
+熟語-1085-far away,熟語,1085,far away,遠くに[へ],熟語,A
+熟語-1086-finish reading,熟語,1086,finish reading,読むことを終える,熟語,A
+熟語-1087-for more information,熟語,1087,for more information,詳しいことは,熟語,A
+熟語-1088-forget to ～,熟語,1088,forget to ～,～するのを忘れる,熟語,A
+熟語-1089-get off,熟語,1089,get off,降りる,熟語,A
+熟語-1090-give up,熟語,1090,give up,あきらめる、やめる,熟語,A
+熟語-1091-go to the dentist,熟語,1091,go to the dentist,歯医者に行く,熟語,A
+熟語-1092-go to work,熟語,1092,go to work,仕事に行く,熟語,A
+熟語-1093-hope to ～,熟語,1093,hope to ～,～することを望む,熟語,A
+熟語-1094-hurry up,熟語,1094,hurry up,急ぐ,熟語,A
+熟語-1095-introduce A to B,熟語,1095,introduce A to B,AをBに紹介する,熟語,A
+熟語-1096-near here,熟語,1096,near here,この近くに,熟語,A
+熟語-1097-once a month,熟語,1097,once a month,月に1回,熟語,A
+熟語-1098-put on ～,熟語,1098,put on ～,～を身につける,熟語,A
+熟語-1099-show me how to ～,熟語,1099,show me how to ～,私に～のしかたを教える,熟語,A
+熟語-1100-speak to ～,熟語,1100,speak to ～,～に話しかける、～と話す,熟語,A
+熟語-1101-take a test,熟語,1101,take a test,試験を受ける,熟語,A
+熟語-1102-thousands of ～,熟語,1102,thousands of ～,何千もの～,熟語,A
+熟語-1103-worry about ～,熟語,1103,worry about ～,～について心配する,熟語,A
+熟語-1104-would like ～,熟語,1104,would like ～,～がほしい,熟語,A
+熟語-1105-write to ～,熟語,1105,write to ～,～に手紙を書く,熟語,A
+熟語-1106-a glass of ～,熟語,1106,a glass of ～,コップ1杯の～,熟語,A
+熟語-1107-a slice of ～,熟語,1107,a slice of ～,1枚の～,熟語,A
+熟語-1108-a ticket to ～,熟語,1108,a ticket to ～,～への切符,熟語,A
+熟語-1109-all over the world,熟語,1109,all over the world,世界中で,熟語,A
+熟語-1110-ask A for B,熟語,1110,ask A for B,AにBをくれるように頼む,熟語,A
+熟語-1111-be covered with ～,熟語,1111,be covered with ～,～でおおわれている,熟語,A
+熟語-1112-be full of ～,熟語,1112,be full of ～,～でいっぱいである,熟語,A
+熟語-1113-be happy to ～,熟語,1113,be happy to ～,～してうれしい,熟語,A
+熟語-1114-be interested in ～,熟語,1114,be interested in ～,～に興味がある,熟語,A
+熟語-1115-be on a trip,熟語,1115,be on a trip,旅行中である,熟語,A
+熟語-1116-be popular with ～,熟語,1116,be popular with ～,～の間で人気がある,熟語,A
+熟語-1117-begin learning,熟語,1117,begin learning,学び始める,熟語,A
+熟語-1118-by e-mail,熟語,1118,by e-mail,電子メールで,熟語,A
+熟語-1119-clean up ～,熟語,1119,clean up ～,～をかたづける、～をきれいにそうじする,熟語,A
+熟語-1120-each other,熟語,1120,each other,お互い（に）,熟語,A
+熟語-1121-find out ～,熟語,1121,find out ～,～を見つけ出す、～だとわかる,熟語,A
+熟語-1122-get married,熟語,1122,get married,結婚する,熟語,A
+熟語-1123-get well,熟語,1123,get well,よくなる,熟語,A
+熟語-1124-go on a trip,熟語,1124,go on a trip,旅行に出かける,熟語,A
+熟語-1125-graduate from ～,熟語,1125,graduate from ～,～を卒業する,熟語,A
+熟語-1126-have a headache,熟語,1126,have a headache,頭痛がする,熟語,A
+熟語-1127-have a stomachache,熟語,1127,have a stomachache,腹が痛い,熟語,A
+熟語-1128-hear from ～,熟語,1128,hear from ～,～から連絡がある,熟語,A
+熟語-1129-on foot,熟語,1129,on foot,徒歩で,熟語,A
+熟語-1130-one day,熟語,1130,one day,ある日、いつか,熟語,A
+熟語-1131-say hello to ～,熟語,1131,say hello to ～,～によろしくと言う,熟語,A
+熟語-1132-sound like ～,熟語,1132,sound like ～,～のように聞こえる,熟語,A
+熟語-1133-spend A on B,熟語,1133,spend A on B,AをBに使う,熟語,A
+熟語-1134-take a train,熟語,1134,take a train,電車に乗る,熟語,A
+熟語-1135-take time to ～,熟語,1135,take time to ～,～する時間がかかる,熟語,A
+熟語-1136-teach me to ～,熟語,1136,teach me to ～,私に～のしかたを教える,熟語,A
+熟語-1137-tell me how to ～,熟語,1137,tell me how to ～,私に～のしかたを教える,熟語,A
+熟語-1138-thanks to ～,熟語,1138,thanks to ～,～のおかげで,熟語,A
+熟語-1139-turn down ～,熟語,1139,turn down ～,（音量・電気などを）弱くする,熟語,A
+熟語-1140-taller than any other ～,熟語,1140,taller than any other ～,ほかのどの～よりも背が高い,熟語,A
+熟語-1141-a pair of ～,熟語,1141,a pair of ～,1組の～,熟語,A
+熟語-1142-a part of ～,熟語,1142,a part of ～,～の一部,熟語,A
+熟語-1143-across from ～,熟語,1143,across from ～,～の向かいに,熟語,A
+熟語-1144-be absent from ～,熟語,1144,be absent from ～,～を欠席する,熟語,A
+熟語-1145-be afraid of ～,熟語,1145,be afraid of ～,～をこわがる、～をおそれる,熟語,A
+熟語-1146-be excited about ～,熟語,1146,be excited about ～,～にわくわくする,熟語,A
+熟語-1147-be surprised to ～,熟語,1147,be surprised to ～,～して驚く,熟語,A
+熟語-1148-come over,熟語,1148,come over,やって来る,熟語,A
+熟語-1149-do my best,熟語,1149,do my best,全力をつくす,熟語,A
+熟語-1150-fall down,熟語,1150,fall down,倒れる、転ぶ,熟語,A
+熟語-1151-fall off ～,熟語,1151,fall off ～,～から落ちる,熟語,B
+熟語-1152-for a long time,熟語,1152,for a long time,長い間,熟語,B
+熟語-1153-for a while,熟語,1153,for a while,しばらくの間,熟語,B
+熟語-1154-for free,熟語,1154,for free,無料で,熟語,B
+熟語-1155-forget about ～,熟語,1155,forget about ～,～のことを忘れる,熟語,B
+熟語-1156-get back ～,熟語,1156,get back ～,～を取り戻す,熟語,B
+熟語-1157-get a good grade,熟語,1157,get a good grade,よい成績[点数]をとる,熟語,B
+熟語-1158-give me a ride,熟語,1158,give me a ride,私を車に乗せる,熟語,B
+熟語-1159-give a speech,熟語,1159,give a speech,スピーチをする、演説をする,熟語,B
+熟語-1160-go skiing,熟語,1160,go skiing,スキーに行く,熟語,B
+熟語-1161-go to the movies,熟語,1161,go to the movies,映画を見に行く,熟語,B
+熟語-1162-have a cold,熟語,1162,have a cold,かぜをひいている,熟語,B
+熟語-1163-have a fever,熟語,1163,have a fever,熱がある,熟語,B
+熟語-1164-in the evening,熟語,1164,in the evening,夕方に、晩に,熟語,B
+熟語-1165-laugh at ～,熟語,1165,laugh at ～,～を笑う,熟語,B
+熟語-1166-make A of B,熟語,1166,make A of B,BのAを作る,熟語,B
+熟語-1167-make a friend,熟語,1167,make a friend,友だちを作る,熟語,B
+熟語-1168-on a website,熟語,1168,on a website,ウェブサイトで[に],熟語,B
+熟語-1169-on land,熟語,1169,on land,陸上で[に、の],熟語,B
+熟語-1170-on the ～ team,熟語,1170,on the ～ team,～部に入って,熟語,B
+熟語-1171-on the Internet,熟語,1171,on the Internet,インターネットで,熟語,B
+熟語-1172-say hi to ～,熟語,1172,say hi to ～,～によろしくと言う,熟語,B
+熟語-1173-shake hands,熟語,1173,shake hands,握手をする,熟語,B
+熟語-1174-so many ～,熟語,1174,so many ～,とても多くの～,熟語,B
+熟語-1175-so much,熟語,1175,so much,とても,熟語,B
+熟語-1176-stay up,熟語,1176,stay up,（寝ないで）起きている、夜ふかしする,熟語,B
+熟語-1177-take A out of B,熟語,1177,take A out of B,AをBから取り出す,熟語,B
+熟語-1178-take a message,熟語,1178,take a message,伝言を預かる、伝言を受ける,熟語,B
+熟語-1179-take an elevator,熟語,1179,take an elevator,エレベーターに乗る,熟語,B
+熟語-1180-the same as ～,熟語,1180,the same as ～,～と同じ,熟語,B
+熟語-1181-these days,熟語,1181,these days,このごろ、近ごろ,熟語,B
+熟語-1182-try on ～,熟語,1182,try on ～,～を試着する,熟語,B
+熟語-1183-turn off ～,熟語,1183,turn off ～,～のスイッチを切る,熟語,B
+熟語-1184-under the ground,熟語,1184,under the ground,地下に[で],熟語,B
+熟語-1185-a long time ago,熟語,1185,a long time ago,ずっと前に,熟語,B
+熟語-1186-all by myself,熟語,1186,all by myself,まったく1人で,熟語,B
+熟語-1187-all the way,熟語,1187,all the way,ずっと,熟語,B
+熟語-1188-arrive in ～,熟語,1188,arrive in ～,～に着く,熟語,B
+熟語-1189-as old as ～,熟語,1189,as old as ～,～と同じくらい古い,熟語,B
+熟語-1190-as soon as possible,熟語,1190,as soon as possible,できるだけ早く,熟語,B
+熟語-1191-as usual,熟語,1191,as usual,いつものように,熟語,B
+熟語-1192-at his desk,熟語,1192,at his desk,席について,熟語,B
+熟語-1193-at the beginning of ～,熟語,1193,at the beginning of ～,～の初めに,熟語,B
+熟語-1194-at the end of ～,熟語,1194,at the end of ～,～の終わりに,熟語,B
+熟語-1195-be angry at ～,熟語,1195,be angry at ～,～に怒っている,熟語,B
+熟語-1196-be glad to ～,熟語,1196,be glad to ～,～してうれしい,熟語,B
+熟語-1197-be in a meeting,熟語,1197,be in a meeting,会議中である,熟語,B
+熟語-1198-be in an accident,熟語,1198,be in an accident,事故にあう,熟語,B
+熟語-1199-be in bed,熟語,1199,be in bed,寝ている,熟語,B
+熟語-1200-be in the hospital,熟語,1200,be in the hospital,入院している,熟語,B
+熟語-1201-be kind to ～,熟語,1201,be kind to ～,～に親切である,熟語,B
+熟語-1202-be known as ～,熟語,1202,be known as ～,～として知られている,熟語,B
+熟語-1203-be worried about ～,熟語,1203,be worried about ～,～のことを心配している,熟語,B
+熟語-1204-break my promise,熟語,1204,break my promise,約束を破る,熟語,B
+熟語-1205-by the end of ～,熟語,1205,by the end of ～,～の終わりまでに,熟語,B
+熟語-1206-cut A into B,熟語,1206,cut A into B,AをBに切る,熟語,B
+熟語-1207-cut A out of B,熟語,1207,cut A out of B,AをBから切り抜く,熟語,B
+熟語-1208-fall asleep,熟語,1208,fall asleep,眠る、寝入る,熟語,B
+熟語-1209-famous for ～,熟語,1209,famous for ～,～で有名で,熟語,B
+熟語-1210-feel sick,熟語,1210,feel sick,気分が悪い,熟語,B
+熟語-1211-first of all,熟語,1211,first of all,まず第一に,熟語,B
+熟語-1212-for hours,熟語,1212,for hours,何時間も,熟語,B
+熟語-1213-get back,熟語,1213,get back,戻る,熟語,B
+熟語-1214-go ahead,熟語,1214,go ahead,どうぞ,熟語,B
+熟語-1215-go riding,熟語,1215,go riding,乗馬に出かける,熟語,B
+熟語-1216-had better ～,熟語,1216,had better ～,～するほうがよい、～しなさい,熟語,B
+熟語-1217-have a chance to ～,熟語,1217,have a chance to ～,～する機会がある,熟語,B
+熟語-1218-have an accident,熟語,1218,have an accident,事故にあう,熟語,B
+熟語-1219-have enough ... to ～,熟語,1219,have enough ... to ～,～するのに十分な…がある,熟語,B
+熟語-1220-hear about ～,熟語,1220,hear about ～,～について聞く,熟語,B
+熟語-1221-help me to ～,熟語,1221,help me to ～,私が～するのを手伝う,熟語,B
+熟語-1222-in nature,熟語,1222,in nature,自然の中で[の],熟語,B
+熟語-1223-in my opinion,熟語,1223,in my opinion,私の意見では,熟語,B
+熟語-1224-in trouble,熟語,1224,in trouble,困って,熟語,B
+熟語-1225-just in time,熟語,1225,just in time,ちょうど間に合って,熟語,B
+熟語-1226-keep using,熟語,1226,keep using,使い続ける,熟語,B
+熟語-1227-make A from B,熟語,1227,make A from B,AをBから作る,熟語,B
+熟語-1228-make a speech,熟語,1228,make a speech,スピーチをする、演説をする,熟語,B
+熟語-1229-make money,熟語,1229,make money,金をかせぐ,熟語,B
+熟語-1230-more and more ～,熟語,1230,more and more ～,ますます多くの～,熟語,B
+熟語-1231-move around,熟語,1231,move around,動きまわる,熟語,B
+"熟語-1232-one ～, the other ...",熟語,1232,"one ～, the other ...",一方は～、もう一方は…,熟語,B
+熟語-1233-out of bed,熟語,1233,out of bed,ベッドから出て、起きて,熟語,B
+熟語-1234-raise your hand,熟語,1234,raise your hand,手をあげる,熟語,B
+熟語-1235-right away,熟語,1235,right away,すぐに,熟語,B
+熟語-1236-say goodbye to ～,熟語,1236,say goodbye to ～,～にさようならを言う,熟語,B
+熟語-1237-stop at ～,熟語,1237,stop at ～,～に立ち寄る,熟語,B
+熟語-1238-such a ～,熟語,1238,such a ～,とても～な,熟語,B
+熟語-1239-take ～ for a walk,熟語,1239,take ～ for a walk,～を散歩に連れていく,熟語,B
+熟語-1240-take out ～,熟語,1240,take out ～,～を連れ出す,熟語,B
+熟語-1241-take a ～ class,熟語,1241,take a ～ class,～の授業を受ける,熟語,B
+熟語-1242-take a walk,熟語,1242,take a walk,散歩する,熟語,B
+熟語-1243-write down ～,熟語,1243,write down ～,～を書きとめる,熟語,B
+熟語-1244-big enough for ～,熟語,1244,big enough for ～,～に十分なほど大きい,熟語,B
+熟語-1245-a couple of ～,熟語,1245,a couple of ～,2、3の～,熟語,B
+熟語-1246-agree with ～,熟語,1246,agree with ～,～に同意する,熟語,B
+熟語-1247-all around ～,熟語,1247,all around ～,～中に[で],熟語,B
+熟語-1248-all day long,熟語,1248,all day long,一日中,熟語,B
+熟語-1249-all the time,熟語,1249,all the time,いつも,熟語,B
+熟語-1250-arrive at ～,熟語,1250,arrive at ～,～に着く,熟語,B
+熟語-1251-as fast as they can,熟語,1251,as fast as they can,できるだけ速く,熟語,B
+熟語-1252-at one time,熟語,1252,at one time,一度で、いっぺんに,熟語,B
+熟語-1253-be busy cooking,熟語,1253,be busy cooking,料理するのに忙しい,熟語,B
+熟語-1254-be filled with ～,熟語,1254,be filled with ～,～でいっぱいである,熟語,B
+熟語-1255-be in a hurry,熟語,1255,be in a hurry,急いでいる,熟語,B
+熟語-1256-be over,熟語,1256,be over,終わる,熟語,B
+熟語-1257-be proud of ～,熟語,1257,be proud of ～,～を誇りに思う,熟語,B
+熟語-1258-be sick in bed,熟語,1258,be sick in bed,病気で寝ている,熟語,B
+熟語-1259-be sure to ～,熟語,1259,be sure to ～,必ず～する,熟語,B
+熟語-1260-be surprised at ～,熟語,1260,be surprised at ～,～に驚く,熟語,B
+熟語-1261-be tired from ～,熟語,1261,be tired from ～,～で疲れる,熟語,B
+熟語-1262-be tired of ～,熟語,1262,be tired of ～,～にあきる、～にうんざりする,熟語,B
+熟語-1263-belong to ～,熟語,1263,belong to ～,～に所属する,熟語,B
+熟語-1264-both of ～,熟語,1264,both of ～,～の両方とも,熟語,B
+熟語-1265-bring back ～,熟語,1265,bring back ～,～を返す,熟語,B
+熟語-1266-by mail,熟語,1266,by mail,郵便で,熟語,B
+熟語-1267-by the way,熟語,1267,by the way,ところで,熟語,B
+熟語-1268-change A into B,熟語,1268,change A into B,AをBに変える,熟語,B
+熟語-1269-change trains,熟語,1269,change trains,電車を乗りかえる,熟語,B
+熟語-1270-come out,熟語,1270,come out,出てくる,熟語,B
+熟語-1271-cool down ～,熟語,1271,cool down ～,～を冷やす、～をすずしくする,熟語,B
+熟語-1272-drive ～ home,熟語,1272,drive ～ home,～を車で家に送る,熟語,B
+熟語-1273-either A or B,熟語,1273,either A or B,AかBかどちらか,熟語,B
+熟語-1274-exchange A for B,熟語,1274,exchange A for B,AをBと取りかえる,熟語,B
+熟語-1275-fight with ～,熟語,1275,fight with ～,～と戦う、～とけんかする,熟語,B
+熟語-1276-fly away,熟語,1276,fly away,飛び去る,熟語,B
+熟語-1277-for a ～ reason,熟語,1277,for a ～ reason,～の理由で,熟語,B
+熟語-1278-for example,熟語,1278,for example,例えば,熟語,B
+熟語-1279-for life,熟語,1279,for life,一生、死ぬまで,熟語,B
+熟語-1280-for now,熟語,1280,for now,今のところ、とりあえず,熟語,B
+熟語-1281-for years,熟語,1281,for years,何年も,熟語,B
+熟語-1282-get dressed,熟語,1282,get dressed,（きちんとした）服を着る,熟語,B
+熟語-1283-get into ～,熟語,1283,get into ～,（大学など）に入学する,熟語,B
+熟語-1284-get lost,熟語,1284,get lost,迷子になる、道に迷う,熟語,B
+熟語-1285-get on ～,熟語,1285,get on ～,（電車やバス）に乗る,熟語,B
+熟語-1286-give you a hand,熟語,1286,give you a hand,あなたを手伝う,熟語,B
+熟語-1287-give back ～,熟語,1287,give back ～,～を返す,熟語,B
+熟語-1288-go abroad,熟語,1288,go abroad,外国へ行く,熟語,B
+熟語-1289-go away,熟語,1289,go away,（休暇で）出かける,熟語,B
+熟語-1290-go down ～,熟語,1290,go down ～,～に沿って行く、～を行く,熟語,B
+熟語-1291-go driving,熟語,1291,go driving,ドライブに行く,熟語,B
+熟語-1292-go on a picnic,熟語,1292,go on a picnic,ピクニックに行く,熟語,B
+熟語-1293-go on holiday,熟語,1293,go on holiday,休暇で出かける,熟語,B
+熟語-1294-go over to ～,熟語,1294,go over to ～,～のところに行く,熟語,B
+熟語-1295-go running,熟語,1295,go running,ランニングに行く,熟語,B
+熟語-1296-go sightseeing,熟語,1296,go sightseeing,観光に行く,熟語,B
+熟語-1297-go to college,熟語,1297,go to college,大学に行く,熟語,B
+熟語-1298-go to sleep,熟語,1298,go to sleep,眠る、寝入る,熟語,B
+熟語-1299-half an hour,熟語,1299,half an hour,30分,熟語,B
+熟語-1300-have back ～,熟語,1300,have back ～,～を取り戻す、～を返してもらう,熟語,B
+熟語-1301-hear of ～,熟語,1301,hear of ～,～のことを耳にする,熟語,B
+熟語-1302-hundreds of ～,熟語,1302,hundreds of ～,何百もの～,熟語,B
+熟語-1303-hurry to ～,熟語,1303,hurry to ～,～へ急ぐ,熟語,B
+熟語-1304-in a ～ way,熟語,1304,in a ～ way,～の方法で,熟語,B
+熟語-1305-in fact,熟語,1305,in fact,実は、実際は,熟語,B
+熟語-1306-in the middle of ～,熟語,1306,in the middle of ～,～の真ん中に,熟語,B
+熟語-1307-jump into ～,熟語,1307,jump into ～,～に飛びこむ,熟語,B
+熟語-1308-keep in touch with ～,熟語,1308,keep in touch with ～,～と連絡を取り合う,熟語,B
+熟語-1309-last time,熟語,1309,last time,この前のとき、前回,熟語,B
+熟語-1310-leave a message,熟語,1310,leave a message,伝言を残す、伝言を頼む,熟語,B
+熟語-1311-leave for ～,熟語,1311,leave for ～,～へ出発する,熟語,B
+熟語-1312-less than ～,熟語,1312,less than ～,～未満の,熟語,B
+熟語-1313-look after ～,熟語,1313,look after ～,～の世話をする,熟語,B
+熟語-1314-look around ～,熟語,1314,look around ～,～を見て回る,熟語,B
+熟語-1315-lose my way,熟語,1315,lose my way,道に迷う,熟語,B
+熟語-1316-make A into B,熟語,1316,make A into B,AをBにする,熟語,B
+熟語-1317-make a mistake,熟語,1317,make a mistake,間違える、間違いをする,熟語,B
+熟語-1318-more popular than before,熟語,1318,more popular than before,以前よりも人気のある,熟語,B
+熟語-1319-more ～ than usual,熟語,1319,more ～ than usual,いつもより多くの～,熟語,B
+熟語-1320-move away,熟語,1320,move away,去る,熟語,B
+熟語-1321-no other ～,熟語,1321,no other ～,ほかの～はない,熟語,B
+熟語-1322-not only A but also B,熟語,1322,not only A but also B,AだけでなくBも,熟語,B
+熟語-1323-on business,熟語,1323,on business,仕事で、商用で,熟語,B
+熟語-1324-on his farm,熟語,1324,on his farm,彼の農場で[に],熟語,B
+熟語-1325-on your right,熟語,1325,on your right,あなたの右手に,熟語,B
+熟語-1326-on stage,熟語,1326,on stage,ステージ[舞台]に出て,熟語,B
+熟語-1327-on the top of ～,熟語,1327,on the top of ～,～のてっぺん[頂上]に,熟語,B
+熟語-1328-put together ～,熟語,1328,put together ～,～を寄せ集める,熟語,B
+熟語-1329-remember visiting,熟語,1329,remember visiting,訪れたことを覚えている,熟語,B
+熟語-1330-return home,熟語,1330,return home,帰郷する、帰省する,熟語,B
+熟語-1331-share A with B,熟語,1331,share A with B,AをBと共有する,熟語,B
+熟語-1332-so scary that I cannot ～,熟語,1332,so scary that I cannot ～,とてもこわいので私は～できない,熟語,B
+熟語-1333-stay with ～,熟語,1333,stay with ～,～の家に泊まる,熟語,B
+熟語-1334-surf the Internet,熟語,1334,surf the Internet,インターネットを見て回る,熟語,B
+熟語-1335-take off ～,熟語,1335,take off ～,～を脱ぐ,熟語,B
+熟語-1336-take a break,熟語,1336,take a break,ひと休みする,熟語,B
+熟語-1337-take a look at ～,熟語,1337,take a look at ～,～をひと目見る,熟語,B
+熟語-1338-talk to himself,熟語,1338,talk to himself,ひとりごとを言う,熟語,B
+熟語-1339-the other day,熟語,1339,the other day,先日,熟語,B
+熟語-1340-throw away ～,熟語,1340,throw away ～,～を捨てる,熟語,B
+熟語-1341-try our best,熟語,1341,try our best,全力をつくす,熟語,B
+熟語-1342-turn on ～,熟語,1342,turn on ～,～のスイッチを入れる,熟語,B
+熟語-1343-wake up ～,熟語,1343,wake up ～,～を起こす,熟語,B
+熟語-1344-walk along ～,熟語,1344,walk along ～,～に沿って歩く,熟語,B
+熟語-1345-walk around ～,熟語,1345,walk around ～,～を歩きまわる,熟語,B
+熟語-1346-walk out of ～,熟語,1346,walk out of ～,～から歩いて出る,熟語,B
+熟語-1347-walk through ～,熟語,1347,walk through ～,～を通って歩く,熟語,B
+熟語-1348-work on ～,熟語,1348,work on ～,～に取り組む,熟語,B
+熟語-1349-work well,熟語,1349,work well,調子よく動く、うまく機能する,熟語,B
+会話表現-1350-Sure.,会話表現,1350,Sure.,いいですよ、もちろん,会話表現,
+会話表現-1351-Can you ～?,会話表現,1351,Can you ～?,～してくれますか。,会話表現,
+会話表現-1352-How many ～?,会話表現,1352,How many ～?,いくつの～？,会話表現,
+会話表現-1353-Excuse me.,会話表現,1353,Excuse me.,すみません。,会話表現,
+会話表現-1354-How about ～?,会話表現,1354,How about ～?,～はどうですか。,会話表現,
+会話表現-1355-I hope ～.,会話表現,1355,I hope ～.,～だといいと思います。,会話表現,
+会話表現-1356-How long ～?,会話表現,1356,How long ～?,どのくらい長く～,会話表現,
+会話表現-1357-How is ～?,会話表現,1357,How is ～?,～はどうですか。,会話表現,
+会話表現-1358-See you ～.,会話表現,1358,See you ～.,じゃあ～。,会話表現,
+会話表現-1359-Do you want to ～?,会話表現,1359,Do you want to ～?,～しませんか。,会話表現,
+会話表現-1360-Can I ～?,会話表現,1360,Can I ～?,～してもいいですか。,会話表現,
+会話表現-1361-That's fine.,会話表現,1361,That's fine.,いいですよ、かまいません。,会話表現,
+会話表現-1362-Thanks for ～.,会話表現,1362,Thanks for ～.,～をありがとう。,会話表現,
+会話表現-1363-All right.,会話表現,1363,All right.,いいですよ、わかりました。,会話表現,
+会話表現-1364-Sounds good.,会話表現,1364,Sounds good.,いいね。,会話表現,
+会話表現-1365-May I ～?,会話表現,1365,May I ～?,～してもいいですか。,会話表現,
+会話表現-1366-Could you ～?,会話表現,1366,Could you ～?,～してくださいますか。,会話表現,
+会話表現-1367-How are you?,会話表現,1367,How are you?,元気ですか、調子はどうですか。,会話表現,
+会話表現-1368-Good luck.,会話表現,1368,Good luck.,幸運を祈る、がんばってね。,会話表現,
+会話表現-1369-Welcome to ～.,会話表現,1369,Welcome to ～.,～へようこそ。,会話表現,
+会話表現-1370-I'm afraid ～.,会話表現,1370,I'm afraid ～.,（残念ながら）～ではないかと思います。,会話表現,
+会話表現-1371-No problem.,会話表現,1371,No problem.,どういたしまして。,会話表現,
+会話表現-1372-Have a nice ～.,会話表現,1372,Have a nice ～.,よい～を。,会話表現,
+会話表現-1373-How often ～?,会話表現,1373,How often ～?,何回～、どのくらいの頻度で～,会話表現,
+会話表現-1374-I'd love to ～.,会話表現,1374,I'd love to ～.,ぜひ～したいです。,会話表現,
+"会話表現-1375-Me, too.",会話表現,1375,"Me, too.",私もです。,会話表現,
+会話表現-1376-That's all.,会話表現,1376,That's all.,それだけです。,会話表現,
+会話表現-1377-That's too bad.,会話表現,1377,That's too bad.,それはいけませんね、それは残念ですね。,会話表現,
+会話表現-1378-Would you like to ～?,会話表現,1378,Would you like to ～?,～しませんか。,会話表現,
+会話表現-1379-Here you are.,会話表現,1379,Here you are.,はい、どうぞ。,会話表現,
+会話表現-1380-I'm sure ～.,会話表現,1380,I'm sure ～.,きっと～と思います。,会話表現,
+会話表現-1381-Why don't we ～?,会話表現,1381,Why don't we ～?,（いっしょに）～しませんか。,会話表現,
+会話表現-1382-Certainly.,会話表現,1382,Certainly.,承知しました。,会話表現,
+会話表現-1383-Have fun.,会話表現,1383,Have fun.,楽しんでください。,会話表現,
+会話表現-1384-I can't wait.,会話表現,1384,I can't wait.,待ちきれません。,会話表現,
+会話表現-1385-I'm not sure.,会話表現,1385,I'm not sure.,わかりません。,会話表現,
+会話表現-1386-May I help you?,会話表現,1386,May I help you?,いらっしゃいませ。何かお探しですか。,会話表現,
+会話表現-1387-My pleasure.,会話表現,1387,My pleasure.,どういたしまして。,会話表現,
+会話表現-1388-This is ～.,会話表現,1388,This is ～.,（電話で）～ですが。,会話表現,
+会話表現-1389-Why not?,会話表現,1389,Why not?,どうして（～ないの）ですか。,会話表現,
+会話表現-1390-Good idea.,会話表現,1390,Good idea.,いい考えですね。,会話表現,
+会話表現-1391-How do you know?,会話表現,1391,How do you know?,どうしてわかるのですか。,会話表現,
+会話表現-1392-How do you like ～?,会話表現,1392,How do you like ～?,～はいかがですか。,会話表現,
+会話表現-1393-Not yet.,会話表現,1393,Not yet.,まだです。,会話表現,
+会話表現-1394-What is it?,会話表現,1394,What is it?,どうしたのですか、何の用ですか。,会話表現,
+会話表現-1395-What's wrong?,会話表現,1395,What's wrong?,どうしたのですか。,会話表現,
+会話表現-1396-Congratulations.,会話表現,1396,Congratulations.,おめでとう。,会話表現,
+会話表現-1397-Guess what?,会話表現,1397,Guess what?,どうなったと思いますか。,会話表現,
+会話表現-1398-Here it is.,会話表現,1398,Here it is.,はい、どうぞ。,会話表現,
+会話表現-1399-How can I help you?,会話表現,1399,How can I help you?,いらっしゃいませ。どのようなご用でしょうか。,会話表現,
+会話表現-1400-I agree.,会話表現,1400,I agree.,賛成です。,会話表現,
+会話表現-1401-I'll be there.,会話表現,1401,I'll be there.,行きます。,会話表現,
+会話表現-1402-What about ～?,会話表現,1402,What about ～?,～はどうですか。,会話表現,
+会話表現-1403-What happened?,会話表現,1403,What happened?,何があったのですか。,会話表現,
+会話表現-1404-What's the matter?,会話表現,1404,What's the matter?,どうしたのですか。,会話表現,
+会話表現-1405-Can I help you?,会話表現,1405,Can I help you?,いらっしゃいませ。何かお探しですか。,会話表現,
+会話表現-1406-How far ～?,会話表現,1406,How far ～?,～はどのくらい遠くて,会話表現,
+会話表現-1407-How old ～?,会話表現,1407,How old ～?,～は何歳,会話表現,
+会話表現-1408-I'll be right back.,会話表現,1408,I'll be right back.,すぐに戻ります。,会話表現,
+会話表現-1409-I'll think about it.,会話表現,1409,I'll think about it.,考えておきます。,会話表現,
+会話表現-1410-I'm afraid not.,会話表現,1410,I'm afraid not.,（残念ながら）そうではないようです。,会話表現,
+会話表現-1411-Is ～ there?,会話表現,1411,Is ～ there?,～はいますか。,会話表現,
+会話表現-1412-Is it for here or to go?,会話表現,1412,Is it for here or to go?,こちらでお召し上がりですか、それともお持ち帰りですか。,会話表現,
+会話表現-1413-Is this seat taken?,会話表現,1413,Is this seat taken?,この席は空いていますか。,会話表現,
+会話表現-1414-It's time for ～.,会話表現,1414,It's time for ～.,～の時間です。,会話表現,
+会話表現-1415-It's your turn.,会話表現,1415,It's your turn.,あなたの番です。,会話表現,
+会話表現-1416-Maybe you're right.,会話表現,1416,Maybe you're right.,あなたが正しいのかもしれません。,会話表現,
+会話表現-1417-Nice talking to you.,会話表現,1417,Nice talking to you.,話ができてよかったです。,会話表現,
+会話表現-1418-Not really.,会話表現,1418,Not really.,そうでもありません。,会話表現,
+"会話表現-1419-This way, please.",会話表現,1419,"This way, please.",こちらへどうぞ。,会話表現,
+会話表現-1420-What do you think of ～?,会話表現,1420,What do you think of ～?,～をどう思いますか。,会話表現,
+会話表現-1421-What would you like?,会話表現,1421,What would you like?,何がほしいですか。,会話表現,
+会話表現-1422-You don't look well.,会話表現,1422,You don't look well.,具合が悪そうです。,会話表現,
+"会話表現-1423-You, too.",会話表現,1423,"You, too.",あなたも。,会話表現,
+会話表現-1424-Are you OK?,会話表現,1424,Are you OK?,だいじょうぶですか。,会話表現,
+会話表現-1425-Get well soon.,会話表現,1425,Get well soon.,お大事に。,会話表現,
+会話表現-1426-Have a seat.,会話表現,1426,Have a seat.,（いすに）かけてください。,会話表現,
+会話表現-1427-Help yourself.,会話表現,1427,Help yourself.,自由に召し上がってください。,会話表現,
+会話表現-1428-Here's your change.,会話表現,1428,Here's your change.,おつりです。,会話表現,
+会話表現-1429-I hope not.,会話表現,1429,I hope not.,そうでなければいいのですが。,会話表現,
+会話表現-1430-I'm a stranger here.,会話表現,1430,I'm a stranger here.,私はこのあたりはあまり知りません。,会話表現,
+会話表現-1431-I'm all right.,会話表現,1431,I'm all right.,だいじょうぶです。,会話表現,
+会話表現-1432-I'm coming.,会話表現,1432,I'm coming.,すぐ行きます。,会話表現,
+会話表現-1433-I'm sorry about ～.,会話表現,1433,I'm sorry about ～.,～のことは残念［気の毒］です。,会話表現,
+会話表現-1434-Is ～ home?,会話表現,1434,Is ～ home?,～は在宅ですか。,会話表現,
+会話表現-1435-Is something the matter?,会話表現,1435,Is something the matter?,何かあったのですか。,会話表現,
+会話表現-1436-Is something wrong?,会話表現,1436,Is something wrong?,どうかしましたか。,会話表現,
+会話表現-1437-It's time to ～.,会話表現,1437,It's time to ～.,～する時間です。,会話表現,
+会話表現-1438-Just a minute.,会話表現,1438,Just a minute.,ちょっと待ってください。,会話表現,
+会話表現-1439-May I speak to ～?,会話表現,1439,May I speak to ～?,～さんをお願いします。,会話表現,
+会話表現-1440-Maybe next time.,会話表現,1440,Maybe next time.,また次の機会にでも、また今度。,会話表現,
+"会話表現-1441-Me, neither.",会話表現,1441,"Me, neither.",私も（～ではない）です。,会話表現,
+会話表現-1442-Nice to see you.,会話表現,1442,Nice to see you.,会えてうれしいです。,会話表現,
+会話表現-1443-Not at all.,会話表現,1443,Not at all.,どういたしまして。,会話表現,
+会話表現-1444-Probably not.,会話表現,1444,Probably not.,おそらくしません。,会話表現,
+"会話表現-1445-Table for ～, please.",会話表現,1445,"Table for ～, please.",～人席をお願いします。,会話表現,
+会話表現-1446-Take care.,会話表現,1446,Take care.,じゃあね。元気でね。,会話表現,
+会話表現-1447-What do you want me to do?,会話表現,1447,What do you want me to do?,私は何をしたらいいですか。,会話表現,
+会話表現-1448-What for?,会話表現,1448,What for?,何のためですか。,会話表現,
+会話表現-1449-What size would you like?,会話表現,1449,What size would you like?,どのサイズがいいですか。,会話表現,
+会話表現-1450-What's the problem?,会話表現,1450,What's the problem?,どうしたのですか。,会話表現,
+会話表現-1451-Why don't you ～?,会話表現,1451,Why don't you ～?,～しませんか。、～してはどうですか。,会話表現,
+会話表現-1452-Will you pass me ～?,会話表現,1452,Will you pass me ～?,～を取ってくれますか。,会話表現,
+"会話表現-1453-Yes, please.",会話表現,1453,"Yes, please.",はい、お願いします。,会話表現,
+会話表現-1454-You don't need to.,会話表現,1454,You don't need to.,そうする必要はありません。,会話表現,
+会話表現-1455-You're welcome.,会話表現,1455,You're welcome.,どういたしまして。,会話表現,
+会話表現-1456-Are you ready?,会話表現,1456,Are you ready?,用意ができていますか。,会話表現,
+"会話表現-1457-Attention, ～.",会話表現,1457,"Attention, ～.",～にお知らせします。,会話表現,
+会話表現-1458-Don't worry.,会話表現,1458,Don't worry.,心配しないでください。,会話表現,
+会話表現-1459-How exciting!,会話表現,1459,How exciting!,なんてわくわくするんでしょう。,会話表現,
+会話表現-1460-How was the weather ～?,会話表現,1460,How was the weather ～?,～の天気はどうでしたか。,会話表現,
+会話表現-1461-How's ～ going?,会話表現,1461,How's ～ going?,～はどうですか。,会話表現,
+会話表現-1462-I don't think so.,会話表現,1462,I don't think so.,私はそうは思いません。,会話表現,
+会話表現-1463-I had a good time.,会話表現,1463,I had a good time.,楽しい時を過ごしました。,会話表現,
+会話表現-1464-I hope so.,会話表現,1464,I hope so.,そうだといいですね。,会話表現,
+会話表現-1465-I see.,会話表現,1465,I see.,わかりました。、なるほど。,会話表現,
+会話表現-1466-I think so.,会話表現,1466,I think so.,そう思います。,会話表現,
+会話表現-1467-I'll take it.,会話表現,1467,I'll take it.,それをください。,会話表現,
+会話表現-1468-I'm full.,会話表現,1468,I'm full.,おなかがいっぱいです。,会話表現,
+会話表現-1469-I'm looking for ～.,会話表現,1469,I'm looking for ～.,私は～を探しています。,会話表現,
+会話表現-1470-It's been a long time.,会話表現,1470,It's been a long time.,久しぶりですね。,会話表現,
+会話表現-1471-It's for you.,会話表現,1471,It's for you.,あなたに電話です。,会話表現,
+会話表現-1472-I've never been ～.,会話表現,1472,I've never been ～.,私は～に一度も行ったことはありません。,会話表現,
+会話表現-1473-Let me see.,会話表現,1473,Let me see.,ええと。,会話表現,
+会話表現-1474-One ticket for ～.,会話表現,1474,One ticket for ～.,～のチケットを1枚ください。,会話表現,
+会話表現-1475-Same to you.,会話表現,1475,Same to you.,あなたもね。,会話表現,
+会話表現-1476-Shall we ～?,会話表現,1476,Shall we ～?,～しましょうか。,会話表現,
+会話表現-1477-That's a good idea.,会話表現,1477,That's a good idea.,それはいい考えです。,会話表現,
+会話表現-1478-That's terrible.,会話表現,1478,That's terrible.,それはひどいですね。,会話表現,
+会話表現-1479-That's very kind of you.,会話表現,1479,That's very kind of you.,どうもご親切に。,会話表現,
