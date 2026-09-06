@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>ねこ英語大戦 - v15 横スクロールねこ王国</title>
+<title>ねこ英語大戦 - v15.1 図鑑・王国修正版</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0;background:#bfe8ff;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Maru Gothic ProN","Yu Gothic",sans-serif;color:#2a211a;overscroll-behavior:none}
@@ -391,7 +391,7 @@ body{
 <div class="hud"><div class="hudbox">にゃこ軍団<br><span id="lifeHearts">❤️❤️❤️</span></div><div class="hudbox">敵HP <span id="hpText"></span><div class="hpbar"><div id="hpFill" class="hpfill"></div></div></div><div class="hudbox">コイン<br>🪙 <span id="coinHud">0</span></div></div>
 <div class="quiz"><div class="qHead"><span id="qStage"></span><button id="speakBtn" class="soundBtn" aria-label="英語をもう一度聞く">🔊</button></div><div id="qWord" class="word"></div><div id="answers" class="answers"></div><div id="feedback" class="feedback"></div></div>
 <div class="deploy"><div class="deployTitle">🐾 ねこを出撃させよう！</div><div id="catGrid" class="catGrid"></div></div>
-<div class="bottom"><button id="battleBackBtn">← もどる</button><button id="zukanBtn">📖 ねこ図鑑</button><button id="battleMapBtn">🗺️ ステージ</button><button id="menuBtn">🐾 メニュー</button></div>
+<div class="bottom"><button id="battleBackBtn">← もどる</button><button id="battleZukanBtn">📖 ねこ図鑑</button><button id="battleMapBtn">🗺️ ステージ</button><button id="menuBtn">🐾 メニュー</button></div>
 </section>
 
 <section id="zukan" class="screen"><div class="panel"><div class="zukanTop"><div><div class="heroTitle" style="font-size:25px">🐾 猫図鑑</div><div id="zukanCount" class="zukanCount"></div></div><button id="zukanHomeBtn" class="subBtn" style="width:auto;margin:0;padding:9px 12px">ホーム</button></div><div class="heroSub">50単語覚えるごとに、王国の住民が1匹ずつ仲間になるにゃ！</div><div id="zukanGrid" class="zukanGrid"></div></div></section><section id="catProfile" class="screen"><div class="panel"><div id="profileNo" class="zukanNo" style="text-align:center"></div><img id="profileArt" class="profileArtImg" alt="ねこのイラスト"><div id="profileName" class="profileName"></div><div id="profileText" class="profileText"></div><div id="profileQuote" class="profileQuote"></div><div id="profileHint" class="lockHint"></div><button id="profileBackBtn" class="mainBtn">← 図鑑にもどる</button></div></section>
@@ -584,6 +584,17 @@ async function unlockAudio(){
  }
 }
 function speak(t){try{if(!("speechSynthesis" in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=.82;speechSynthesis.speak(u)}catch(e){}}
+function stopScreenAudio(){
+  try{
+    if("speechSynthesis" in window) speechSynthesis.cancel();
+  }catch(e){}
+  try{
+    if(el.boo){
+      el.boo.pause();
+      el.boo.currentTime=0;
+    }
+  }catch(e){}
+}
 function playBoo(){try{el.boo.pause();el.boo.currentTime=0;el.boo.volume=1;const p=el.boo.play();if(p&&p.catch)p.catch(()=>note("消音モードや音量を確認してね"))}catch(e){}}
 function ding(){try{const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;const c=new AC();const o=c.createOscillator(),g=c.createGain();o.connect(g);g.connect(c.destination);g.gain.value=.10;o.frequency.setValueAtTime(760,c.currentTime);o.frequency.linearRampToValueAtTime(1100,c.currentTime+.12);o.start();o.stop(c.currentTime+.16);later(()=>c.close(),300)}catch(e){}}
 
@@ -875,14 +886,29 @@ function openProfile(i){
  show("catProfile");
  window.scrollTo(0,0);
 }
-$("zukanBtn").addEventListener("click",()=>{renderZukan();show("zukan")});
+$("zukanBtn").addEventListener("click",(e)=>{
+  e.preventDefault();
+  stopScreenAudio();
+  renderZukan();
+  show("zukan");
+  window.scrollTo(0,0);
+});
+$("battleZukanBtn").addEventListener("click",(e)=>{
+  e.preventDefault();
+  stopScreenAudio();
+  renderZukan();
+  show("zukan");
+  window.scrollTo(0,0);
+});
 $("zukanHomeBtn").addEventListener("click",(e)=>{
   e.preventDefault();
-  openHome();
+  stopScreenAudio();
+  show("home");
   window.scrollTo(0,0);
 });
 $("profileBackBtn").addEventListener("click",(e)=>{
   e.preventDefault();
+  stopScreenAudio();
   renderZukan();
   show("zukan");
   window.scrollTo(0,0);
@@ -983,11 +1009,18 @@ function renderKingdom(){
   kingdomScrollToPoint(KINGDOM_POSITIONS[n-1][0]);
 }
 
-$("kingdomBtn").addEventListener("click",()=>{
+$("kingdomBtn").addEventListener("click",(e)=>{
+  e.preventDefault();
+  stopScreenAudio();
   show("kingdom");
   renderKingdom();
   window.scrollTo(0,0);
 });
-$("kingdomHomeBtn").addEventListener("click",()=>{openHome();window.scrollTo(0,0)});
+$("kingdomHomeBtn").addEventListener("click",(e)=>{
+  e.preventDefault();
+  stopScreenAudio();
+  show("home");
+  window.scrollTo(0,0);
+});
 
 </script></body></html>
