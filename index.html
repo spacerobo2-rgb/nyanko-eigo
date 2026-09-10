@@ -661,6 +661,93 @@ body:has(#home.on) .top{display:none!important}
 
 
 
+
+/* ===== v4：覚えるモードの固定レイアウト ===== */
+.learnAnswerSlot{
+  width:100%;
+  min-height:72px;
+  margin:8px 0 10px;
+  padding:12px 14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:3px dashed #c9ab78;
+  border-radius:16px;
+  background:#fffdf6;
+  color:#9a805e;
+  font:inherit;
+  font-size:18px;
+  font-weight:1000;
+  text-align:center;
+  line-height:1.45;
+}
+.learnAnswerSlot.revealed{
+  border-style:solid;
+  background:#fff8df;
+  color:#4e342e;
+}
+#learn .learnSpeakBtn,
+#learn #learnBtn,
+#learn .exampleToggle,
+#learn .learnCheckBtn,
+#learn .subBtn{
+  width:100%;
+}
+#learnExampleBtn[hidden]{display:none !important}
+
+/* ===== v4：フワねこ「完璧にゃ！」ごほうびスタンプ ===== */
+.fuwaPerfectStamp{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:5px 11px 5px 5px;
+  border:3px solid #ef6c79;
+  border-radius:999px;
+  background:linear-gradient(#fffdfd,#fff0f4);
+  box-shadow:
+    0 2px 0 rgba(154,52,72,.23),
+    inset 0 0 0 3px rgba(255,255,255,.8);
+  color:#d54463;
+  font-size:13px;
+  font-weight:1000;
+  transform:rotate(-5deg);
+  animation:fuwaStampPop .42s cubic-bezier(.2,1.55,.45,1) both;
+}
+.fuwaPerfectStamp::after{
+  content:"";
+  position:absolute;
+  inset:-5px;
+  border:2px dashed rgba(239,108,121,.42);
+  border-radius:999px;
+  pointer-events:none;
+}
+.fuwaPerfectImg{
+  width:42px;
+  height:42px;
+  object-fit:contain;
+  border-radius:50%;
+  background:#fff;
+}
+.fuwaPerfectText{
+  display:flex;
+  flex-direction:column;
+  line-height:1.05;
+  text-align:center;
+}
+.fuwaPerfectText small{
+  font-size:9px;
+  letter-spacing:1px;
+}
+.fuwaPerfectText strong{
+  font-size:15px;
+}
+@keyframes fuwaStampPop{
+  0%{transform:scale(.35) rotate(-14deg);opacity:0}
+  68%{transform:scale(1.10) rotate(-3deg);opacity:1}
+  100%{transform:scale(1) rotate(-5deg);opacity:1}
+}
+
 /* ===== 最終調整：冒険モード ===== */
 
 /* 敵の進軍ゲージは右（敵陣）→左（自陣）へ伸びる */
@@ -778,7 +865,7 @@ body:has(#home.on) .top{display:none!important}
     <button id="reviewOpenBtn" class="homeHotspot hsReview" aria-label="復習モード"></button>
     <button id="zukanBtn" class="homeHotspot hsZukan" aria-label="猫図鑑"></button>
     <button id="kingdomBtn" class="homeHotspot hsKingdom" aria-label="ねこ王国"></button>
-    <div class="versionBadge">最終調整 v3</div>
+    <div class="versionBadge">フワねこ完成 v4</div>
     <button id="exampleModeBtn" class="homeExampleModeBtn" type="button">📖 例文モード</button>
   </div>
 </section>
@@ -828,17 +915,17 @@ body:has(#home.on) .top{display:none!important}
 <div id="learnTitle" class="heroTitle" style="font-size:23px">📖 おぼえるモード</div>
 <div id="learnStats" class="learnStats"></div>
 <div id="learnWord" class="learnWord"></div>
+<button id="learnMeaning" class="meaning learnAnswerSlot" type="button">正解は・・</button>
 <button id="learnSpeakBtn" class="learnSpeakBtn" type="button">🔊 音声をきく</button>
-<button id="learnBtn" class="mainBtn">正解は・・</button>
-<div id="learnMeaning" class="meaning" hidden></div>
+<button id="learnBtn" class="mainBtn">次のことば ▶</button>
 <div id="exampleAnswers" class="exampleAnswers" hidden></div>
-<button id="learnExampleBtn" class="exampleToggle" type="button" hidden>📖 例文を見る</button>
+<button id="learnExampleBtn" class="exampleToggle" type="button">📖 例文を見る</button>
 <div id="learnExampleBox" class="exampleBox" hidden>
   <div id="learnExampleEn" class="exampleEn"></div>
   <div id="learnExampleJp" class="exampleJp"></div>
   <button id="learnExampleSpeakBtn" class="exampleSpeak" type="button">🔊 例文をきく</button>
 </div>
-<button id="learnCheckBtn" class="learnCheckBtn">✓ 覚えた！</button>
+<button id="learnCheckBtn" class="learnCheckBtn show">✓ 覚えた！</button>
 <button id="learnBackBtn" class="subBtn">← もどる</button>
 </div></section>
 <div id="notice" class="notice"></div><div id="kingdomUnlockOverlay" class="kingdomUnlockOverlay">
@@ -1173,8 +1260,18 @@ function openMap(){
     stars.appendChild(starsText);
     if(clearCount>=5){
       const stamp=document.createElement("span");
-      stamp.className="perfectCatStamp";
-      stamp.innerHTML='<span class="catFace">😺</span> 完璧！';
+      stamp.className="fuwaPerfectStamp";
+
+      const fuwaImg=document.createElement("img");
+      fuwaImg.className="fuwaPerfectImg";
+      fuwaImg.alt="フワねこ";
+      fuwaImg.src=CAT_POSES.fuwa.taiki;
+
+      const stampText=document.createElement("span");
+      stampText.className="fuwaPerfectText";
+      stampText.innerHTML="<small>★★★★★</small><strong>完璧にゃ！</strong>";
+
+      stamp.append(fuwaImg,stampText);
       stars.appendChild(stamp);
     }
 
@@ -1396,23 +1493,32 @@ function loadLearn(){
   }
 
   el.learnCheckBtn.style.display="";
-  el.learnCheckBtn.className="learnCheckBtn"+(learnMode==="review"?" review":"");
+  el.learnCheckBtn.className="learnCheckBtn show"+(learnMode==="review"?" review":"");
   el.learnCheckBtn.textContent=learnMode==="review"?"↩ 覚えたチェックを外す":"✓ 覚えた！";
-  el.learnCheckBtn.classList.remove("show");
   if(!learnPool.length){
-    learnCurrent=null;el.learnMeaning.hidden=true;el.learnBtn.style.display="none";$("learnSpeakBtn").style.display="none";
+    learnCurrent=null;
+    el.learnMeaning.style.display="none";
+    el.learnBtn.style.display="none";
+    $("learnSpeakBtn").style.display="none";
+    $("learnExampleBtn").hidden=true;
     el.learnWord.innerHTML=learnMode==="review"
       ?'<div class="learnEmpty">まだ「覚えた！」にした単語がないよ。<br>おぼえるモードから始めよう 🐾</div>'
       :'<div class="learnEmpty">🎉 すごい！<br>'+DATA.length+'語ぜんぶ「覚えた！」になったよ！</div>';
     return;
   }
-  el.learnBtn.style.display="";$("learnSpeakBtn").style.display="";
+
+  el.learnMeaning.style.display="";
+  el.learnBtn.style.display="";
+  $("learnSpeakBtn").style.display="";
+
   if(learnIndex>=learnPool.length)learnIndex=0;
   learnCurrent=learnPool[learnIndex];
+
   el.learnWord.textContent=learnCurrent.en;
-  el.learnMeaning.textContent=learnCurrent.jp;
-  el.learnMeaning.hidden=true;
-  el.learnBtn.textContent="正解は・・";
+  el.learnMeaning.textContent="正解は・・";
+  el.learnMeaning.classList.remove("revealed");
+  el.learnBtn.textContent="次のことば ▶";
+  $("learnExampleBtn").hidden=!hasExample(learnCurrent);
   learnShown=false;
   speak(learnCurrent.en);
 }
@@ -1424,6 +1530,13 @@ function showCurrentExample(){
   $("learnExampleBtn").hidden=true;
   speak(learnCurrent.example_en);
 }
+function revealLearnAnswer(){
+  if(!learnCurrent)return;
+  if(learnMode==="examples" || (learnMode==="review" && reviewKind==="examples"))return;
+  el.learnMeaning.textContent=learnCurrent.jp;
+  el.learnMeaning.classList.add("revealed");
+  learnShown=true;
+}
 function learnAction(){
   if(!learnCurrent)return;
 
@@ -1431,23 +1544,15 @@ function learnAction(){
     learnIndex++;loadReviewExample();return;
   }
 
-  if(!learnShown){
-    el.learnMeaning.hidden=false;
-    el.learnBtn.textContent="次のことば ▶";
-    el.learnCheckBtn.classList.add("show");
-    if(hasExample(learnCurrent))$("learnExampleBtn").hidden=false;
-    learnShown=true;
-  }else{
-    learnIndex++;
-    loadLearn();
-  }
+  learnIndex++;
+  loadLearn();
 }
 function loadReviewExample(){
   buildLearnPool();
   resetExampleArea();
   el.learnCheckBtn.style.display="none";
   $("learnSpeakBtn").style.display="none";
-  el.learnMeaning.hidden=true;
+  el.learnMeaning.style.display="none";
   el.learnBtn.style.display="none";
   el.learnWord.classList.add("exampleCloze");
 
@@ -1560,7 +1665,7 @@ $("battleBackBtn").addEventListener("click",()=>show("home"));
 $("battleMapBtn").addEventListener("click",openMap);
 $("clearHomeBtn").addEventListener("click",()=>show("home"));
 $("nextStageBtn").addEventListener("click",()=>startStage(Math.min(stageIndex+1,STAGES.length-1)));
-$("learnBtn").addEventListener("click",learnAction);$("learnCheckBtn").addEventListener("click",toggleLearned);$("learnExampleBtn").addEventListener("click",showCurrentExample);$("learnExampleSpeakBtn").addEventListener("click",()=>{unlockAudio();if(learnCurrent&&hasExample(learnCurrent))speak(learnCurrent.example_en)});
+$("learnMeaning").addEventListener("click",revealLearnAnswer);$("learnBtn").addEventListener("click",learnAction);$("learnCheckBtn").addEventListener("click",toggleLearned);$("learnExampleBtn").addEventListener("click",showCurrentExample);$("learnExampleSpeakBtn").addEventListener("click",()=>{unlockAudio();if(learnCurrent&&hasExample(learnCurrent))speak(learnCurrent.example_en)});
 $("learnBackBtn").addEventListener("click",(e)=>{
   e.preventDefault();
   show("home");
