@@ -865,7 +865,7 @@ body:has(#home.on) .top{display:none!important}
     <button id="reviewOpenBtn" class="homeHotspot hsReview" aria-label="復習モード"></button>
     <button id="zukanBtn" class="homeHotspot hsZukan" aria-label="猫図鑑"></button>
     <button id="kingdomBtn" class="homeHotspot hsKingdom" aria-label="ねこ王国"></button>
-    <div class="versionBadge">フワねこ完成 v4</div>
+    <div class="versionBadge">例文モード改良 v5</div>
     <button id="exampleModeBtn" class="homeExampleModeBtn" type="button">📖 例文モード</button>
   </div>
 </section>
@@ -1433,6 +1433,7 @@ function stageClear(){
 function gameOver(){stopAdvance();el.answers.replaceChildren();el.feedback.textContent="💔 GAME OVER";later(openMap,1200)}
 
 let learnMode="learn",learnPool=[],learnCurrent=null,reviewKind="words",reviewExampleLocked=false;
+let exampleLastId=null;
 
 function learnedSet(){
   try{return new Set(JSON.parse(localStorage.getItem(storageKey("learnedWords"))||"[]"))}
@@ -1472,6 +1473,7 @@ function resetExampleArea(){
 }
 function startLearn(mode="learn"){
   learnMode=mode;reviewKind="words";learnIndex=0;learnShown=false;reviewExampleLocked=false;
+  if(mode==="examples")exampleLastId=null;
   buildLearnPool();show("learn");loadLearn();
 }
 function setReviewKind(kind){
@@ -1552,22 +1554,40 @@ function loadReviewExample(){
   resetExampleArea();
   el.learnCheckBtn.style.display="none";
   $("learnSpeakBtn").style.display="none";
-  el.learnMeaning.style.display="none";
   el.learnBtn.style.display="none";
   el.learnWord.classList.add("exampleCloze");
 
   if(!learnPool.length){
     learnCurrent=null;
+    el.learnMeaning.style.display="none";
     el.learnWord.innerHTML=learnMode==="examples"
       ?'<div class="learnEmpty">📖 例文チャレンジに使えるデータがないよ。</div>'
       :'<div class="learnEmpty">📖 例文つきの「覚えた！」単語がまだないよ。<br>例文データがある単語を覚えると、ここで挑戦できるにゃ！</div>';
     return;
   }
 
-  if(learnIndex>=learnPool.length)learnIndex=0;
-  learnCurrent=learnPool[learnIndex];
+  if(learnMode==="examples"){
+    // トップ画面の例文モードは完全ランダム。
+    // 直前と同じ問題だけは、2問以上あるとき避ける。
+    let candidates=learnPool;
+    if(learnPool.length>1 && exampleLastId!==null){
+      const filtered=learnPool.filter(q=>q.id!==exampleLastId);
+      if(filtered.length)candidates=filtered;
+    }
+    learnCurrent=candidates[Math.floor(Math.random()*candidates.length)];
+    exampleLastId=learnCurrent.id;
+  }else{
+    if(learnIndex>=learnPool.length)learnIndex=0;
+    learnCurrent=learnPool[learnIndex];
+  }
+
   reviewExampleLocked=false;
   el.learnWord.textContent=makeCloze(learnCurrent);
+
+  // 問題を解く前から日本語訳を表示
+  el.learnMeaning.style.display="";
+  el.learnMeaning.classList.remove("revealed");
+  el.learnMeaning.textContent="🇯🇵 "+(learnCurrent.example_jp||"");
 
   const box=$("exampleAnswers");box.hidden=false;box.replaceChildren();
   const source=DATA.filter(q=>q.en&&q.id!==learnCurrent.id);
@@ -1589,13 +1609,51 @@ function answerReviewExample(choice){
   if(reviewExampleLocked||!learnCurrent)return;
   reviewExampleLocked=true;
   $("exampleAnswers").querySelectorAll("button").forEach(b=>b.disabled=true);
+
   const ok=choice===learnCurrent.en;
-  el.learnMeaning.hidden=false;
-  el.learnMeaning.innerHTML=(ok?"⭕ 正解！":"❌ 正解は <b>"+learnCurrent.en+"</b>")+"<br><span style='font-size:16px'>"+(learnCurrent.example_en||"")+"</span>"+(learnCurrent.example_jp?"<br><span style='font-size:14px'>"+learnCurrent.example_jp+"</span>":"");
-  if(ok)ding();else playBoo();
-  if(hasExample(learnCurrent))speak(learnCurrent.example_en);
-  el.learnBtn.style.display="";
-  el.learnBtn.textContent="次の例文 ▶";
+
+  if(ok){
+    ding();
+    el.learnMeaning.classList.add("revealed");
+    el.learnMeaning.innerHTML="⭕ 正解！<br><span style='font-size:14px'>🇯🇵 "+(learnCurrent.example_jp||"")+"</span>";
+    if(hasExample(learnCurrent))speak(learnCurrent.example_en);
+
+    // 正解はテンポよく自動で次のランダム問題へ
+    later(()=>{
+      if(learnMode==="examples"){
+        loadReviewExample();
+      }else{
+        learnIndex++;
+        loadReviewExample();
+      }
+    },700);
+  }else{
+    playBoo();
+
+    // 不正解は正解をしっかり確認してから、自分で次へ
+    el.learnMeaning.classList.add("revealed");
+    el.learnMeaning.innerHTML=
+      "❌ 正解は <b>"+learnCurrent.en+"</b>"+
+      "<br><span style='font-size:16px'>"+(learnCurrent.example_en||"")+"</span>"+
+      (learnCurrent.example_jp?"<br><span style='font-size:14px'>🇯🇵 "+learnCurrent.example_jp+"</span>":"");
+
+    if(hasExample(learnCurrent))speak(learnCurrent.example_en);
+
+    const nextBtn=document.createElement("button");
+    nextBtn.className="wrongNextBtn";
+    nextBtn.type="button";
+    nextBtn.textContent="正解を確認したらタップして次へ ▶";
+    nextBtn.addEventListener("click",()=>{
+      if(learnMode==="examples"){
+        loadReviewExample();
+      }else{
+        learnIndex++;
+        loadReviewExample();
+      }
+    },{once:true});
+
+    $("exampleAnswers").replaceChildren(nextBtn);
+  }
 }
 
 function showKingdomUnlock(index){
