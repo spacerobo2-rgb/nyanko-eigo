@@ -660,6 +660,76 @@ body:has(#home.on) .top{display:none!important}
 @media (max-width:390px){#home .homePosterArt{min-height:calc(100svh - env(safe-area-inset-top));}}
 
 
+
+/* ===== 最終調整：冒険モード ===== */
+
+/* 敵の進軍ゲージは右（敵陣）→左（自陣）へ伸びる */
+.advanceTrack{
+  display:flex;
+  justify-content:flex-end;
+}
+.advanceFill{
+  margin-left:auto;
+  background:linear-gradient(270deg,#ffd54f,#ff8a65,#ef5350);
+}
+
+/* 不正解後：正解を確認して、自分で次へ */
+.wrongNextBtn{
+  width:100%;
+  margin-top:10px;
+  padding:13px 10px;
+  border:3px solid #7a3f2a;
+  border-radius:14px;
+  background:linear-gradient(#fff5e8,#ffd9c4);
+  color:#5b2f21;
+  font:inherit;
+  font-size:15px;
+  font-weight:1000;
+  box-shadow:0 3px 0 #7a3f2a;
+}
+.wrongNextBtn:active{
+  transform:translateY(2px);
+  box-shadow:0 1px 0 #7a3f2a;
+}
+
+/* ステージごとのクリア回数 */
+.clearStars{
+  margin-top:7px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.clearStarsText{
+  letter-spacing:2px;
+  font-size:20px;
+  line-height:1;
+  color:#f3a400;
+  text-shadow:0 1px 0 #fff;
+}
+.perfectCatStamp{
+  display:inline-flex;
+  align-items:center;
+  gap:3px;
+  padding:3px 8px;
+  border:3px double #e65151;
+  border-radius:999px;
+  background:#fff9ef;
+  color:#d43d3d;
+  font-size:12px;
+  font-weight:1000;
+  transform:rotate(-5deg);
+  box-shadow:0 1px 0 rgba(140,30,30,.18);
+}
+.perfectCatStamp .catFace{
+  font-size:18px;
+}
+
+/* 覚えるモード：メインボタンの位置を固定しやすくする */
+#learnBtn{
+  min-height:56px;
+}
+
 /* ===== 例文学習システム ===== */
 .exampleToggle{
   display:block;width:100%;margin:8px 0 0;padding:10px 12px;
@@ -708,7 +778,7 @@ body:has(#home.on) .top{display:none!important}
     <button id="reviewOpenBtn" class="homeHotspot hsReview" aria-label="復習モード"></button>
     <button id="zukanBtn" class="homeHotspot hsZukan" aria-label="猫図鑑"></button>
     <button id="kingdomBtn" class="homeHotspot hsKingdom" aria-label="ねこ王国"></button>
-    <div class="versionBadge">例文対応 v2</div>
+    <div class="versionBadge">最終調整 v3</div>
     <button id="exampleModeBtn" class="homeExampleModeBtn" type="button">📖 例文モード</button>
   </div>
 </section>
@@ -757,12 +827,9 @@ body:has(#home.on) .top{display:none!important}
 <section id="learn" class="screen learn"><div class="panel">
 <div id="learnTitle" class="heroTitle" style="font-size:23px">📖 おぼえるモード</div>
 <div id="learnStats" class="learnStats"></div>
-<div id="reviewTabs" class="reviewTabs" hidden>
-  <button id="reviewWordsBtn" type="button" class="on">🔁 単語で復習</button>
-  <button id="reviewExamplesBtn" type="button">📖 例文チャレンジ</button>
-</div>
 <div id="learnWord" class="learnWord"></div>
 <button id="learnSpeakBtn" class="learnSpeakBtn" type="button">🔊 音声をきく</button>
+<button id="learnBtn" class="mainBtn">正解は・・</button>
 <div id="learnMeaning" class="meaning" hidden></div>
 <div id="exampleAnswers" class="exampleAnswers" hidden></div>
 <button id="learnExampleBtn" class="exampleToggle" type="button" hidden>📖 例文を見る</button>
@@ -772,7 +839,6 @@ body:has(#home.on) .top{display:none!important}
   <button id="learnExampleSpeakBtn" class="exampleSpeak" type="button">🔊 例文をきく</button>
 </div>
 <button id="learnCheckBtn" class="learnCheckBtn">✓ 覚えた！</button>
-<button id="learnBtn" class="mainBtn">正解は・・</button>
 <button id="learnBackBtn" class="subBtn">← もどる</button>
 </div></section>
 <div id="notice" class="notice"></div><div id="kingdomUnlockOverlay" class="kingdomUnlockOverlay">
@@ -879,7 +945,37 @@ const el={
 
 let progress=Math.max(0,Math.min(Number(localStorage.getItem(storageKey("progress"))||0),STAGES.length-1));
 let stageIndex=progress,coins=0,life=3,enemyHP=80,maxHP=80,currentQ=null,answerLocked=false,battleQuestionCount=0,currentQuestionKind="word";
+
 let battleActive=false,enemyAdvance=0,lastAdvanceTime=0,advanceRAF=0,enemyPauseUntil=0;
+
+function getStageClearCounts(){
+  let counts=[];
+  try{
+    const saved=JSON.parse(localStorage.getItem(storageKey("stageClearCounts"))||"[]");
+    if(Array.isArray(saved))counts=saved.map(n=>Math.max(0,Number(n)||0));
+  }catch(e){}
+  while(counts.length<STAGES.length)counts.push(0);
+
+  // 以前の完成版からの引き継ぎ：
+  // すでに「CLEAR」になっているステージは最低1回クリアとして扱う
+  let changed=false;
+  for(let i=0;i<Math.min(progress,STAGES.length);i++){
+    if(counts[i]<1){counts[i]=1;changed=true}
+  }
+  if(changed)localStorage.setItem(storageKey("stageClearCounts"),JSON.stringify(counts));
+  return counts;
+}
+function addStageClear(stageNo){
+  const counts=getStageClearCounts();
+  counts[stageNo]=(counts[stageNo]||0)+1;
+  localStorage.setItem(storageKey("stageClearCounts"),JSON.stringify(counts));
+  return counts[stageNo];
+}
+function stageStars(stageNo){
+  const n=Math.min(5,getStageClearCounts()[stageNo]||0);
+  return "★".repeat(n)+"☆".repeat(5-n);
+}
+
 let learnIndex=0,learnShown=false,audioUnlocked=false,activeTimers=new Set();
 
 const UNLOCK_RULES=[
@@ -1068,7 +1164,21 @@ function openMap(){
     d.className="s";
     d.textContent=[s.type,s.cat,s.rank].filter(Boolean).join(" ");
 
-    card.append(n,d);
+    const stars=document.createElement("div");
+    stars.className="clearStars";
+    const starsText=document.createElement("span");
+    starsText.className="clearStarsText";
+    const clearCount=Math.min(5,getStageClearCounts()[i]||0);
+    starsText.textContent="★".repeat(clearCount)+"☆".repeat(5-clearCount);
+    stars.appendChild(starsText);
+    if(clearCount>=5){
+      const stamp=document.createElement("span");
+      stamp.className="perfectCatStamp";
+      stamp.innerHTML='<span class="catFace">😺</span> 完璧！';
+      stars.appendChild(stamp);
+    }
+
+    card.append(n,d,stars);
     if(i<=progress)card.addEventListener("click",()=>startStage(i));
     el.stageList.appendChild(card);
   });
@@ -1104,64 +1214,79 @@ function renderCats(){
  updateHud();
 }
 function nextQuestion(){
- if(enemyHP<=0)return stageClear();if(life<=0)return gameOver();
- answerLocked=false;
- const p=stagePool(STAGES[stageIndex]);
- battleQuestionCount++;
- const exPool=exampleCapable(p);
- const doExample=(battleQuestionCount%5===0 && exPool.length>0);
- currentQuestionKind=doExample?"example":"word";
+ if(enemyHP<=0)return stageClear();
+ if(life<=0)return gameOver();
 
- if(doExample){
-   currentQ=exPool[Math.floor(Math.random()*exPool.length)];
-   el.qWord.textContent=makeCloze(currentQ);
-   el.qWord.classList.add("exampleCloze");
-   el.answers.replaceChildren();
-   el.feedback.innerHTML='📖 <span class="exampleBattleTag">例文チャレンジ</span> 空欄に入る英語を選ぶにゃ！';
-   let ch=[currentQ.en],guard=0;
-   while(ch.length<4&&guard<150){
-     guard++;
-     const x=p[Math.floor(Math.random()*p.length)].en;
-     if(x&&!ch.includes(x))ch.push(x);
-   }
-   while(ch.length<4)ch.push("？？？");
-   for(let i=ch.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[ch[i],ch[j]]=[ch[j],ch[i]]}
-   ch.forEach(text=>{const b=document.createElement("button");b.textContent=text;b.addEventListener("click",()=>answer(text));el.answers.appendChild(b)});
-   later(()=>speak(currentQ.example_en),80);
- }else{
-   currentQ=p[Math.floor(Math.random()*p.length)];
-   el.qWord.classList.remove("exampleCloze");
-   el.qWord.textContent=currentQ.en;el.answers.replaceChildren();el.feedback.textContent="正解してコインをためるにゃ！";
-   let ch=[currentQ.jp],guard=0;
-   while(ch.length<4&&guard<100){guard++;const x=p[Math.floor(Math.random()*p.length)].jp;if(x&&!ch.includes(x))ch.push(x)}
-   while(ch.length<4)ch.push("？？？");
-   for(let i=ch.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[ch[i],ch[j]]=[ch[j],ch[i]]}
-   ch.forEach(text=>{const b=document.createElement("button");b.textContent=text;b.addEventListener("click",()=>answer(text));el.answers.appendChild(b)});
-   later(()=>speak(currentQ.en),80);
+ answerLocked=false;
+ currentQuestionKind="word";
+
+ const p=stagePool(STAGES[stageIndex]);
+ currentQ=p[Math.floor(Math.random()*p.length)];
+
+ el.qWord.classList.remove("exampleCloze");
+ el.qWord.textContent=currentQ.en;
+ el.answers.replaceChildren();
+ el.feedback.textContent="正解してコインをためるにゃ！";
+
+ let ch=[currentQ.jp],guard=0;
+ while(ch.length<4&&guard<100){
+   guard++;
+   const x=p[Math.floor(Math.random()*p.length)].jp;
+   if(x&&!ch.includes(x))ch.push(x);
  }
+ while(ch.length<4)ch.push("？？？");
+ for(let i=ch.length-1;i>0;i--){
+   const j=Math.floor(Math.random()*(i+1));
+   [ch[i],ch[j]]=[ch[j],ch[i]];
+ }
+ ch.forEach(text=>{
+   const b=document.createElement("button");
+   b.textContent=text;
+   b.addEventListener("click",()=>answer(text));
+   el.answers.appendChild(b);
+ });
+ later(()=>speak(currentQ.en),80);
 }
 function answer(choice){
- if(answerLocked)return;answerLocked=true;el.answers.querySelectorAll("button").forEach(b=>b.disabled=true);
- const correct=currentQuestionKind==="example"?currentQ.en:currentQ.jp;
+ if(answerLocked)return;
+ answerLocked=true;
+ el.answers.querySelectorAll("button").forEach(b=>b.disabled=true);
+
+ const correct=currentQ.jp;
+
  if(choice===correct){
-  const bonus=currentQuestionKind==="example"?100:50;
-  coins+=bonus;ding();enemyPauseUntil=performance.now()+(currentQuestionKind==="example"?1400:900);
-  if(currentQuestionKind==="example"){
-    el.feedback.textContent="📖⭕ 例文チャレンジ成功！ 会心の一撃！ +100コイン！";
-    later(()=>speak(currentQ.example_en),100);
-  }else{
-    el.feedback.textContent="⭕ 正解！ +50コイン！ 敵の進軍が一瞬ストップ！";
-  }
-  updateHud();later(nextQuestion,currentQuestionKind==="example"?900:620);
+  coins+=50;
+  ding();
+  enemyPauseUntil=performance.now()+900;
+  el.feedback.textContent="⭕ 正解！ +50コイン！ 敵の進軍が一瞬ストップ！";
+  updateHud();
+  later(nextQuestion,620);
  }else{
-  playBoo();life--;enemyAdvance=Math.min(1,enemyAdvance+.08);updateEnemyPosition();
+  playBoo();
+  life--;
+  enemyAdvance=Math.min(1,enemyAdvance+.08);
+  updateEnemyPosition();
   enemyHP=Math.min(maxHP,enemyHP+10);
-  el.feedback.textContent=currentQuestionKind==="example"
-    ?"❌ まちがい… 正解は「"+correct+"」！ 敵が前進＆HPが10回復！"
-    :"❌ まちがい… 敵が前進＆HPが10回復！";
+
+  el.feedback.innerHTML="❌ まちがい<br><b>正解は「"+correct+"」</b><br>敵が前進＆HPが10回復！";
+
   el.enemy.style.backgroundImage=`url("${ENEMY_POSES.kougeki}")`;
-  el.enemy.classList.remove("shake");void el.enemy.offsetWidth;el.enemy.classList.add("shake");updateHud();
-  later(()=>el.enemy.style.backgroundImage=`url("${ENEMY_POSES.taiki}")`,330);later(nextQuestion,1000);
+  el.enemy.classList.remove("shake");
+  void el.enemy.offsetWidth;
+  el.enemy.classList.add("shake");
+  updateHud();
+
+  later(()=>el.enemy.style.backgroundImage=`url("${ENEMY_POSES.taiki}")`,330);
+
+  const nextBtn=document.createElement("button");
+  nextBtn.className="wrongNextBtn";
+  nextBtn.type="button";
+  nextBtn.textContent="正解を確認したらタップして次へ ▶";
+  nextBtn.addEventListener("click",()=>{
+    if(life<=0)return gameOver();
+    nextQuestion();
+  },{once:true});
+  el.answers.replaceChildren(nextBtn);
  }
 }
 function deploy(i){
@@ -1198,6 +1323,7 @@ function attack(c,u){
 }
 function stageClear(){
  stopAdvance();
+ addStageClear(stageIndex);
  let newlyUnlocked=null;
  if(stageIndex>=progress){
    if(progress<STAGES.length-1){progress=stageIndex+1;localStorage.setItem(storageKey("progress"),String(progress))}
@@ -1261,7 +1387,7 @@ function loadLearn(){
   buildLearnPool();
   el.learnTitle.textContent=learnMode==="examples"?"📖 例文モード":(learnMode==="review"?"🔁 復習モード":"📖 おぼえるモード");
   el.learnStats.textContent=learnMode==="examples"?"例文チャレンジ　"+learnPool.length+"問からランダム出題":learnProgressText();
-  $("reviewTabs").hidden=learnMode!=="review";
+  
   resetExampleArea();
   el.learnWord.classList.remove("exampleCloze");
 
@@ -1434,7 +1560,7 @@ $("battleBackBtn").addEventListener("click",()=>show("home"));
 $("battleMapBtn").addEventListener("click",openMap);
 $("clearHomeBtn").addEventListener("click",()=>show("home"));
 $("nextStageBtn").addEventListener("click",()=>startStage(Math.min(stageIndex+1,STAGES.length-1)));
-$("learnBtn").addEventListener("click",learnAction);$("learnCheckBtn").addEventListener("click",toggleLearned);$("learnExampleBtn").addEventListener("click",showCurrentExample);$("learnExampleSpeakBtn").addEventListener("click",()=>{unlockAudio();if(learnCurrent&&hasExample(learnCurrent))speak(learnCurrent.example_en)});$("reviewWordsBtn").addEventListener("click",()=>setReviewKind("words"));$("reviewExamplesBtn").addEventListener("click",()=>setReviewKind("examples"));
+$("learnBtn").addEventListener("click",learnAction);$("learnCheckBtn").addEventListener("click",toggleLearned);$("learnExampleBtn").addEventListener("click",showCurrentExample);$("learnExampleSpeakBtn").addEventListener("click",()=>{unlockAudio();if(learnCurrent&&hasExample(learnCurrent))speak(learnCurrent.example_en)});
 $("learnBackBtn").addEventListener("click",(e)=>{
   e.preventDefault();
   show("home");
